@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_nonOverlappingSeq_behav/xsimk.exe -simmode gui -wdb tb_nonOverlappingSeq_behav.wdb -simrunnum 0 -socket 57375
+Design successfully loaded
+Design Loading Memory Usage: 11316 KB (Peak: 11316 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 12256 KB (Peak: 12256 KB)
+Simulation CPU Usage: 139 ms

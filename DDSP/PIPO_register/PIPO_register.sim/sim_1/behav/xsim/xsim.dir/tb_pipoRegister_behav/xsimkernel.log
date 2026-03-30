@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_pipoRegister_behav/xsimk.exe -simmode gui -wdb tb_pipoRegister_behav.wdb -simrunnum 0 -socket 51653
+Design successfully loaded
+Design Loading Memory Usage: 11468 KB (Peak: 11468 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 12504 KB (Peak: 12504 KB)
+Simulation CPU Usage: 93 ms
