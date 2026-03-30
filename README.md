@@ -1,2 +1,4 @@
 # EL_Semester_4
-Here are stored the semester 4 files for:
+In this repository are stored the Semester 4 files for Electrical Engineering:
+- Power Electronics 1
+- Digital Design and Signal Processing
