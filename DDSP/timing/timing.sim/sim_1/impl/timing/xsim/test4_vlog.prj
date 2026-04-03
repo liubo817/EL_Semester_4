@@ -1,0 +1,6 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../../../../../../Apps/Vivado/2025.2/Vivado/data/rsb/busdef" \
+"test4_time_impl.v" \
+
+# Do not sort compile order
+nosort
