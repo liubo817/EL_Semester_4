@@ -66,9 +66,9 @@ Plecs {
   InvalidNetlistFunctionEvaluationMsg "1"
   IncompatibleInitialConditionMsg "2"
   Schematic {
-    Location      [769, 30; 1535, 868]
-    ZoomFactor    1.14437
-    SliderPosition [0, -1]
+    Location      [0, 23; 1536, 869]
+    ZoomFactor    1.71498
+    SliderPosition [-1, -1]
     ShowBrowser   off
     BrowserWidth  100
     Component {
@@ -188,7 +188,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Probe"
       Show          on
-      Position      [70, 300]
+      Position      [50, 345]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -217,7 +217,7 @@ Plecs {
       Type          SignalDemux
       Name          "Demux"
       Show          off
-      Position      [120, 300]
+      Position      [100, 345]
       Direction     right
       Flipped       on
       LabelPosition south
@@ -232,7 +232,7 @@ Plecs {
       Type          Scope
       Name          "Scope"
       Show          on
-      Position      [200, 300]
+      Position      [180, 345]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -378,7 +378,7 @@ Plecs {
       SrcComponent  "Components/Control/Filters/Total Harmonic\\nDistortion"
       Name          "Total Harmonic\nDistortion"
       Show          on
-      Position      [200, 385]
+      Position      [180, 430]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -408,7 +408,7 @@ Plecs {
       Type          Gain
       Name          "Gain"
       Show          on
-      Position      [260, 385]
+      Position      [240, 430]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -442,7 +442,7 @@ Plecs {
       Type          Display
       Name          "THD RLC"
       Show          on
-      Position      [330, 385]
+      Position      [310, 430]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -463,7 +463,7 @@ Plecs {
       SrcComponent  "Components/Control/Filters/RMS Value"
       Name          "RMS Value"
       Show          on
-      Position      [200, 455]
+      Position      [180, 500]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -498,7 +498,7 @@ Plecs {
       Type          Display
       Name          "Input current_RLC"
       Show          on
-      Position      [330, 455]
+      Position      [310, 500]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -518,7 +518,7 @@ Plecs {
       Type          PeriodicAverage
       Name          "Periodic Average"
       Show          on
-      Position      [200, 515]
+      Position      [180, 560]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -532,7 +532,7 @@ Plecs {
       Type          Display
       Name          "Input current_RLC_avg"
       Show          on
-      Position      [330, 515]
+      Position      [310, 560]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -552,7 +552,7 @@ Plecs {
       Type          PeriodicAverage
       Name          "Periodic Average2"
       Show          on
-      Position      [200, 660]
+      Position      [180, 705]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -566,7 +566,7 @@ Plecs {
       Type          Display
       Name          "Output current_RLC"
       Show          on
-      Position      [330, 660]
+      Position      [310, 705]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -586,7 +586,7 @@ Plecs {
       Type          Display
       Name          "Output Voltage RLC"
       Show          on
-      Position      [330, 585]
+      Position      [310, 630]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -606,7 +606,7 @@ Plecs {
       Type          PeriodicAverage
       Name          "Periodic Average1"
       Show          on
-      Position      [200, 585]
+      Position      [180, 630]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -617,890 +617,34 @@ Plecs {
       }
     }
     Component {
-      Type          ACVoltageSource
-      Name          "V_ac1"
-      Show          on
-      Position      [590, 100]
-      Direction     down
-      Flipped       on
-      LabelPosition east
-      Parameter {
-        Variable      "V"
-        Value         "310"
-        Show          on
-      }
-      Parameter {
-        Variable      "w"
-        Value         "2*pi*50"
-        Show          on
-      }
-      Parameter {
-        Variable      "phi"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
-      Type          Diode
-      Name          "D5"
-      Show          on
-      Position      [730, 55]
-      Direction     down
-      Flipped       off
-      LabelPosition east
-      Parameter {
-        Variable      "Vf"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Ron"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "thermal"
-        Value         ""
-        Show          off
-      }
-      Parameter {
-        Variable      "Rth"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Np"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "T_init"
-        Value         ""
-        Show          off
-      }
-      Parameter {
-        Variable      "SwitchModel"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "f_grid"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
-      Type          Diode
-      Name          "D6"
-      Show          on
-      Position      [785, 55]
-      Direction     down
-      Flipped       off
-      LabelPosition east
-      Parameter {
-        Variable      "Vf"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Ron"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "thermal"
-        Value         ""
-        Show          off
-      }
-      Parameter {
-        Variable      "Rth"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Np"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "T_init"
-        Value         ""
-        Show          off
-      }
-      Parameter {
-        Variable      "SwitchModel"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "f_grid"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
-      Type          Diode
-      Name          "D7"
-      Show          on
-      Position      [730, 160]
-      Direction     down
-      Flipped       off
-      LabelPosition east
-      Parameter {
-        Variable      "Vf"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Ron"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "thermal"
-        Value         ""
-        Show          off
-      }
-      Parameter {
-        Variable      "Rth"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Np"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "T_init"
-        Value         ""
-        Show          off
-      }
-      Parameter {
-        Variable      "SwitchModel"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "f_grid"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
-      Type          Diode
-      Name          "D8"
-      Show          on
-      Position      [785, 160]
-      Direction     down
-      Flipped       off
-      LabelPosition east
-      Parameter {
-        Variable      "Vf"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Ron"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "thermal"
-        Value         ""
-        Show          off
-      }
-      Parameter {
-        Variable      "Rth"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Np"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "T_init"
-        Value         ""
-        Show          off
-      }
-      Parameter {
-        Variable      "SwitchModel"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "f_grid"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
-      Type          Voltmeter
-      Name          "V_R1"
-      Show          on
-      Position      [825, 100]
-      Direction     up
-      Flipped       off
-      LabelPosition west
-    }
-    Component {
-      Type          Resistor
-      Name          "R2"
-      Show          on
-      Position      [945, 100]
-      Direction     up
-      Flipped       off
-      LabelPosition east
-      Parameter {
-        Variable      "R"
-        Value         "3"
-        Show          off
-      }
-    }
-    Component {
-      Type          Inductor
-      Name          "L3"
-      Show          on
-      Position      [655, 70]
-      Direction     left
-      Flipped       off
-      LabelPosition north
-      Parameter {
-        Variable      "L"
-        Value         "0.001"
-        Show          off
-      }
-      Parameter {
-        Variable      "i_init"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
-      Type          Voltmeter
-      Name          "V_L1"
-      Show          on
-      Position      [1010, 100]
-      Direction     up
-      Flipped       off
-      LabelPosition west
-    }
-    Component {
-      Type          ACVoltageSource
-      Name          "V_ac2"
-      Show          on
-      Position      [35, 825]
-      Direction     down
-      Flipped       on
-      LabelPosition east
-      Parameter {
-        Variable      "V"
-        Value         "310"
-        Show          on
-      }
-      Parameter {
-        Variable      "w"
-        Value         "2*pi*50"
-        Show          on
-      }
-      Parameter {
-        Variable      "phi"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
-      Type          Diode
-      Name          "D9"
-      Show          on
-      Position      [175, 780]
-      Direction     down
-      Flipped       off
-      LabelPosition east
-      Parameter {
-        Variable      "Vf"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Ron"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "thermal"
-        Value         ""
-        Show          off
-      }
-      Parameter {
-        Variable      "Rth"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Np"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "T_init"
-        Value         ""
-        Show          off
-      }
-      Parameter {
-        Variable      "SwitchModel"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "f_grid"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
-      Type          Diode
-      Name          "D10"
-      Show          on
-      Position      [230, 780]
-      Direction     down
-      Flipped       off
-      LabelPosition east
-      Parameter {
-        Variable      "Vf"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Ron"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "thermal"
-        Value         ""
-        Show          off
-      }
-      Parameter {
-        Variable      "Rth"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Np"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "T_init"
-        Value         ""
-        Show          off
-      }
-      Parameter {
-        Variable      "SwitchModel"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "f_grid"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
-      Type          Diode
-      Name          "D11"
-      Show          on
-      Position      [175, 885]
-      Direction     down
-      Flipped       off
-      LabelPosition east
-      Parameter {
-        Variable      "Vf"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Ron"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "thermal"
-        Value         ""
-        Show          off
-      }
-      Parameter {
-        Variable      "Rth"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Np"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "T_init"
-        Value         ""
-        Show          off
-      }
-      Parameter {
-        Variable      "SwitchModel"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "f_grid"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
-      Type          Diode
-      Name          "D12"
-      Show          on
-      Position      [230, 885]
-      Direction     down
-      Flipped       off
-      LabelPosition east
-      Parameter {
-        Variable      "Vf"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Ron"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "thermal"
-        Value         ""
-        Show          off
-      }
-      Parameter {
-        Variable      "Rth"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Np"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "T_init"
-        Value         ""
-        Show          off
-      }
-      Parameter {
-        Variable      "SwitchModel"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "f_grid"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
-      Type          Voltmeter
-      Name          "V_R2"
-      Show          on
-      Position      [270, 825]
-      Direction     up
-      Flipped       off
-      LabelPosition west
-    }
-    Component {
-      Type          Resistor
-      Name          "R3"
-      Show          on
-      Position      [390, 825]
-      Direction     up
-      Flipped       off
-      LabelPosition east
-      Parameter {
-        Variable      "R"
-        Value         "3"
-        Show          off
-      }
-    }
-    Component {
-      Type          Inductor
-      Name          "L4"
-      Show          on
-      Position      [100, 795]
-      Direction     left
-      Flipped       off
-      LabelPosition north
-      Parameter {
-        Variable      "L"
-        Value         "0.001"
-        Show          off
-      }
-      Parameter {
-        Variable      "i_init"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
-      Type          Inductor
-      Name          "L5"
-      Show          on
-      Position      [315, 750]
-      Direction     left
-      Flipped       off
-      LabelPosition north
-      Parameter {
-        Variable      "L"
-        Value         "0.05"
-        Show          off
-      }
-      Parameter {
-        Variable      "i_init"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
-      Type          Voltmeter
-      Name          "V_L2"
-      Show          on
-      Position      [455, 825]
-      Direction     up
-      Flipped       off
-      LabelPosition west
-    }
-    Component {
-      Type          ACVoltageSource
-      Name          "V_ac3"
-      Show          on
-      Position      [580, 825]
-      Direction     down
-      Flipped       on
-      LabelPosition east
-      Parameter {
-        Variable      "V"
-        Value         "310"
-        Show          on
-      }
-      Parameter {
-        Variable      "w"
-        Value         "2*pi*50"
-        Show          on
-      }
-      Parameter {
-        Variable      "phi"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
-      Type          Diode
-      Name          "D13"
-      Show          on
-      Position      [720, 780]
-      Direction     down
-      Flipped       off
-      LabelPosition east
-      Parameter {
-        Variable      "Vf"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Ron"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "thermal"
-        Value         ""
-        Show          off
-      }
-      Parameter {
-        Variable      "Rth"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Np"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "T_init"
-        Value         ""
-        Show          off
-      }
-      Parameter {
-        Variable      "SwitchModel"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "f_grid"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
-      Type          Diode
-      Name          "D14"
-      Show          on
-      Position      [775, 780]
-      Direction     down
-      Flipped       off
-      LabelPosition east
-      Parameter {
-        Variable      "Vf"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Ron"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "thermal"
-        Value         ""
-        Show          off
-      }
-      Parameter {
-        Variable      "Rth"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Np"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "T_init"
-        Value         ""
-        Show          off
-      }
-      Parameter {
-        Variable      "SwitchModel"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "f_grid"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
-      Type          Diode
-      Name          "D15"
-      Show          on
-      Position      [720, 885]
-      Direction     down
-      Flipped       off
-      LabelPosition east
-      Parameter {
-        Variable      "Vf"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Ron"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "thermal"
-        Value         ""
-        Show          off
-      }
-      Parameter {
-        Variable      "Rth"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Np"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "T_init"
-        Value         ""
-        Show          off
-      }
-      Parameter {
-        Variable      "SwitchModel"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "f_grid"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
-      Type          Diode
-      Name          "D16"
-      Show          on
-      Position      [775, 885]
-      Direction     down
-      Flipped       off
-      LabelPosition east
-      Parameter {
-        Variable      "Vf"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Ron"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "thermal"
-        Value         ""
-        Show          off
-      }
-      Parameter {
-        Variable      "Rth"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Np"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "T_init"
-        Value         ""
-        Show          off
-      }
-      Parameter {
-        Variable      "SwitchModel"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "f_grid"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
-      Type          Voltmeter
-      Name          "V_R3"
-      Show          on
-      Position      [815, 825]
-      Direction     up
-      Flipped       off
-      LabelPosition west
-    }
-    Component {
-      Type          Resistor
-      Name          "R4"
-      Show          on
-      Position      [935, 825]
-      Direction     up
-      Flipped       off
-      LabelPosition east
-      Parameter {
-        Variable      "R"
-        Value         "3"
-        Show          off
-      }
-    }
-    Component {
-      Type          Inductor
-      Name          "L6"
-      Show          on
-      Position      [645, 795]
-      Direction     left
-      Flipped       off
-      LabelPosition north
-      Parameter {
-        Variable      "L"
-        Value         "0.001"
-        Show          off
-      }
-      Parameter {
-        Variable      "i_init"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
-      Type          Capacitor
-      Name          "C3"
-      Show          on
-      Position      [905, 825]
-      Direction     down
-      Flipped       on
-      LabelPosition west
-      Parameter {
-        Variable      "C"
-        Value         "500e-6"
-        Show          off
-      }
-      Parameter {
-        Variable      "v_init"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
-      Type          Voltmeter
-      Name          "V_L3"
-      Show          on
-      Position      [1000, 825]
-      Direction     up
-      Flipped       off
-      LabelPosition west
-    }
-    Component {
       Type          PlecsProbe
       Name          "Probe1"
       Show          on
-      Position      [600, 240]
+      Position      [700, 335]
       Direction     right
       Flipped       off
       LabelPosition south
       Probe {
-        Component     "V_ac"
+        Component     "V_ac1"
         Path          ""
         Signals       {"Source current", "Source voltage"}
       }
       Probe {
-        Component     "V_R"
-        Path          ""
-        Signals       {"Measured voltage"}
-      }
-      Probe {
-        Component     "V_L"
+        Component     "V_R1"
         Path          ""
         Signals       {"Measured voltage"}
       }
       Probe {
         Component     "R2"
         Path          ""
-        Signals       {"Resistor current"}
+        Signals       {"Resistor voltage", "Resistor current"}
       }
     }
     Component {
       Type          SignalDemux
       Name          "Demux1"
       Show          off
-      Position      [650, 240]
+      Position      [750, 335]
       Direction     right
       Flipped       on
       LabelPosition south
@@ -1515,7 +659,7 @@ Plecs {
       Type          Scope
       Name          "Scope1"
       Show          on
-      Position      [730, 240]
+      Position      [830, 335]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1661,7 +805,7 @@ Plecs {
       SrcComponent  "Components/Control/Filters/Total Harmonic\\nDistortion"
       Name          "Total Harmonic\nDistortion1"
       Show          on
-      Position      [730, 325]
+      Position      [830, 420]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1691,7 +835,7 @@ Plecs {
       Type          Gain
       Name          "Gain1"
       Show          on
-      Position      [790, 325]
+      Position      [890, 420]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1725,7 +869,7 @@ Plecs {
       Type          Display
       Name          "THD R"
       Show          on
-      Position      [860, 325]
+      Position      [960, 420]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1746,7 +890,7 @@ Plecs {
       SrcComponent  "Components/Control/Filters/RMS Value"
       Name          "RMS Value1"
       Show          on
-      Position      [730, 395]
+      Position      [830, 490]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1781,7 +925,7 @@ Plecs {
       Type          Display
       Name          "Input current_R"
       Show          on
-      Position      [860, 395]
+      Position      [960, 490]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1801,7 +945,7 @@ Plecs {
       Type          PeriodicAverage
       Name          "Periodic Average3"
       Show          on
-      Position      [730, 455]
+      Position      [830, 550]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1815,7 +959,7 @@ Plecs {
       Type          Display
       Name          "Input current_R_avg"
       Show          on
-      Position      [860, 455]
+      Position      [960, 550]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1835,7 +979,7 @@ Plecs {
       Type          PeriodicAverage
       Name          "Periodic Average4"
       Show          on
-      Position      [730, 600]
+      Position      [830, 695]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1849,7 +993,7 @@ Plecs {
       Type          Display
       Name          "Output current_R"
       Show          on
-      Position      [860, 600]
+      Position      [960, 695]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1869,7 +1013,7 @@ Plecs {
       Type          Display
       Name          "Output Voltage R"
       Show          on
-      Position      [860, 525]
+      Position      [960, 620]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1889,7 +1033,7 @@ Plecs {
       Type          PeriodicAverage
       Name          "Periodic Average5"
       Show          on
-      Position      [730, 525]
+      Position      [830, 620]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1903,36 +1047,31 @@ Plecs {
       Type          PlecsProbe
       Name          "Probe2"
       Show          on
-      Position      [100, 1020]
+      Position      [170, 1080]
       Direction     right
       Flipped       off
       LabelPosition south
       Probe {
-        Component     "V_ac"
+        Component     "V_ac2"
         Path          ""
         Signals       {"Source current", "Source voltage"}
       }
       Probe {
-        Component     "V_R"
+        Component     "V_R2"
         Path          ""
         Signals       {"Measured voltage"}
       }
       Probe {
-        Component     "V_L"
+        Component     "R3"
         Path          ""
-        Signals       {"Measured voltage"}
-      }
-      Probe {
-        Component     "L5"
-        Path          ""
-        Signals       {"Inductor current"}
+        Signals       {"Resistor voltage", "Resistor current"}
       }
     }
     Component {
       Type          SignalDemux
       Name          "Demux2"
       Show          off
-      Position      [150, 1020]
+      Position      [220, 1080]
       Direction     right
       Flipped       on
       LabelPosition south
@@ -1947,7 +1086,7 @@ Plecs {
       Type          Scope
       Name          "Scope2"
       Show          on
-      Position      [230, 1020]
+      Position      [300, 1080]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2093,7 +1232,7 @@ Plecs {
       SrcComponent  "Components/Control/Filters/Total Harmonic\\nDistortion"
       Name          "Total Harmonic\nDistortion2"
       Show          on
-      Position      [230, 1105]
+      Position      [300, 1165]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2123,7 +1262,7 @@ Plecs {
       Type          Gain
       Name          "Gain2"
       Show          on
-      Position      [290, 1105]
+      Position      [360, 1165]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -2157,7 +1296,7 @@ Plecs {
       Type          Display
       Name          "THD RL"
       Show          on
-      Position      [360, 1105]
+      Position      [430, 1165]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2178,7 +1317,7 @@ Plecs {
       SrcComponent  "Components/Control/Filters/RMS Value"
       Name          "RMS Value2"
       Show          on
-      Position      [230, 1175]
+      Position      [300, 1235]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2213,7 +1352,7 @@ Plecs {
       Type          Display
       Name          "Input current_RL"
       Show          on
-      Position      [360, 1175]
+      Position      [430, 1235]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2233,7 +1372,7 @@ Plecs {
       Type          PeriodicAverage
       Name          "Periodic Average6"
       Show          on
-      Position      [230, 1235]
+      Position      [300, 1295]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2247,7 +1386,7 @@ Plecs {
       Type          Display
       Name          "Input current_RL_avg"
       Show          on
-      Position      [360, 1235]
+      Position      [430, 1295]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2267,7 +1406,7 @@ Plecs {
       Type          PeriodicAverage
       Name          "Periodic Average7"
       Show          on
-      Position      [230, 1380]
+      Position      [300, 1440]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2281,7 +1420,7 @@ Plecs {
       Type          Display
       Name          "Output current_RL"
       Show          on
-      Position      [360, 1380]
+      Position      [430, 1440]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2301,7 +1440,7 @@ Plecs {
       Type          Display
       Name          "Output Voltage RL"
       Show          on
-      Position      [360, 1305]
+      Position      [430, 1365]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2321,7 +1460,7 @@ Plecs {
       Type          PeriodicAverage
       Name          "Periodic Average8"
       Show          on
-      Position      [230, 1305]
+      Position      [300, 1365]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2335,7 +1474,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Probe3"
       Show          on
-      Position      [645, 1030]
+      Position      [870, 1070]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -2350,21 +1489,16 @@ Plecs {
         Signals       {"Measured voltage"}
       }
       Probe {
-        Component     "V_L"
-        Path          ""
-        Signals       {"Measured voltage"}
-      }
-      Probe {
         Component     "R4"
         Path          ""
-        Signals       {"Resistor current"}
+        Signals       {"Resistor voltage", "Resistor current"}
       }
     }
     Component {
       Type          SignalDemux
       Name          "Demux3"
       Show          off
-      Position      [695, 1030]
+      Position      [920, 1070]
       Direction     right
       Flipped       on
       LabelPosition south
@@ -2379,7 +1513,7 @@ Plecs {
       Type          Scope
       Name          "Scope3"
       Show          on
-      Position      [775, 1030]
+      Position      [1000, 1070]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2525,7 +1659,7 @@ Plecs {
       SrcComponent  "Components/Control/Filters/Total Harmonic\\nDistortion"
       Name          "Total Harmonic\nDistortion3"
       Show          on
-      Position      [775, 1115]
+      Position      [1000, 1155]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2555,7 +1689,7 @@ Plecs {
       Type          Gain
       Name          "Gain3"
       Show          on
-      Position      [835, 1115]
+      Position      [1060, 1155]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -2589,7 +1723,7 @@ Plecs {
       Type          Display
       Name          "THD RC"
       Show          on
-      Position      [905, 1115]
+      Position      [1130, 1155]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2610,7 +1744,7 @@ Plecs {
       SrcComponent  "Components/Control/Filters/RMS Value"
       Name          "RMS Value3"
       Show          on
-      Position      [775, 1185]
+      Position      [1000, 1225]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2645,7 +1779,7 @@ Plecs {
       Type          Display
       Name          "Input current_RC"
       Show          on
-      Position      [905, 1185]
+      Position      [1130, 1225]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2665,7 +1799,7 @@ Plecs {
       Type          PeriodicAverage
       Name          "Periodic Average9"
       Show          on
-      Position      [775, 1245]
+      Position      [1000, 1285]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2679,7 +1813,7 @@ Plecs {
       Type          Display
       Name          "Input current_RC_avg"
       Show          on
-      Position      [905, 1245]
+      Position      [1130, 1285]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2699,7 +1833,7 @@ Plecs {
       Type          PeriodicAverage
       Name          "Periodic Average10"
       Show          on
-      Position      [775, 1390]
+      Position      [1000, 1430]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2713,7 +1847,7 @@ Plecs {
       Type          Display
       Name          "Output current_RC"
       Show          on
-      Position      [905, 1390]
+      Position      [1130, 1430]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2733,7 +1867,7 @@ Plecs {
       Type          Display
       Name          "Output Voltage RC"
       Show          on
-      Position      [905, 1315]
+      Position      [1130, 1355]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2753,7 +1887,7 @@ Plecs {
       Type          PeriodicAverage
       Name          "Periodic Average11"
       Show          on
-      Position      [775, 1315]
+      Position      [1000, 1355]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2771,6 +1905,14 @@ Plecs {
       Direction     right
       Flipped       off
       LabelPosition south
+      ComponentAssertion {
+        SignalName       "Output"
+        TrSignalName     "Output"
+        LowerLimit       "-inf"
+        UpperLimit       "inf"
+        IncludeLimits    off
+        Action           "2"
+      }
     }
     Component {
       Type          Gain
@@ -2782,7 +1924,7 @@ Plecs {
       LabelPosition south
       Parameter {
         Variable      "K"
-        Value         "100"
+        Value         "2*pi*50"
         Show          off
       }
       Parameter {
@@ -3088,6 +2230,1244 @@ Plecs {
         Show          off
       }
     }
+    Component {
+      Type          ACVoltageSource
+      Name          "V_ac1"
+      Show          on
+      Position      [720, 100]
+      Direction     down
+      Flipped       on
+      LabelPosition east
+      Parameter {
+        Variable      "V"
+        Value         "310"
+        Show          on
+      }
+      Parameter {
+        Variable      "w"
+        Value         "2*pi*50"
+        Show          on
+      }
+      Parameter {
+        Variable      "phi"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          Voltmeter
+      Name          "V_R1"
+      Show          on
+      Position      [955, 100]
+      Direction     up
+      Flipped       off
+      LabelPosition west
+    }
+    Component {
+      Type          Resistor
+      Name          "R2"
+      Show          on
+      Position      [1030, 100]
+      Direction     up
+      Flipped       off
+      LabelPosition east
+      Parameter {
+        Variable      "R"
+        Value         "3"
+        Show          off
+      }
+    }
+    Component {
+      Type          Inductor
+      Name          "L3"
+      Show          on
+      Position      [785, 70]
+      Direction     left
+      Flipped       off
+      LabelPosition north
+      Parameter {
+        Variable      "L"
+        Value         "0.001"
+        Show          off
+      }
+      Parameter {
+        Variable      "i_init"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          Voltmeter
+      Name          "V_L1"
+      Show          on
+      Position      [1095, 100]
+      Direction     up
+      Flipped       off
+      LabelPosition west
+    }
+    Component {
+      Type          Clock
+      Name          "Clock1"
+      Show          on
+      Position      [650, 195]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+    }
+    Component {
+      Type          Gain
+      Name          "Gain5"
+      Show          on
+      Position      [685, 195]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "K"
+        Value         "2*pi*50"
+        Show          off
+      }
+      Parameter {
+        Variable      "Multiplication"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "OutputDataType"
+        Value         "11"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataTypeOverflowMode"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "GainDataType"
+        Value         "11"
+        Show          off
+      }
+    }
+    Component {
+      Type          Constant
+      Name          "Constant2"
+      Show          on
+      Position      [675, 160]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Frame         [-10, -10; 10, 10]
+      Parameter {
+        Variable      "Value"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataType"
+        Value         "10"
+        Show          off
+      }
+    }
+    Component {
+      Type          Thyristor
+      Name          "Thy5"
+      Show          on
+      Position      [915, 160]
+      Direction     down
+      Flipped       off
+      LabelPosition east
+      Parameter {
+        Variable      "Vf"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "Ron"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "s_init"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "thermal"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "Rth"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "T_init"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "SwitchModel"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "f_grid"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          Thyristor
+      Name          "Thy6"
+      Show          on
+      Position      [915, 55]
+      Direction     down
+      Flipped       off
+      LabelPosition east
+      Parameter {
+        Variable      "Vf"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "Ron"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "s_init"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "thermal"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "Rth"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "T_init"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "SwitchModel"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "f_grid"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          Thyristor
+      Name          "Thy7"
+      Show          on
+      Position      [860, 55]
+      Direction     down
+      Flipped       off
+      LabelPosition east
+      Parameter {
+        Variable      "Vf"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "Ron"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "s_init"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "thermal"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "Rth"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "T_init"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "SwitchModel"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "f_grid"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Control/Modulators/2-Pulse\\nGenerator"
+      Name          "2-Pulse\nGenerator1"
+      Show          on
+      Position      [765, 195]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-30, -30; 30, 30]
+      Terminal {
+        Type          Input
+        Position      [-30, -20]
+        Direction     left
+      }
+      Terminal {
+        Type          Input
+        Position      [-30, 20]
+        Direction     left
+      }
+      Terminal {
+        Type          Input
+        Position      [-30, 0]
+        Direction     left
+      }
+      Terminal {
+        Type          Output
+        Position      [34, 0]
+        Direction     right
+      }
+    }
+    Component {
+      Type          Thyristor
+      Name          "Thy8"
+      Show          on
+      Position      [860, 160]
+      Direction     down
+      Flipped       off
+      LabelPosition east
+      Parameter {
+        Variable      "Vf"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "Ron"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "s_init"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "thermal"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "Rth"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "T_init"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "SwitchModel"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "f_grid"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          SignalDemux
+      Name          "Demux5"
+      Show          off
+      Position      [815, 195]
+      Direction     right
+      Flipped       on
+      LabelPosition south
+      Frame         [-7, -10; 2, 10]
+      Parameter {
+        Variable      "Width"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          Constant
+      Name          "Constant3"
+      Show          on
+      Position      [675, 250]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Frame         [-20, -10; 20, 10]
+      Parameter {
+        Variable      "Value"
+        Value         "pi/4"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataType"
+        Value         "8"
+        Show          off
+      }
+    }
+    Component {
+      Type          ACVoltageSource
+      Name          "V_ac2"
+      Show          on
+      Position      [90, 845]
+      Direction     down
+      Flipped       on
+      LabelPosition east
+      Parameter {
+        Variable      "V"
+        Value         "310"
+        Show          on
+      }
+      Parameter {
+        Variable      "w"
+        Value         "2*pi*50"
+        Show          on
+      }
+      Parameter {
+        Variable      "phi"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          Voltmeter
+      Name          "V_R2"
+      Show          on
+      Position      [325, 845]
+      Direction     up
+      Flipped       off
+      LabelPosition west
+    }
+    Component {
+      Type          Resistor
+      Name          "R3"
+      Show          on
+      Position      [445, 845]
+      Direction     up
+      Flipped       off
+      LabelPosition east
+      Parameter {
+        Variable      "R"
+        Value         "3"
+        Show          off
+      }
+    }
+    Component {
+      Type          Inductor
+      Name          "L4"
+      Show          on
+      Position      [155, 815]
+      Direction     left
+      Flipped       off
+      LabelPosition north
+      Parameter {
+        Variable      "L"
+        Value         "0.001"
+        Show          off
+      }
+      Parameter {
+        Variable      "i_init"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          Inductor
+      Name          "L5"
+      Show          on
+      Position      [370, 770]
+      Direction     left
+      Flipped       off
+      LabelPosition north
+      Parameter {
+        Variable      "L"
+        Value         "0.05"
+        Show          off
+      }
+      Parameter {
+        Variable      "i_init"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          Voltmeter
+      Name          "V_L2"
+      Show          on
+      Position      [510, 845]
+      Direction     up
+      Flipped       off
+      LabelPosition west
+    }
+    Component {
+      Type          Clock
+      Name          "Clock2"
+      Show          on
+      Position      [20, 940]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+    }
+    Component {
+      Type          Gain
+      Name          "Gain6"
+      Show          on
+      Position      [55, 940]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "K"
+        Value         "2*pi*50"
+        Show          off
+      }
+      Parameter {
+        Variable      "Multiplication"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "OutputDataType"
+        Value         "11"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataTypeOverflowMode"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "GainDataType"
+        Value         "11"
+        Show          off
+      }
+    }
+    Component {
+      Type          Constant
+      Name          "Constant4"
+      Show          on
+      Position      [45, 905]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Frame         [-10, -10; 10, 10]
+      Parameter {
+        Variable      "Value"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataType"
+        Value         "10"
+        Show          off
+      }
+    }
+    Component {
+      Type          Thyristor
+      Name          "Thy9"
+      Show          on
+      Position      [285, 905]
+      Direction     down
+      Flipped       off
+      LabelPosition east
+      Parameter {
+        Variable      "Vf"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "Ron"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "s_init"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "thermal"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "Rth"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "T_init"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "SwitchModel"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "f_grid"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          Thyristor
+      Name          "Thy10"
+      Show          on
+      Position      [285, 800]
+      Direction     down
+      Flipped       off
+      LabelPosition east
+      Parameter {
+        Variable      "Vf"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "Ron"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "s_init"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "thermal"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "Rth"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "T_init"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "SwitchModel"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "f_grid"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          Thyristor
+      Name          "Thy11"
+      Show          on
+      Position      [230, 800]
+      Direction     down
+      Flipped       off
+      LabelPosition east
+      Parameter {
+        Variable      "Vf"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "Ron"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "s_init"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "thermal"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "Rth"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "T_init"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "SwitchModel"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "f_grid"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Control/Modulators/2-Pulse\\nGenerator"
+      Name          "2-Pulse\nGenerator2"
+      Show          on
+      Position      [135, 940]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-30, -30; 30, 30]
+      Terminal {
+        Type          Input
+        Position      [-30, -20]
+        Direction     left
+      }
+      Terminal {
+        Type          Input
+        Position      [-30, 20]
+        Direction     left
+      }
+      Terminal {
+        Type          Input
+        Position      [-30, 0]
+        Direction     left
+      }
+      Terminal {
+        Type          Output
+        Position      [34, 0]
+        Direction     right
+      }
+    }
+    Component {
+      Type          Thyristor
+      Name          "Thy12"
+      Show          on
+      Position      [230, 905]
+      Direction     down
+      Flipped       off
+      LabelPosition east
+      Parameter {
+        Variable      "Vf"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "Ron"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "s_init"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "thermal"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "Rth"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "T_init"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "SwitchModel"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "f_grid"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          SignalDemux
+      Name          "Demux6"
+      Show          off
+      Position      [185, 940]
+      Direction     right
+      Flipped       on
+      LabelPosition south
+      Frame         [-7, -10; 2, 10]
+      Parameter {
+        Variable      "Width"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          Constant
+      Name          "Constant5"
+      Show          on
+      Position      [45, 995]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Frame         [-20, -10; 20, 10]
+      Parameter {
+        Variable      "Value"
+        Value         "pi/4"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataType"
+        Value         "8"
+        Show          off
+      }
+    }
+    Component {
+      Type          ACVoltageSource
+      Name          "V_ac3"
+      Show          on
+      Position      [740, 845]
+      Direction     down
+      Flipped       on
+      LabelPosition east
+      Parameter {
+        Variable      "V"
+        Value         "310"
+        Show          on
+      }
+      Parameter {
+        Variable      "w"
+        Value         "2*pi*50"
+        Show          on
+      }
+      Parameter {
+        Variable      "phi"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          Voltmeter
+      Name          "V_R3"
+      Show          on
+      Position      [975, 845]
+      Direction     up
+      Flipped       off
+      LabelPosition west
+    }
+    Component {
+      Type          Resistor
+      Name          "R4"
+      Show          on
+      Position      [1095, 845]
+      Direction     up
+      Flipped       off
+      LabelPosition east
+      Parameter {
+        Variable      "R"
+        Value         "3"
+        Show          off
+      }
+    }
+    Component {
+      Type          Inductor
+      Name          "L6"
+      Show          on
+      Position      [805, 815]
+      Direction     left
+      Flipped       off
+      LabelPosition north
+      Parameter {
+        Variable      "L"
+        Value         "0.001"
+        Show          off
+      }
+      Parameter {
+        Variable      "i_init"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          Capacitor
+      Name          "C3"
+      Show          on
+      Position      [1065, 845]
+      Direction     down
+      Flipped       on
+      LabelPosition west
+      Parameter {
+        Variable      "C"
+        Value         "500e-6"
+        Show          off
+      }
+      Parameter {
+        Variable      "v_init"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          Voltmeter
+      Name          "V_L3"
+      Show          on
+      Position      [1160, 845]
+      Direction     up
+      Flipped       off
+      LabelPosition west
+    }
+    Component {
+      Type          Clock
+      Name          "Clock3"
+      Show          on
+      Position      [670, 940]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+    }
+    Component {
+      Type          Gain
+      Name          "Gain7"
+      Show          on
+      Position      [705, 940]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "K"
+        Value         "2*pi*50"
+        Show          off
+      }
+      Parameter {
+        Variable      "Multiplication"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "OutputDataType"
+        Value         "11"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataTypeOverflowMode"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "GainDataType"
+        Value         "11"
+        Show          off
+      }
+    }
+    Component {
+      Type          Constant
+      Name          "Constant6"
+      Show          on
+      Position      [695, 905]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Frame         [-10, -10; 10, 10]
+      Parameter {
+        Variable      "Value"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataType"
+        Value         "10"
+        Show          off
+      }
+    }
+    Component {
+      Type          Thyristor
+      Name          "Thy13"
+      Show          on
+      Position      [935, 905]
+      Direction     down
+      Flipped       off
+      LabelPosition east
+      Parameter {
+        Variable      "Vf"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "Ron"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "s_init"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "thermal"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "Rth"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "T_init"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "SwitchModel"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "f_grid"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          Thyristor
+      Name          "Thy14"
+      Show          on
+      Position      [935, 800]
+      Direction     down
+      Flipped       off
+      LabelPosition east
+      Parameter {
+        Variable      "Vf"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "Ron"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "s_init"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "thermal"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "Rth"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "T_init"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "SwitchModel"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "f_grid"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          Thyristor
+      Name          "Thy15"
+      Show          on
+      Position      [880, 800]
+      Direction     down
+      Flipped       off
+      LabelPosition east
+      Parameter {
+        Variable      "Vf"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "Ron"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "s_init"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "thermal"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "Rth"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "T_init"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "SwitchModel"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "f_grid"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Control/Modulators/2-Pulse\\nGenerator"
+      Name          "2-Pulse\nGenerator3"
+      Show          on
+      Position      [785, 940]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-30, -30; 30, 30]
+      Terminal {
+        Type          Input
+        Position      [-30, -20]
+        Direction     left
+      }
+      Terminal {
+        Type          Input
+        Position      [-30, 20]
+        Direction     left
+      }
+      Terminal {
+        Type          Input
+        Position      [-30, 0]
+        Direction     left
+      }
+      Terminal {
+        Type          Output
+        Position      [34, 0]
+        Direction     right
+      }
+    }
+    Component {
+      Type          Thyristor
+      Name          "Thy16"
+      Show          on
+      Position      [880, 905]
+      Direction     down
+      Flipped       off
+      LabelPosition east
+      Parameter {
+        Variable      "Vf"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "Ron"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "s_init"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "thermal"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "Rth"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "T_init"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "SwitchModel"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "f_grid"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          SignalDemux
+      Name          "Demux7"
+      Show          off
+      Position      [835, 940]
+      Direction     right
+      Flipped       on
+      LabelPosition south
+      Frame         [-7, -10; 2, 10]
+      Parameter {
+        Variable      "Width"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          Constant
+      Name          "Constant7"
+      Show          on
+      Position      [695, 995]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Frame         [-20, -10; 20, 10]
+      Parameter {
+        Variable      "Value"
+        Value         "pi/4"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataType"
+        Value         "8"
+        Show          off
+      }
+    }
     Connection {
       Type          Wire
       SrcComponent  "V_ac"
@@ -3217,25 +3597,25 @@ Plecs {
       Type          Signal
       SrcComponent  "Demux"
       SrcTerminal   3
-      Points        [160, 290]
+      Points        [140, 335]
       Branch {
         DstComponent  "Scope"
         DstTerminal   2
       }
       Branch {
-        Points        [160, 385]
+        Points        [140, 430]
         Branch {
           DstComponent  "Total Harmonic\nDistortion"
           DstTerminal   1
         }
         Branch {
-          Points        [160, 455]
+          Points        [140, 500]
           Branch {
             DstComponent  "RMS Value"
             DstTerminal   1
           }
           Branch {
-            Points        [160, 515]
+            Points        [140, 560]
             DstComponent  "Periodic Average"
             DstTerminal   2
           }
@@ -3288,13 +3668,13 @@ Plecs {
       Type          Signal
       SrcComponent  "Demux"
       SrcTerminal   6
-      Points        [130, 320]
+      Points        [110, 365]
       Branch {
         DstComponent  "Scope"
         DstTerminal   5
       }
       Branch {
-        Points        [130, 660]
+        Points        [110, 705]
         DstComponent  "Periodic Average2"
         DstTerminal   2
       }
@@ -3303,327 +3683,15 @@ Plecs {
       Type          Signal
       SrcComponent  "Demux"
       SrcTerminal   5
-      Points        [145, 310]
+      Points        [125, 355]
       Branch {
         DstComponent  "Scope"
         DstTerminal   4
       }
       Branch {
-        Points        [145, 585]
+        Points        [125, 630]
         DstComponent  "Periodic Average1"
         DstTerminal   2
-      }
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "V_ac1"
-      SrcTerminal   1
-      Points        [590, 70]
-      DstComponent  "L3"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "D6"
-      SrcTerminal   2
-      Points        [785, 25]
-      Branch {
-        Points        [730, 25]
-        DstComponent  "D5"
-        DstTerminal   2
-      }
-      Branch {
-        Points        [825, 25]
-        Branch {
-          Points        [945, 25]
-          Branch {
-            DstComponent  "R2"
-            DstTerminal   1
-          }
-          Branch {
-            Points        [1010, 25]
-            DstComponent  "V_L1"
-            DstTerminal   1
-          }
-        }
-        Branch {
-          DstComponent  "V_R1"
-          DstTerminal   1
-        }
-      }
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "D5"
-      SrcTerminal   1
-      Points        [730, 70]
-      Branch {
-        DstComponent  "L3"
-        DstTerminal   2
-      }
-      Branch {
-        DstComponent  "D7"
-        DstTerminal   2
-      }
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "D6"
-      SrcTerminal   1
-      Points        [785, 140]
-      Branch {
-        Points        [590, 140]
-        DstComponent  "V_ac1"
-        DstTerminal   2
-      }
-      Branch {
-        DstComponent  "D8"
-        DstTerminal   2
-      }
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "D8"
-      SrcTerminal   1
-      Points        [785, 180]
-      Branch {
-        Points        [730, 180]
-        DstComponent  "D7"
-        DstTerminal   1
-      }
-      Branch {
-        Points        [825, 180]
-        Branch {
-          DstComponent  "V_R1"
-          DstTerminal   2
-        }
-        Branch {
-          Points        [945, 180]
-          Branch {
-            DstComponent  "R2"
-            DstTerminal   2
-          }
-          Branch {
-            Points        [1010, 180]
-            DstComponent  "V_L1"
-            DstTerminal   2
-          }
-        }
-      }
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "V_ac2"
-      SrcTerminal   1
-      Points        [35, 795]
-      DstComponent  "L4"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "D10"
-      SrcTerminal   2
-      Points        [230, 750]
-      Branch {
-        Points        [175, 750]
-        DstComponent  "D9"
-        DstTerminal   2
-      }
-      Branch {
-        Points        [270, 750]
-        Branch {
-          DstComponent  "L5"
-          DstTerminal   1
-        }
-        Branch {
-          DstComponent  "V_R2"
-          DstTerminal   1
-        }
-      }
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "D9"
-      SrcTerminal   1
-      Points        [175, 795]
-      Branch {
-        DstComponent  "L4"
-        DstTerminal   2
-      }
-      Branch {
-        DstComponent  "D11"
-        DstTerminal   2
-      }
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "D10"
-      SrcTerminal   1
-      Points        [230, 865]
-      Branch {
-        Points        [35, 865]
-        DstComponent  "V_ac2"
-        DstTerminal   2
-      }
-      Branch {
-        DstComponent  "D12"
-        DstTerminal   2
-      }
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "D12"
-      SrcTerminal   1
-      Points        [230, 905]
-      Branch {
-        Points        [175, 905]
-        DstComponent  "D11"
-        DstTerminal   1
-      }
-      Branch {
-        Points        [270, 905]
-        Branch {
-          DstComponent  "V_R2"
-          DstTerminal   2
-        }
-        Branch {
-          Points        [390, 905]
-          Branch {
-            DstComponent  "R3"
-            DstTerminal   2
-          }
-          Branch {
-            Points        [455, 905]
-            DstComponent  "V_L2"
-            DstTerminal   2
-          }
-        }
-      }
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "R3"
-      SrcTerminal   1
-      Points        [390, 750]
-      Branch {
-        DstComponent  "L5"
-        DstTerminal   2
-      }
-      Branch {
-        Points        [455, 750]
-        DstComponent  "V_L2"
-        DstTerminal   1
-      }
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "V_ac3"
-      SrcTerminal   1
-      Points        [580, 795]
-      DstComponent  "L6"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "D14"
-      SrcTerminal   2
-      Points        [775, 750]
-      Branch {
-        Points        [720, 750]
-        DstComponent  "D13"
-        DstTerminal   2
-      }
-      Branch {
-        Points        [815, 750]
-        Branch {
-          Points        [905, 750]
-          Branch {
-            DstComponent  "C3"
-            DstTerminal   1
-          }
-          Branch {
-            Points        [935, 750]
-            Branch {
-              DstComponent  "R4"
-              DstTerminal   1
-            }
-            Branch {
-              Points        [1000, 750]
-              DstComponent  "V_L3"
-              DstTerminal   1
-            }
-          }
-        }
-        Branch {
-          DstComponent  "V_R3"
-          DstTerminal   1
-        }
-      }
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "D13"
-      SrcTerminal   1
-      Points        [720, 795]
-      Branch {
-        DstComponent  "L6"
-        DstTerminal   2
-      }
-      Branch {
-        DstComponent  "D15"
-        DstTerminal   2
-      }
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "D14"
-      SrcTerminal   1
-      Points        [775, 865]
-      Branch {
-        Points        [580, 865]
-        DstComponent  "V_ac3"
-        DstTerminal   2
-      }
-      Branch {
-        DstComponent  "D16"
-        DstTerminal   2
-      }
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "D16"
-      SrcTerminal   1
-      Points        [775, 905]
-      Branch {
-        Points        [720, 905]
-        DstComponent  "D15"
-        DstTerminal   1
-      }
-      Branch {
-        Points        [815, 905]
-        Branch {
-          DstComponent  "V_R3"
-          DstTerminal   2
-        }
-        Branch {
-          Points        [905, 905]
-          Branch {
-            DstComponent  "C3"
-            DstTerminal   2
-          }
-          Branch {
-            Points        [935, 905]
-            Branch {
-              DstComponent  "R4"
-              DstTerminal   2
-            }
-            Branch {
-              Points        [1000, 905]
-              DstComponent  "V_L3"
-              DstTerminal   2
-            }
-          }
-        }
       }
     }
     Connection {
@@ -3651,25 +3719,25 @@ Plecs {
       Type          Signal
       SrcComponent  "Demux1"
       SrcTerminal   3
-      Points        [690, 230]
+      Points        [790, 325]
       Branch {
         DstComponent  "Scope1"
         DstTerminal   2
       }
       Branch {
-        Points        [690, 325]
+        Points        [790, 420]
         Branch {
           DstComponent  "Total Harmonic\nDistortion1"
           DstTerminal   1
         }
         Branch {
-          Points        [690, 395]
+          Points        [790, 490]
           Branch {
             DstComponent  "RMS Value1"
             DstTerminal   1
           }
           Branch {
-            Points        [690, 455]
+            Points        [790, 550]
             DstComponent  "Periodic Average3"
             DstTerminal   2
           }
@@ -3722,13 +3790,13 @@ Plecs {
       Type          Signal
       SrcComponent  "Demux1"
       SrcTerminal   6
-      Points        [660, 260]
+      Points        [760, 355]
       Branch {
         DstComponent  "Scope1"
         DstTerminal   5
       }
       Branch {
-        Points        [660, 600]
+        Points        [760, 695]
         DstComponent  "Periodic Average4"
         DstTerminal   2
       }
@@ -3737,13 +3805,13 @@ Plecs {
       Type          Signal
       SrcComponent  "Demux1"
       SrcTerminal   5
-      Points        [675, 250]
+      Points        [775, 345]
       Branch {
         DstComponent  "Scope1"
         DstTerminal   4
       }
       Branch {
-        Points        [675, 525]
+        Points        [775, 620]
         DstComponent  "Periodic Average5"
         DstTerminal   2
       }
@@ -3773,25 +3841,25 @@ Plecs {
       Type          Signal
       SrcComponent  "Demux2"
       SrcTerminal   3
-      Points        [190, 1010]
+      Points        [260, 1070]
       Branch {
         DstComponent  "Scope2"
         DstTerminal   2
       }
       Branch {
-        Points        [190, 1105]
+        Points        [260, 1165]
         Branch {
           DstComponent  "Total Harmonic\nDistortion2"
           DstTerminal   1
         }
         Branch {
-          Points        [190, 1175]
+          Points        [260, 1235]
           Branch {
             DstComponent  "RMS Value2"
             DstTerminal   1
           }
           Branch {
-            Points        [190, 1235]
+            Points        [260, 1295]
             DstComponent  "Periodic Average6"
             DstTerminal   2
           }
@@ -3844,13 +3912,13 @@ Plecs {
       Type          Signal
       SrcComponent  "Demux2"
       SrcTerminal   6
-      Points        [160, 1040]
+      Points        [230, 1100]
       Branch {
         DstComponent  "Scope2"
         DstTerminal   5
       }
       Branch {
-        Points        [160, 1380]
+        Points        [230, 1440]
         DstComponent  "Periodic Average7"
         DstTerminal   2
       }
@@ -3859,13 +3927,13 @@ Plecs {
       Type          Signal
       SrcComponent  "Demux2"
       SrcTerminal   5
-      Points        [175, 1030]
+      Points        [245, 1090]
       Branch {
         DstComponent  "Scope2"
         DstTerminal   4
       }
       Branch {
-        Points        [175, 1305]
+        Points        [245, 1365]
         DstComponent  "Periodic Average8"
         DstTerminal   2
       }
@@ -3895,25 +3963,25 @@ Plecs {
       Type          Signal
       SrcComponent  "Demux3"
       SrcTerminal   3
-      Points        [735, 1020]
+      Points        [960, 1060]
       Branch {
         DstComponent  "Scope3"
         DstTerminal   2
       }
       Branch {
-        Points        [735, 1115]
+        Points        [960, 1155]
         Branch {
           DstComponent  "Total Harmonic\nDistortion3"
           DstTerminal   1
         }
         Branch {
-          Points        [735, 1185]
+          Points        [960, 1225]
           Branch {
             DstComponent  "RMS Value3"
             DstTerminal   1
           }
           Branch {
-            Points        [735, 1245]
+            Points        [960, 1285]
             DstComponent  "Periodic Average9"
             DstTerminal   2
           }
@@ -3966,13 +4034,13 @@ Plecs {
       Type          Signal
       SrcComponent  "Demux3"
       SrcTerminal   6
-      Points        [705, 1050]
+      Points        [930, 1090]
       Branch {
         DstComponent  "Scope3"
         DstTerminal   5
       }
       Branch {
-        Points        [705, 1390]
+        Points        [930, 1430]
         DstComponent  "Periodic Average10"
         DstTerminal   2
       }
@@ -3981,13 +4049,13 @@ Plecs {
       Type          Signal
       SrcComponent  "Demux3"
       SrcTerminal   5
-      Points        [720, 1040]
+      Points        [945, 1080]
       Branch {
         DstComponent  "Scope3"
         DstTerminal   4
       }
       Branch {
-        Points        [720, 1315]
+        Points        [945, 1355]
         DstComponent  "Periodic Average11"
         DstTerminal   2
       }
@@ -4071,6 +4139,522 @@ Plecs {
       Branch {
         Points        [260, 120]
         DstComponent  "Thy1"
+        DstTerminal   3
+      }
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "V_ac1"
+      SrcTerminal   1
+      Points        [720, 70]
+      DstComponent  "L3"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "Thy6"
+      SrcTerminal   2
+      Points        [915, 25]
+      Branch {
+        Points        [860, 25]
+        DstComponent  "Thy7"
+        DstTerminal   2
+      }
+      Branch {
+        Points        [955, 25]
+        Branch {
+          Points        [1030, 25]
+          Branch {
+            DstComponent  "R2"
+            DstTerminal   1
+          }
+          Branch {
+            Points        [1095, 25]
+            DstComponent  "V_L1"
+            DstTerminal   1
+          }
+        }
+        Branch {
+          DstComponent  "V_R1"
+          DstTerminal   1
+        }
+      }
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "Thy6"
+      SrcTerminal   1
+      Points        [915, 140]
+      Branch {
+        Points        [720, 140]
+        DstComponent  "V_ac1"
+        DstTerminal   2
+      }
+      Branch {
+        DstComponent  "Thy5"
+        DstTerminal   2
+      }
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "V_R1"
+      SrcTerminal   2
+      Points        [955, 180]
+      Branch {
+        Points        [915, 180]
+        Branch {
+          DstComponent  "Thy5"
+          DstTerminal   1
+        }
+        Branch {
+          Points        [860, 180]
+          DstComponent  "Thy8"
+          DstTerminal   1
+        }
+      }
+      Branch {
+        Points        [1030, 180]
+        Branch {
+          DstComponent  "R2"
+          DstTerminal   2
+        }
+        Branch {
+          Points        [1095, 180]
+          DstComponent  "V_L1"
+          DstTerminal   2
+        }
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Clock1"
+      SrcTerminal   1
+      DstComponent  "Gain5"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "L3"
+      SrcTerminal   2
+      Points        [860, 70]
+      Branch {
+        DstComponent  "Thy8"
+        DstTerminal   2
+      }
+      Branch {
+        DstComponent  "Thy7"
+        DstTerminal   1
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "2-Pulse\nGenerator1"
+      SrcTerminal   4
+      DstComponent  "Demux5"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Gain5"
+      SrcTerminal   2
+      DstComponent  "2-Pulse\nGenerator1"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Constant2"
+      SrcTerminal   1
+      Points        [705, 160; 705, 175]
+      DstComponent  "2-Pulse\nGenerator1"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Constant3"
+      SrcTerminal   1
+      Points        [710, 250; 710, 215]
+      DstComponent  "2-Pulse\nGenerator1"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux5"
+      SrcTerminal   3
+      Points        [830, 200]
+      Branch {
+        Points        [875, 200; 875, 45]
+        DstComponent  "Thy6"
+        DstTerminal   3
+      }
+      Branch {
+        DstComponent  "Thy8"
+        DstTerminal   3
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux5"
+      SrcTerminal   2
+      Points        [825, 190; 825, 120]
+      Branch {
+        Points        [825, 45]
+        DstComponent  "Thy7"
+        DstTerminal   3
+      }
+      Branch {
+        Points        [885, 120]
+        DstComponent  "Thy5"
+        DstTerminal   3
+      }
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "V_ac2"
+      SrcTerminal   1
+      Points        [90, 815]
+      DstComponent  "L4"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "Thy10"
+      SrcTerminal   2
+      Points        [285, 770]
+      Branch {
+        Points        [230, 770]
+        DstComponent  "Thy11"
+        DstTerminal   2
+      }
+      Branch {
+        Points        [325, 770]
+        Branch {
+          DstComponent  "L5"
+          DstTerminal   1
+        }
+        Branch {
+          DstComponent  "V_R2"
+          DstTerminal   1
+        }
+      }
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "Thy10"
+      SrcTerminal   1
+      Points        [285, 885]
+      Branch {
+        Points        [90, 885]
+        DstComponent  "V_ac2"
+        DstTerminal   2
+      }
+      Branch {
+        DstComponent  "Thy9"
+        DstTerminal   2
+      }
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "V_R2"
+      SrcTerminal   2
+      Points        [325, 925]
+      Branch {
+        Points        [285, 925]
+        Branch {
+          DstComponent  "Thy9"
+          DstTerminal   1
+        }
+        Branch {
+          Points        [230, 925]
+          DstComponent  "Thy12"
+          DstTerminal   1
+        }
+      }
+      Branch {
+        Points        [445, 925]
+        Branch {
+          DstComponent  "R3"
+          DstTerminal   2
+        }
+        Branch {
+          Points        [510, 925]
+          DstComponent  "V_L2"
+          DstTerminal   2
+        }
+      }
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "R3"
+      SrcTerminal   1
+      Points        [445, 770]
+      Branch {
+        DstComponent  "L5"
+        DstTerminal   2
+      }
+      Branch {
+        Points        [510, 770]
+        DstComponent  "V_L2"
+        DstTerminal   1
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Clock2"
+      SrcTerminal   1
+      DstComponent  "Gain6"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "L4"
+      SrcTerminal   2
+      Points        [230, 815]
+      Branch {
+        DstComponent  "Thy12"
+        DstTerminal   2
+      }
+      Branch {
+        DstComponent  "Thy11"
+        DstTerminal   1
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "2-Pulse\nGenerator2"
+      SrcTerminal   4
+      DstComponent  "Demux6"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Gain6"
+      SrcTerminal   2
+      DstComponent  "2-Pulse\nGenerator2"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Constant4"
+      SrcTerminal   1
+      Points        [75, 905; 75, 920]
+      DstComponent  "2-Pulse\nGenerator2"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Constant5"
+      SrcTerminal   1
+      Points        [80, 995; 80, 960]
+      DstComponent  "2-Pulse\nGenerator2"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux6"
+      SrcTerminal   3
+      Points        [200, 945]
+      Branch {
+        Points        [245, 945; 245, 790]
+        DstComponent  "Thy10"
+        DstTerminal   3
+      }
+      Branch {
+        DstComponent  "Thy12"
+        DstTerminal   3
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux6"
+      SrcTerminal   2
+      Points        [195, 935; 195, 865]
+      Branch {
+        Points        [195, 790]
+        DstComponent  "Thy11"
+        DstTerminal   3
+      }
+      Branch {
+        Points        [255, 865]
+        DstComponent  "Thy9"
+        DstTerminal   3
+      }
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "V_ac3"
+      SrcTerminal   1
+      Points        [740, 815]
+      DstComponent  "L6"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "Thy14"
+      SrcTerminal   2
+      Points        [935, 770]
+      Branch {
+        Points        [880, 770]
+        DstComponent  "Thy15"
+        DstTerminal   2
+      }
+      Branch {
+        Points        [975, 770]
+        Branch {
+          Points        [1065, 770]
+          Branch {
+            DstComponent  "C3"
+            DstTerminal   1
+          }
+          Branch {
+            Points        [1095, 770]
+            Branch {
+              DstComponent  "R4"
+              DstTerminal   1
+            }
+            Branch {
+              Points        [1160, 770]
+              DstComponent  "V_L3"
+              DstTerminal   1
+            }
+          }
+        }
+        Branch {
+          DstComponent  "V_R3"
+          DstTerminal   1
+        }
+      }
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "Thy14"
+      SrcTerminal   1
+      Points        [935, 885]
+      Branch {
+        Points        [740, 885]
+        DstComponent  "V_ac3"
+        DstTerminal   2
+      }
+      Branch {
+        DstComponent  "Thy13"
+        DstTerminal   2
+      }
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "V_R3"
+      SrcTerminal   2
+      Points        [975, 925]
+      Branch {
+        Points        [935, 925]
+        Branch {
+          DstComponent  "Thy13"
+          DstTerminal   1
+        }
+        Branch {
+          Points        [880, 925]
+          DstComponent  "Thy16"
+          DstTerminal   1
+        }
+      }
+      Branch {
+        Points        [1065, 925]
+        Branch {
+          DstComponent  "C3"
+          DstTerminal   2
+        }
+        Branch {
+          Points        [1095, 925]
+          Branch {
+            DstComponent  "R4"
+            DstTerminal   2
+          }
+          Branch {
+            Points        [1160, 925]
+            DstComponent  "V_L3"
+            DstTerminal   2
+          }
+        }
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Clock3"
+      SrcTerminal   1
+      DstComponent  "Gain7"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "L6"
+      SrcTerminal   2
+      Points        [880, 815]
+      Branch {
+        DstComponent  "Thy16"
+        DstTerminal   2
+      }
+      Branch {
+        DstComponent  "Thy15"
+        DstTerminal   1
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "2-Pulse\nGenerator3"
+      SrcTerminal   4
+      DstComponent  "Demux7"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Gain7"
+      SrcTerminal   2
+      DstComponent  "2-Pulse\nGenerator3"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Constant6"
+      SrcTerminal   1
+      Points        [725, 905; 725, 920]
+      DstComponent  "2-Pulse\nGenerator3"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Constant7"
+      SrcTerminal   1
+      Points        [730, 995; 730, 960]
+      DstComponent  "2-Pulse\nGenerator3"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux7"
+      SrcTerminal   3
+      Points        [850, 945]
+      Branch {
+        Points        [895, 945; 895, 790]
+        DstComponent  "Thy14"
+        DstTerminal   3
+      }
+      Branch {
+        DstComponent  "Thy16"
+        DstTerminal   3
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux7"
+      SrcTerminal   2
+      Points        [845, 935; 845, 865]
+      Branch {
+        Points        [845, 790]
+        DstComponent  "Thy15"
+        DstTerminal   3
+      }
+      Branch {
+        Points        [905, 865]
+        DstComponent  "Thy13"
         DstTerminal   3
       }
     }
