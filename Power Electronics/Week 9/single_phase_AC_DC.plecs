@@ -67,8 +67,8 @@ Plecs {
   IncompatibleInitialConditionMsg "2"
   Schematic {
     Location      [0, 23; 1536, 870]
-    ZoomFactor    0.873846
-    SliderPosition [0, 0]
+    ZoomFactor    1.14437
+    SliderPosition [0, 629]
     ShowBrowser   off
     BrowserWidth  100
     Component {
@@ -391,7 +391,7 @@ Plecs {
       Probe {
         Component     "V_ac"
         Path          ""
-        Signals       {"Source voltage", "Source current"}
+        Signals       {"Source current", "Source voltage"}
       }
       Probe {
         Component     "V_R"
@@ -402,6 +402,11 @@ Plecs {
         Component     "V_L"
         Path          ""
         Signals       {"Measured voltage"}
+      }
+      Probe {
+        Component     "L2"
+        Path          ""
+        Signals       {"Inductor current"}
       }
     }
     Component {
@@ -631,7 +636,7 @@ Plecs {
     }
     Component {
       Type          Display
-      Name          "Display"
+      Name          "THD RLC"
       Show          on
       Position      [365, 350]
       Direction     up
@@ -687,7 +692,7 @@ Plecs {
     }
     Component {
       Type          Display
-      Name          "Display1"
+      Name          "Input current_RLC"
       Show          on
       Position      [365, 420]
       Direction     up
@@ -721,7 +726,7 @@ Plecs {
     }
     Component {
       Type          Display
-      Name          "Display2"
+      Name          "Input current_RLC_avg"
       Show          on
       Position      [365, 480]
       Direction     up
@@ -755,7 +760,7 @@ Plecs {
     }
     Component {
       Type          Display
-      Name          "Display4"
+      Name          "Output current_RLC"
       Show          on
       Position      [365, 625]
       Direction     up
@@ -775,7 +780,7 @@ Plecs {
     }
     Component {
       Type          Display
-      Name          "Display3"
+      Name          "Output Voltage RLC"
       Show          on
       Position      [365, 550]
       Direction     up
@@ -1082,7 +1087,7 @@ Plecs {
       Type          ACVoltageSource
       Name          "V_ac2"
       Show          on
-      Position      [615, 355]
+      Position      [60, 845]
       Direction     down
       Flipped       on
       LabelPosition east
@@ -1106,7 +1111,7 @@ Plecs {
       Type          Diode
       Name          "D9"
       Show          on
-      Position      [755, 310]
+      Position      [200, 800]
       Direction     down
       Flipped       off
       LabelPosition east
@@ -1155,7 +1160,7 @@ Plecs {
       Type          Diode
       Name          "D10"
       Show          on
-      Position      [810, 310]
+      Position      [255, 800]
       Direction     down
       Flipped       off
       LabelPosition east
@@ -1204,7 +1209,7 @@ Plecs {
       Type          Diode
       Name          "D11"
       Show          on
-      Position      [755, 415]
+      Position      [200, 905]
       Direction     down
       Flipped       off
       LabelPosition east
@@ -1253,7 +1258,7 @@ Plecs {
       Type          Diode
       Name          "D12"
       Show          on
-      Position      [810, 415]
+      Position      [255, 905]
       Direction     down
       Flipped       off
       LabelPosition east
@@ -1302,7 +1307,7 @@ Plecs {
       Type          Voltmeter
       Name          "V_R2"
       Show          on
-      Position      [850, 355]
+      Position      [295, 845]
       Direction     up
       Flipped       off
       LabelPosition west
@@ -1311,7 +1316,7 @@ Plecs {
       Type          Resistor
       Name          "R3"
       Show          on
-      Position      [970, 355]
+      Position      [415, 845]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -1325,7 +1330,7 @@ Plecs {
       Type          Inductor
       Name          "L4"
       Show          on
-      Position      [680, 325]
+      Position      [125, 815]
       Direction     left
       Flipped       off
       LabelPosition north
@@ -1344,7 +1349,7 @@ Plecs {
       Type          Inductor
       Name          "L5"
       Show          on
-      Position      [895, 280]
+      Position      [340, 770]
       Direction     left
       Flipped       off
       LabelPosition north
@@ -1363,7 +1368,7 @@ Plecs {
       Type          Voltmeter
       Name          "V_L2"
       Show          on
-      Position      [1035, 355]
+      Position      [480, 845]
       Direction     up
       Flipped       off
       LabelPosition west
@@ -1372,7 +1377,7 @@ Plecs {
       Type          ACVoltageSource
       Name          "V_ac3"
       Show          on
-      Position      [615, 605]
+      Position      [605, 845]
       Direction     down
       Flipped       on
       LabelPosition east
@@ -1396,7 +1401,7 @@ Plecs {
       Type          Diode
       Name          "D13"
       Show          on
-      Position      [755, 560]
+      Position      [745, 800]
       Direction     down
       Flipped       off
       LabelPosition east
@@ -1445,7 +1450,7 @@ Plecs {
       Type          Diode
       Name          "D14"
       Show          on
-      Position      [810, 560]
+      Position      [800, 800]
       Direction     down
       Flipped       off
       LabelPosition east
@@ -1494,7 +1499,7 @@ Plecs {
       Type          Diode
       Name          "D15"
       Show          on
-      Position      [755, 665]
+      Position      [745, 905]
       Direction     down
       Flipped       off
       LabelPosition east
@@ -1543,7 +1548,7 @@ Plecs {
       Type          Diode
       Name          "D16"
       Show          on
-      Position      [810, 665]
+      Position      [800, 905]
       Direction     down
       Flipped       off
       LabelPosition east
@@ -1592,7 +1597,7 @@ Plecs {
       Type          Voltmeter
       Name          "V_R3"
       Show          on
-      Position      [850, 605]
+      Position      [840, 845]
       Direction     up
       Flipped       off
       LabelPosition west
@@ -1601,7 +1606,7 @@ Plecs {
       Type          Resistor
       Name          "R4"
       Show          on
-      Position      [970, 605]
+      Position      [960, 845]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -1615,7 +1620,7 @@ Plecs {
       Type          Inductor
       Name          "L6"
       Show          on
-      Position      [680, 575]
+      Position      [670, 815]
       Direction     left
       Flipped       off
       LabelPosition north
@@ -1634,7 +1639,7 @@ Plecs {
       Type          Capacitor
       Name          "C3"
       Show          on
-      Position      [940, 605]
+      Position      [930, 845]
       Direction     down
       Flipped       on
       LabelPosition west
@@ -1653,10 +1658,1306 @@ Plecs {
       Type          Voltmeter
       Name          "V_L3"
       Show          on
-      Position      [1035, 605]
+      Position      [1025, 845]
       Direction     up
       Flipped       off
       LabelPosition west
+    }
+    Component {
+      Type          PlecsProbe
+      Name          "Probe1"
+      Show          on
+      Position      [625, 260]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Probe {
+        Component     "V_ac"
+        Path          ""
+        Signals       {"Source current", "Source voltage"}
+      }
+      Probe {
+        Component     "V_R"
+        Path          ""
+        Signals       {"Measured voltage"}
+      }
+      Probe {
+        Component     "V_L"
+        Path          ""
+        Signals       {"Measured voltage"}
+      }
+      Probe {
+        Component     "R2"
+        Path          ""
+        Signals       {"Resistor current"}
+      }
+    }
+    Component {
+      Type          SignalDemux
+      Name          "Demux1"
+      Show          off
+      Position      [675, 260]
+      Direction     right
+      Flipped       on
+      LabelPosition south
+      Frame         [-7, -25; 2, 25]
+      Parameter {
+        Variable      "Width"
+        Value         "5"
+        Show          off
+      }
+    }
+    Component {
+      Type          Scope
+      Name          "Scope1"
+      Show          on
+      Position      [755, 260]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-15, -30; 15, 30]
+      Location      [0, 24; 1536, 943]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAANAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAYAAAAA4vw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABgAAAABEAP///wAABgAAAAKQAAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":64,\"Labels\":["
+"\"Delta\"],\"VisualIdxs\":[3]}"
+      PlotPalettes  "AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAA="
+      Axes          "5"
+      TimeRange     "0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "0"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    "Time / s"
+      ShowLegend    "1"
+      Axis {
+        Name          "Input AC Voltage"
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          "Input inductor current"
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          "Rectified voltage"
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          "Output DC voltage"
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          "Output inductor current"
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis       on
+        AxisLabel         "Frequency / Hz"
+        Scaling           0
+        PhaseDisplay      0
+        ShowFourierLegend off
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
+    }
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Control/Filters/Total Harmonic\\nDistortion"
+      Name          "Total Harmonic\nDistortion1"
+      Show          on
+      Position      [755, 345]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-15, -15; 15, 15]
+      Parameter {
+        Variable      "ts"
+        Value         "1e-3"
+        Show          off
+      }
+      Parameter {
+        Variable      "fs"
+        Value         "50"
+        Show          off
+      }
+      Terminal {
+        Type          Input
+        Position      [-15, 0]
+        Direction     left
+      }
+      Terminal {
+        Type          Output
+        Position      [19, 0]
+        Direction     right
+      }
+    }
+    Component {
+      Type          Gain
+      Name          "Gain1"
+      Show          on
+      Position      [815, 345]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "K"
+        Value         "100"
+        Show          off
+      }
+      Parameter {
+        Variable      "Multiplication"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "OutputDataType"
+        Value         "11"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataTypeOverflowMode"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "GainDataType"
+        Value         "11"
+        Show          off
+      }
+    }
+    Component {
+      Type          Display
+      Name          "THD R"
+      Show          on
+      Position      [885, 345]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-31, -11; 31, 11]
+      Parameter {
+        Variable      "Notation"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Precision"
+        Value         "4"
+        Show          off
+      }
+    }
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Control/Filters/RMS Value"
+      Name          "RMS Value1"
+      Show          on
+      Position      [755, 415]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-15, -15; 15, 15]
+      Parameter {
+        Variable      "x0"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "ts"
+        Value         "1e-3"
+        Show          off
+      }
+      Parameter {
+        Variable      "fs"
+        Value         "50"
+        Show          off
+      }
+      Terminal {
+        Type          Input
+        Position      [-15, 0]
+        Direction     left
+      }
+      Terminal {
+        Type          Output
+        Position      [19, 0]
+        Direction     right
+      }
+    }
+    Component {
+      Type          Display
+      Name          "Input current_R"
+      Show          on
+      Position      [885, 415]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-31, -11; 31, 11]
+      Parameter {
+        Variable      "Notation"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Precision"
+        Value         "4"
+        Show          off
+      }
+    }
+    Component {
+      Type          PeriodicAverage
+      Name          "Periodic Average3"
+      Show          on
+      Position      [755, 475]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "T_average"
+        Value         "0.8"
+        Show          off
+      }
+    }
+    Component {
+      Type          Display
+      Name          "Input current_R_avg"
+      Show          on
+      Position      [885, 475]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-31, -11; 31, 11]
+      Parameter {
+        Variable      "Notation"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Precision"
+        Value         "4"
+        Show          off
+      }
+    }
+    Component {
+      Type          PeriodicAverage
+      Name          "Periodic Average4"
+      Show          on
+      Position      [755, 620]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "T_average"
+        Value         "0.8"
+        Show          off
+      }
+    }
+    Component {
+      Type          Display
+      Name          "Output current_R"
+      Show          on
+      Position      [885, 620]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-31, -11; 31, 11]
+      Parameter {
+        Variable      "Notation"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Precision"
+        Value         "4"
+        Show          off
+      }
+    }
+    Component {
+      Type          Display
+      Name          "Output Voltage R"
+      Show          on
+      Position      [885, 545]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-31, -11; 31, 11]
+      Parameter {
+        Variable      "Notation"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Precision"
+        Value         "4"
+        Show          off
+      }
+    }
+    Component {
+      Type          PeriodicAverage
+      Name          "Periodic Average5"
+      Show          on
+      Position      [755, 545]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "T_average"
+        Value         "0.8"
+        Show          off
+      }
+    }
+    Component {
+      Type          PlecsProbe
+      Name          "Probe2"
+      Show          on
+      Position      [125, 1040]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Probe {
+        Component     "V_ac"
+        Path          ""
+        Signals       {"Source current", "Source voltage"}
+      }
+      Probe {
+        Component     "V_R"
+        Path          ""
+        Signals       {"Measured voltage"}
+      }
+      Probe {
+        Component     "V_L"
+        Path          ""
+        Signals       {"Measured voltage"}
+      }
+      Probe {
+        Component     "L5"
+        Path          ""
+        Signals       {"Inductor current"}
+      }
+    }
+    Component {
+      Type          SignalDemux
+      Name          "Demux2"
+      Show          off
+      Position      [175, 1040]
+      Direction     right
+      Flipped       on
+      LabelPosition south
+      Frame         [-7, -25; 2, 25]
+      Parameter {
+        Variable      "Width"
+        Value         "5"
+        Show          off
+      }
+    }
+    Component {
+      Type          Scope
+      Name          "Scope2"
+      Show          on
+      Position      [255, 1040]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-15, -30; 15, 30]
+      Location      [0, 24; 1536, 943]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAANAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAYAAAAA4vw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABgAAAABEAP///wAABgAAAAKQAAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":64,\"Labels\":["
+"\"Delta\"],\"VisualIdxs\":[3]}"
+      PlotPalettes  "AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAA="
+      Axes          "5"
+      TimeRange     "0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "0"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    "Time / s"
+      ShowLegend    "1"
+      Axis {
+        Name          "Input AC Voltage"
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          "Input inductor current"
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          "Rectified voltage"
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          "Output DC voltage"
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          "Output inductor current"
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis       on
+        AxisLabel         "Frequency / Hz"
+        Scaling           0
+        PhaseDisplay      0
+        ShowFourierLegend off
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
+    }
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Control/Filters/Total Harmonic\\nDistortion"
+      Name          "Total Harmonic\nDistortion2"
+      Show          on
+      Position      [255, 1125]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-15, -15; 15, 15]
+      Parameter {
+        Variable      "ts"
+        Value         "1e-3"
+        Show          off
+      }
+      Parameter {
+        Variable      "fs"
+        Value         "50"
+        Show          off
+      }
+      Terminal {
+        Type          Input
+        Position      [-15, 0]
+        Direction     left
+      }
+      Terminal {
+        Type          Output
+        Position      [19, 0]
+        Direction     right
+      }
+    }
+    Component {
+      Type          Gain
+      Name          "Gain2"
+      Show          on
+      Position      [315, 1125]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "K"
+        Value         "100"
+        Show          off
+      }
+      Parameter {
+        Variable      "Multiplication"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "OutputDataType"
+        Value         "11"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataTypeOverflowMode"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "GainDataType"
+        Value         "11"
+        Show          off
+      }
+    }
+    Component {
+      Type          Display
+      Name          "THD RL"
+      Show          on
+      Position      [385, 1125]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-31, -11; 31, 11]
+      Parameter {
+        Variable      "Notation"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Precision"
+        Value         "4"
+        Show          off
+      }
+    }
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Control/Filters/RMS Value"
+      Name          "RMS Value2"
+      Show          on
+      Position      [255, 1195]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-15, -15; 15, 15]
+      Parameter {
+        Variable      "x0"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "ts"
+        Value         "1e-3"
+        Show          off
+      }
+      Parameter {
+        Variable      "fs"
+        Value         "50"
+        Show          off
+      }
+      Terminal {
+        Type          Input
+        Position      [-15, 0]
+        Direction     left
+      }
+      Terminal {
+        Type          Output
+        Position      [19, 0]
+        Direction     right
+      }
+    }
+    Component {
+      Type          Display
+      Name          "Input current_RL"
+      Show          on
+      Position      [385, 1195]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-31, -11; 31, 11]
+      Parameter {
+        Variable      "Notation"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Precision"
+        Value         "4"
+        Show          off
+      }
+    }
+    Component {
+      Type          PeriodicAverage
+      Name          "Periodic Average6"
+      Show          on
+      Position      [255, 1255]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "T_average"
+        Value         "0.8"
+        Show          off
+      }
+    }
+    Component {
+      Type          Display
+      Name          "Input current_RL_avg"
+      Show          on
+      Position      [385, 1255]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-31, -11; 31, 11]
+      Parameter {
+        Variable      "Notation"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Precision"
+        Value         "4"
+        Show          off
+      }
+    }
+    Component {
+      Type          PeriodicAverage
+      Name          "Periodic Average7"
+      Show          on
+      Position      [255, 1400]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "T_average"
+        Value         "0.8"
+        Show          off
+      }
+    }
+    Component {
+      Type          Display
+      Name          "Output current_RL"
+      Show          on
+      Position      [385, 1400]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-31, -11; 31, 11]
+      Parameter {
+        Variable      "Notation"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Precision"
+        Value         "4"
+        Show          off
+      }
+    }
+    Component {
+      Type          Display
+      Name          "Output Voltage RL"
+      Show          on
+      Position      [385, 1325]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-31, -11; 31, 11]
+      Parameter {
+        Variable      "Notation"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Precision"
+        Value         "4"
+        Show          off
+      }
+    }
+    Component {
+      Type          PeriodicAverage
+      Name          "Periodic Average8"
+      Show          on
+      Position      [255, 1325]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "T_average"
+        Value         "0.8"
+        Show          off
+      }
+    }
+    Component {
+      Type          PlecsProbe
+      Name          "Probe3"
+      Show          on
+      Position      [670, 1050]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Probe {
+        Component     "V_ac"
+        Path          ""
+        Signals       {"Source current", "Source voltage"}
+      }
+      Probe {
+        Component     "V_R"
+        Path          ""
+        Signals       {"Measured voltage"}
+      }
+      Probe {
+        Component     "V_L"
+        Path          ""
+        Signals       {"Measured voltage"}
+      }
+      Probe {
+        Component     "R4"
+        Path          ""
+        Signals       {"Resistor current"}
+      }
+    }
+    Component {
+      Type          SignalDemux
+      Name          "Demux3"
+      Show          off
+      Position      [720, 1050]
+      Direction     right
+      Flipped       on
+      LabelPosition south
+      Frame         [-7, -25; 2, 25]
+      Parameter {
+        Variable      "Width"
+        Value         "5"
+        Show          off
+      }
+    }
+    Component {
+      Type          Scope
+      Name          "Scope3"
+      Show          on
+      Position      [800, 1050]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-15, -30; 15, 30]
+      Location      [0, 24; 1536, 943]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAANAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAYAAAAA4vw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABgAAAABEAP///wAABgAAAAKQAAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":64,\"Labels\":["
+"\"Delta\"],\"VisualIdxs\":[3]}"
+      PlotPalettes  "AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAA="
+      Axes          "5"
+      TimeRange     "0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "0"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    "Time / s"
+      ShowLegend    "1"
+      Axis {
+        Name          "Input AC Voltage"
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          "Input inductor current"
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          "Rectified voltage"
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          "Output DC voltage"
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          "Output inductor current"
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis       on
+        AxisLabel         "Frequency / Hz"
+        Scaling           0
+        PhaseDisplay      0
+        ShowFourierLegend off
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
+    }
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Control/Filters/Total Harmonic\\nDistortion"
+      Name          "Total Harmonic\nDistortion3"
+      Show          on
+      Position      [800, 1135]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-15, -15; 15, 15]
+      Parameter {
+        Variable      "ts"
+        Value         "1e-3"
+        Show          off
+      }
+      Parameter {
+        Variable      "fs"
+        Value         "50"
+        Show          off
+      }
+      Terminal {
+        Type          Input
+        Position      [-15, 0]
+        Direction     left
+      }
+      Terminal {
+        Type          Output
+        Position      [19, 0]
+        Direction     right
+      }
+    }
+    Component {
+      Type          Gain
+      Name          "Gain3"
+      Show          on
+      Position      [860, 1135]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "K"
+        Value         "100"
+        Show          off
+      }
+      Parameter {
+        Variable      "Multiplication"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "OutputDataType"
+        Value         "11"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataTypeOverflowMode"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "GainDataType"
+        Value         "11"
+        Show          off
+      }
+    }
+    Component {
+      Type          Display
+      Name          "THD RC"
+      Show          on
+      Position      [930, 1135]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-31, -11; 31, 11]
+      Parameter {
+        Variable      "Notation"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Precision"
+        Value         "4"
+        Show          off
+      }
+    }
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Control/Filters/RMS Value"
+      Name          "RMS Value3"
+      Show          on
+      Position      [800, 1205]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-15, -15; 15, 15]
+      Parameter {
+        Variable      "x0"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "ts"
+        Value         "1e-3"
+        Show          off
+      }
+      Parameter {
+        Variable      "fs"
+        Value         "50"
+        Show          off
+      }
+      Terminal {
+        Type          Input
+        Position      [-15, 0]
+        Direction     left
+      }
+      Terminal {
+        Type          Output
+        Position      [19, 0]
+        Direction     right
+      }
+    }
+    Component {
+      Type          Display
+      Name          "Input current_RC"
+      Show          on
+      Position      [930, 1205]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-31, -11; 31, 11]
+      Parameter {
+        Variable      "Notation"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Precision"
+        Value         "4"
+        Show          off
+      }
+    }
+    Component {
+      Type          PeriodicAverage
+      Name          "Periodic Average9"
+      Show          on
+      Position      [800, 1265]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "T_average"
+        Value         "0.8"
+        Show          off
+      }
+    }
+    Component {
+      Type          Display
+      Name          "Input current_RC_avg"
+      Show          on
+      Position      [930, 1265]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-31, -11; 31, 11]
+      Parameter {
+        Variable      "Notation"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Precision"
+        Value         "4"
+        Show          off
+      }
+    }
+    Component {
+      Type          PeriodicAverage
+      Name          "Periodic Average10"
+      Show          on
+      Position      [800, 1410]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "T_average"
+        Value         "0.8"
+        Show          off
+      }
+    }
+    Component {
+      Type          Display
+      Name          "Output current_RC"
+      Show          on
+      Position      [930, 1410]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-31, -11; 31, 11]
+      Parameter {
+        Variable      "Notation"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Precision"
+        Value         "4"
+        Show          off
+      }
+    }
+    Component {
+      Type          Display
+      Name          "Output Voltage RC"
+      Show          on
+      Position      [930, 1335]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-31, -11; 31, 11]
+      Parameter {
+        Variable      "Notation"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Precision"
+        Value         "4"
+        Show          off
+      }
+    }
+    Component {
+      Type          PeriodicAverage
+      Name          "Periodic Average11"
+      Show          on
+      Position      [800, 1335]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "T_average"
+        Value         "0.8"
+        Show          off
+      }
     }
     Connection {
       Type          Wire
@@ -1837,35 +3138,35 @@ Plecs {
       Type          Signal
       SrcComponent  "RMS Value"
       SrcTerminal   2
-      DstComponent  "Display1"
+      DstComponent  "Input current_RLC"
       DstTerminal   1
     }
     Connection {
       Type          Signal
       SrcComponent  "Periodic Average"
       SrcTerminal   1
-      DstComponent  "Display2"
+      DstComponent  "Input current_RLC_avg"
       DstTerminal   1
     }
     Connection {
       Type          Signal
       SrcComponent  "Periodic Average2"
       SrcTerminal   1
-      DstComponent  "Display4"
+      DstComponent  "Output current_RLC"
       DstTerminal   1
     }
     Connection {
       Type          Signal
       SrcComponent  "Gain"
       SrcTerminal   2
-      DstComponent  "Display"
+      DstComponent  "THD RLC"
       DstTerminal   1
     }
     Connection {
       Type          Signal
       SrcComponent  "Periodic Average1"
       SrcTerminal   1
-      DstComponent  "Display3"
+      DstComponent  "Output Voltage RLC"
       DstTerminal   1
     }
     Connection {
@@ -1999,7 +3300,7 @@ Plecs {
       Type          Wire
       SrcComponent  "V_ac2"
       SrcTerminal   1
-      Points        [615, 325]
+      Points        [60, 815]
       DstComponent  "L4"
       DstTerminal   1
     }
@@ -2007,14 +3308,14 @@ Plecs {
       Type          Wire
       SrcComponent  "D10"
       SrcTerminal   2
-      Points        [810, 280]
+      Points        [255, 770]
       Branch {
-        Points        [755, 280]
+        Points        [200, 770]
         DstComponent  "D9"
         DstTerminal   2
       }
       Branch {
-        Points        [850, 280]
+        Points        [295, 770]
         Branch {
           DstComponent  "L5"
           DstTerminal   1
@@ -2029,7 +3330,7 @@ Plecs {
       Type          Wire
       SrcComponent  "D9"
       SrcTerminal   1
-      Points        [755, 325]
+      Points        [200, 815]
       Branch {
         DstComponent  "L4"
         DstTerminal   2
@@ -2043,9 +3344,9 @@ Plecs {
       Type          Wire
       SrcComponent  "D10"
       SrcTerminal   1
-      Points        [810, 395]
+      Points        [255, 885]
       Branch {
-        Points        [615, 395]
+        Points        [60, 885]
         DstComponent  "V_ac2"
         DstTerminal   2
       }
@@ -2058,26 +3359,26 @@ Plecs {
       Type          Wire
       SrcComponent  "D12"
       SrcTerminal   1
-      Points        [810, 435]
+      Points        [255, 925]
       Branch {
-        Points        [755, 435]
+        Points        [200, 925]
         DstComponent  "D11"
         DstTerminal   1
       }
       Branch {
-        Points        [850, 435]
+        Points        [295, 925]
         Branch {
           DstComponent  "V_R2"
           DstTerminal   2
         }
         Branch {
-          Points        [970, 435]
+          Points        [415, 925]
           Branch {
             DstComponent  "R3"
             DstTerminal   2
           }
           Branch {
-            Points        [1035, 435]
+            Points        [480, 925]
             DstComponent  "V_L2"
             DstTerminal   2
           }
@@ -2088,13 +3389,13 @@ Plecs {
       Type          Wire
       SrcComponent  "R3"
       SrcTerminal   1
-      Points        [970, 280]
+      Points        [415, 770]
       Branch {
         DstComponent  "L5"
         DstTerminal   2
       }
       Branch {
-        Points        [1035, 280]
+        Points        [480, 770]
         DstComponent  "V_L2"
         DstTerminal   1
       }
@@ -2103,7 +3404,7 @@ Plecs {
       Type          Wire
       SrcComponent  "V_ac3"
       SrcTerminal   1
-      Points        [615, 575]
+      Points        [605, 815]
       DstComponent  "L6"
       DstTerminal   1
     }
@@ -2111,28 +3412,28 @@ Plecs {
       Type          Wire
       SrcComponent  "D14"
       SrcTerminal   2
-      Points        [810, 530]
+      Points        [800, 770]
       Branch {
-        Points        [755, 530]
+        Points        [745, 770]
         DstComponent  "D13"
         DstTerminal   2
       }
       Branch {
-        Points        [850, 530]
+        Points        [840, 770]
         Branch {
-          Points        [940, 530]
+          Points        [930, 770]
           Branch {
             DstComponent  "C3"
             DstTerminal   1
           }
           Branch {
-            Points        [970, 530]
+            Points        [960, 770]
             Branch {
               DstComponent  "R4"
               DstTerminal   1
             }
             Branch {
-              Points        [1035, 530]
+              Points        [1025, 770]
               DstComponent  "V_L3"
               DstTerminal   1
             }
@@ -2148,7 +3449,7 @@ Plecs {
       Type          Wire
       SrcComponent  "D13"
       SrcTerminal   1
-      Points        [755, 575]
+      Points        [745, 815]
       Branch {
         DstComponent  "L6"
         DstTerminal   2
@@ -2162,9 +3463,9 @@ Plecs {
       Type          Wire
       SrcComponent  "D14"
       SrcTerminal   1
-      Points        [810, 645]
+      Points        [800, 885]
       Branch {
-        Points        [615, 645]
+        Points        [605, 885]
         DstComponent  "V_ac3"
         DstTerminal   2
       }
@@ -2177,37 +3478,403 @@ Plecs {
       Type          Wire
       SrcComponent  "D16"
       SrcTerminal   1
-      Points        [810, 685]
+      Points        [800, 925]
       Branch {
-        Points        [755, 685]
+        Points        [745, 925]
         DstComponent  "D15"
         DstTerminal   1
       }
       Branch {
-        Points        [850, 685]
+        Points        [840, 925]
         Branch {
           DstComponent  "V_R3"
           DstTerminal   2
         }
         Branch {
-          Points        [940, 685]
+          Points        [930, 925]
           Branch {
             DstComponent  "C3"
             DstTerminal   2
           }
           Branch {
-            Points        [970, 685]
+            Points        [960, 925]
             Branch {
               DstComponent  "R4"
               DstTerminal   2
             }
             Branch {
-              Points        [1035, 685]
+              Points        [1025, 925]
               DstComponent  "V_L3"
               DstTerminal   2
             }
           }
         }
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Probe1"
+      SrcTerminal   1
+      DstComponent  "Demux1"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux1"
+      SrcTerminal   2
+      DstComponent  "Scope1"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux1"
+      SrcTerminal   4
+      DstComponent  "Scope1"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux1"
+      SrcTerminal   3
+      Points        [715, 250]
+      Branch {
+        DstComponent  "Scope1"
+        DstTerminal   2
+      }
+      Branch {
+        Points        [715, 345]
+        Branch {
+          DstComponent  "Total Harmonic\nDistortion1"
+          DstTerminal   1
+        }
+        Branch {
+          Points        [715, 415]
+          Branch {
+            DstComponent  "RMS Value1"
+            DstTerminal   1
+          }
+          Branch {
+            Points        [715, 475]
+            DstComponent  "Periodic Average3"
+            DstTerminal   2
+          }
+        }
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Total Harmonic\nDistortion1"
+      SrcTerminal   2
+      DstComponent  "Gain1"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "RMS Value1"
+      SrcTerminal   2
+      DstComponent  "Input current_R"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Periodic Average3"
+      SrcTerminal   1
+      DstComponent  "Input current_R_avg"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Periodic Average4"
+      SrcTerminal   1
+      DstComponent  "Output current_R"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Gain1"
+      SrcTerminal   2
+      DstComponent  "THD R"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Periodic Average5"
+      SrcTerminal   1
+      DstComponent  "Output Voltage R"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux1"
+      SrcTerminal   6
+      Points        [685, 280]
+      Branch {
+        DstComponent  "Scope1"
+        DstTerminal   5
+      }
+      Branch {
+        Points        [685, 620]
+        DstComponent  "Periodic Average4"
+        DstTerminal   2
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux1"
+      SrcTerminal   5
+      Points        [700, 270]
+      Branch {
+        DstComponent  "Scope1"
+        DstTerminal   4
+      }
+      Branch {
+        Points        [700, 545]
+        DstComponent  "Periodic Average5"
+        DstTerminal   2
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Probe2"
+      SrcTerminal   1
+      DstComponent  "Demux2"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux2"
+      SrcTerminal   2
+      DstComponent  "Scope2"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux2"
+      SrcTerminal   4
+      DstComponent  "Scope2"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux2"
+      SrcTerminal   3
+      Points        [215, 1030]
+      Branch {
+        DstComponent  "Scope2"
+        DstTerminal   2
+      }
+      Branch {
+        Points        [215, 1125]
+        Branch {
+          DstComponent  "Total Harmonic\nDistortion2"
+          DstTerminal   1
+        }
+        Branch {
+          Points        [215, 1195]
+          Branch {
+            DstComponent  "RMS Value2"
+            DstTerminal   1
+          }
+          Branch {
+            Points        [215, 1255]
+            DstComponent  "Periodic Average6"
+            DstTerminal   2
+          }
+        }
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Total Harmonic\nDistortion2"
+      SrcTerminal   2
+      DstComponent  "Gain2"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "RMS Value2"
+      SrcTerminal   2
+      DstComponent  "Input current_RL"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Periodic Average6"
+      SrcTerminal   1
+      DstComponent  "Input current_RL_avg"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Periodic Average7"
+      SrcTerminal   1
+      DstComponent  "Output current_RL"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Gain2"
+      SrcTerminal   2
+      DstComponent  "THD RL"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Periodic Average8"
+      SrcTerminal   1
+      DstComponent  "Output Voltage RL"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux2"
+      SrcTerminal   6
+      Points        [185, 1060]
+      Branch {
+        DstComponent  "Scope2"
+        DstTerminal   5
+      }
+      Branch {
+        Points        [185, 1400]
+        DstComponent  "Periodic Average7"
+        DstTerminal   2
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux2"
+      SrcTerminal   5
+      Points        [200, 1050]
+      Branch {
+        DstComponent  "Scope2"
+        DstTerminal   4
+      }
+      Branch {
+        Points        [200, 1325]
+        DstComponent  "Periodic Average8"
+        DstTerminal   2
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Probe3"
+      SrcTerminal   1
+      DstComponent  "Demux3"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux3"
+      SrcTerminal   2
+      DstComponent  "Scope3"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux3"
+      SrcTerminal   4
+      DstComponent  "Scope3"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux3"
+      SrcTerminal   3
+      Points        [760, 1040]
+      Branch {
+        DstComponent  "Scope3"
+        DstTerminal   2
+      }
+      Branch {
+        Points        [760, 1135]
+        Branch {
+          DstComponent  "Total Harmonic\nDistortion3"
+          DstTerminal   1
+        }
+        Branch {
+          Points        [760, 1205]
+          Branch {
+            DstComponent  "RMS Value3"
+            DstTerminal   1
+          }
+          Branch {
+            Points        [760, 1265]
+            DstComponent  "Periodic Average9"
+            DstTerminal   2
+          }
+        }
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Total Harmonic\nDistortion3"
+      SrcTerminal   2
+      DstComponent  "Gain3"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "RMS Value3"
+      SrcTerminal   2
+      DstComponent  "Input current_RC"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Periodic Average9"
+      SrcTerminal   1
+      DstComponent  "Input current_RC_avg"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Periodic Average10"
+      SrcTerminal   1
+      DstComponent  "Output current_RC"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Gain3"
+      SrcTerminal   2
+      DstComponent  "THD RC"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Periodic Average11"
+      SrcTerminal   1
+      DstComponent  "Output Voltage RC"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux3"
+      SrcTerminal   6
+      Points        [730, 1070]
+      Branch {
+        DstComponent  "Scope3"
+        DstTerminal   5
+      }
+      Branch {
+        Points        [730, 1410]
+        DstComponent  "Periodic Average10"
+        DstTerminal   2
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux3"
+      SrcTerminal   5
+      Points        [745, 1060]
+      Branch {
+        DstComponent  "Scope3"
+        DstTerminal   4
+      }
+      Branch {
+        Points        [745, 1335]
+        DstComponent  "Periodic Average11"
+        DstTerminal   2
       }
     }
   }
