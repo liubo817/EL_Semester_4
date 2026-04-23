@@ -66,9 +66,9 @@ Plecs {
   InvalidNetlistFunctionEvaluationMsg "1"
   IncompatibleInitialConditionMsg "2"
   Schematic {
-    Location      [0, 24; 1536, 871]
-    ZoomFactor    0.873849
-    SliderPosition [0, 0]
+    Location      [0, 23; 1920, 989]
+    ZoomFactor    1.71499
+    SliderPosition [0, -1]
     ShowBrowser   off
     BrowserWidth  100
     Component {
@@ -465,9 +465,9 @@ Plecs {
       Name          "Am1"
       Show          on
       Position      [465, 25]
-      Direction     left
+      Direction     right
       Flipped       on
-      LabelPosition south
+      LabelPosition north
     }
     Component {
       Type          Inductor
@@ -498,7 +498,7 @@ Plecs {
       LabelPosition west
       Parameter {
         Variable      "C"
-        Value         "1e-4"
+        Value         "500e-6"
         Show          off
       }
       Parameter {
@@ -582,11 +582,11 @@ Plecs {
       Flipped       off
       LabelPosition south
       Frame         [-15, -35; 15, 35]
-      Location      [1, 29; 767, 899]
+      Location      [1, 29; 767, 917]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAPgA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAAAv4AAANHAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAAAv4AAANZAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -760,7 +760,12 @@ Plecs {
       Probe {
         Component     "Am1"
         Path          ""
-        Signals       {"Measured current"}
+        Signals       {}
+      }
+      Probe {
+        Component     "R1"
+        Path          ""
+        Signals       {"Resistor current"}
       }
     }
     Component {
@@ -787,11 +792,11 @@ Plecs {
       Flipped       off
       LabelPosition south
       Frame         [-15, -20; 15, 20]
-      Location      [0, 24; 1536, 929]
+      Location      [0, 24; 1536, 938]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAIAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAABgAAAANqAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAABgAAAANzAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -5083,6 +5088,40 @@ Plecs {
         }
       }
     }
+    Component {
+      Type          PeriodicAverage
+      Name          "Periodic Average12"
+      Show          on
+      Position      [145, 475]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "T_average"
+        Value         "0.8"
+        Show          off
+      }
+    }
+    Component {
+      Type          Display
+      Name          "Display20"
+      Show          on
+      Position      [220, 475]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-31, -11; 31, 11]
+      Parameter {
+        Variable      "Notation"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Precision"
+        Value         "4"
+        Show          off
+      }
+    }
     Connection {
       Type          Wire
       SrcComponent  "D2"
@@ -5102,11 +5141,11 @@ Plecs {
         Branch {
           Points        [425, 25]
           Branch {
-            DstComponent  "Am1"
-            DstTerminal   2
+            DstComponent  "Vm1"
+            DstTerminal   1
           }
           Branch {
-            DstComponent  "Vm1"
+            DstComponent  "Am1"
             DstTerminal   1
           }
         }
@@ -5154,13 +5193,6 @@ Plecs {
         DstComponent  "D5"
         DstTerminal   1
       }
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "L4"
-      SrcTerminal   1
-      DstComponent  "Am1"
-      DstTerminal   1
     }
     Connection {
       Type          Wire
@@ -5316,20 +5348,6 @@ Plecs {
     }
     Connection {
       Type          Signal
-      SrcComponent  "Demux1"
-      SrcTerminal   3
-      DstComponent  "Scope1"
-      DstTerminal   2
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Demux1"
-      SrcTerminal   4
-      DstComponent  "Scope1"
-      DstTerminal   3
-    }
-    Connection {
-      Type          Signal
       SrcComponent  "RMS Value"
       SrcTerminal   2
       DstComponent  "Display1"
@@ -5360,29 +5378,14 @@ Plecs {
       Type          Signal
       SrcComponent  "Demux1"
       SrcTerminal   2
-      Points        [355, 255]
+      Points        [370, 255]
       Branch {
         DstComponent  "Scope1"
         DstTerminal   1
       }
       Branch {
-        Points        [355, 330]
-        Branch {
-          DstComponent  "Periodic Average"
-          DstTerminal   2
-        }
-        Branch {
-          Points        [355, 390]
-          Branch {
-            DstComponent  "Periodic Average1"
-            DstTerminal   2
-          }
-          Branch {
-            Points        [355, 445]
-            DstComponent  "Periodic Average2"
-            DstTerminal   2
-          }
-        }
+        DstComponent  "Periodic Average"
+        DstTerminal   2
       }
     }
     Connection {
@@ -5423,8 +5426,15 @@ Plecs {
         }
         Branch {
           Points        [105, 420]
-          DstComponent  "RMS Value"
-          DstTerminal   1
+          Branch {
+            DstComponent  "RMS Value"
+            DstTerminal   1
+          }
+          Branch {
+            Points        [105, 475]
+            DstComponent  "Periodic Average12"
+            DstTerminal   2
+          }
         }
       }
     }
@@ -6617,6 +6627,50 @@ Plecs {
       SrcTerminal   7
       DstComponent  "Scope11"
       DstTerminal   6
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux1"
+      SrcTerminal   3
+      Points        [355, 265]
+      Branch {
+        DstComponent  "Scope1"
+        DstTerminal   2
+      }
+      Branch {
+        Points        [355, 390]
+        DstComponent  "Periodic Average1"
+        DstTerminal   2
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux1"
+      SrcTerminal   4
+      Points        [345, 275]
+      Branch {
+        DstComponent  "Scope1"
+        DstTerminal   3
+      }
+      Branch {
+        Points        [345, 445]
+        DstComponent  "Periodic Average2"
+        DstTerminal   2
+      }
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "Am1"
+      SrcTerminal   2
+      DstComponent  "L4"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Periodic Average12"
+      SrcTerminal   1
+      DstComponent  "Display20"
+      DstTerminal   1
     }
   }
 }

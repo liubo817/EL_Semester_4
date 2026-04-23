@@ -153,7 +153,7 @@ Plecs {
       LabelPosition north
       Parameter {
         Variable      "C"
-        Value         "1.7e-6"
+        Value         "1.61e-6"
         Show          on
       }
       Parameter {
@@ -240,7 +240,7 @@ Plecs {
       LabelPosition west
       Parameter {
         Variable      "C"
-        Value         "6.67e-6"
+        Value         "4.71e-6"
         Show          on
       }
       Parameter {
@@ -259,7 +259,7 @@ Plecs {
       LabelPosition east
       Parameter {
         Variable      "R"
-        Value         "215"
+        Value         "230"
         Show          on
       }
     }
@@ -325,11 +325,11 @@ Plecs {
       Flipped       off
       LabelPosition south
       Frame         [-15, -15; 15, 15]
-      Location      [0, 24; 1920, 1057]
-      State         "AAAA/wAAAAD9AAAAAQAAAAEAAAF1AAAD6vwCAAAABPsAAAAUAEQAYQB0A"
-"GEAVwBpAGQAZwBlAHQBAAAANAAAA+oAAABWAP////sAAAAQAFoAbwBvAG0AQQByAGUAYQAAAAAA//"
+      Location      [0, 24; 1920, 1064]
+      State         "AAAA/wAAAAD9AAAAAQAAAAEAAAIPAAAD8fwCAAAABPsAAAAUAEQAYQB0A"
+"GEAVwBpAGQAZwBlAHQBAAAANAAAA/EAAABWAP////sAAAAQAFoAbwBvAG0AQQByAGUAYQAAAAAA//"
 "///wAAADAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA/////wAAAGIA////+wAAAAw"
-"AVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAABgUAAAPqAAAABAAAAAQAAAAIAAAACPwAAAAB"
+"AVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAABWsAAAPxAAAABAAAAAQAAAAIAAAACPwAAAAB"
 "AAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAA=="
       SavedViews    "AAAAAgAAAAA="
       HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":173,\"Labels\":["
@@ -389,9 +389,9 @@ Plecs {
     }
     Component {
       Type          Display
-      Name          "Display"
+      Name          "Output Voltage"
       Show          on
-      Position      [285, 310]
+      Position      [315, 310]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -430,11 +430,11 @@ Plecs {
       Flipped       off
       LabelPosition south
       Frame         [-15, -15; 15, 15]
-      Location      [0, 24; 1920, 1039]
-      State         "AAAA/wAAAAD9AAAAAQAAAAEAAAI0AAAD2PwCAAAABPsAAAAUAEQAYQB0A"
-"GEAVwBpAGQAZwBlAHQBAAAANAAAA9gAAABWAP////sAAAAQAFoAbwBvAG0AQQByAGUAYQAAAAAA//"
+      Location      [0, 23; 1920, 1011]
+      State         "AAAA/wAAAAD9AAAAAQAAAAEAAAI0AAADvfwCAAAABPsAAAAUAEQAYQB0A"
+"GEAVwBpAGQAZwBlAHQBAAAANAAAA70AAABWAP////sAAAAQAFoAbwBvAG0AQQByAGUAYQAAAAAA//"
 "///wAAADAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA/////wAAAGIA////+wAAAAw"
-"AVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAABUYAAAPYAAAABAAAAAQAAAAIAAAACPwAAAAB"
+"AVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAABUYAAAO9AAAABAAAAAQAAAAIAAAACPwAAAAB"
 "AAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAA=="
       SavedViews    "AAAAAgAAAAA="
       HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":173,\"Labels\":["
@@ -494,9 +494,9 @@ Plecs {
     }
     Component {
       Type          Display
-      Name          "Display1"
+      Name          "Output current"
       Show          on
-      Position      [535, 350]
+      Position      [580, 350]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -516,7 +516,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Probe2"
       Show          on
-      Position      [605, 140]
+      Position      [400, 235]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -528,9 +528,9 @@ Plecs {
     }
     Component {
       Type          Display
-      Name          "Display2"
+      Name          "Output Power"
       Show          on
-      Position      [675, 140]
+      Position      [470, 235]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -638,7 +638,7 @@ Plecs {
       Type          Signal
       SrcComponent  "Periodic Average"
       SrcTerminal   1
-      DstComponent  "Display"
+      DstComponent  "Output Voltage"
       DstTerminal   1
     }
     Connection {
@@ -660,7 +660,7 @@ Plecs {
       Type          Signal
       SrcComponent  "Periodic Average1"
       SrcTerminal   1
-      DstComponent  "Display1"
+      DstComponent  "Output current"
       DstTerminal   1
     }
     Connection {
@@ -681,8 +681,39 @@ Plecs {
       Type          Signal
       SrcComponent  "Probe2"
       SrcTerminal   1
-      DstComponent  "Display2"
+      DstComponent  "Output Power"
       DstTerminal   1
     }
+    Annotation {
+      Name          "<html><body>\n<p>Duty Cycle</p></body></html>"
+      Position      [555, 60]
+    } 
+    Annotation {
+      Name          "<html><body>\n<p>Resistor Load</p></body></html>"
+      Position      [635, 60]
+    } 
+    Annotation {
+      Name          "<html><body>\n<p>0.35</p>\n<p>0.5</p>\n<p>0.6</p></body><"
+"/html>"
+      Position      [555, 95]
+    } 
+    Annotation {
+      Name          "<html><body>\n<p>31</p>\n<p>103</p>\n<p>230</p></body></h"
+"tml>"
+      Position      [635, 95]
+    } 
+    Annotation {
+      Name          "<html><body>\n<p>Frequency = 50kHz</p></body></html>"
+      Position      [640, 45]
+    } 
+    Annotation {
+      Name          "<html><body>\n<p>296</p>\n<p>550</p>\n<p>825</p></body></"
+"html>"
+      Position      [720, 95]
+    } 
+    Annotation {
+      Name          "<html><body>\n<p>Output voltage</p></body></html>"
+      Position      [720, 60]
+    } 
   }
 }
