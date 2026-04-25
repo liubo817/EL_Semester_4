@@ -7,6 +7,6 @@ Reports:
 - [Week 4](https://docs.google.com/document/d/1nTa55yCaI-NS7OVzPnSW7fgffGkiPCNtNCDJHHbk-Ag/edit?tab=t.0)
 - [Week 5](https://docs.google.com/document/d/1A0ni9thOd9T6OC-xqtCkx7gC2RCKBOD3BCLiEWinWA8/edit?tab=t.0#heading=h.pu4825pgx8ck)
 - [Project DC-DC](https://docs.google.com/document/d/1WDMq8vqXvUfkIb1-K9jBKxiz_pQyqLL95v_L9Hd917M/edit?tab=t.0#heading=h.pu4825pgx8ck)
-
+- [Week 7](https://docs.google.com/document/d/1fbKuPIt5TA1s78cvRCPJ5FbLAL_1X8jp-UDJ9_hsJA4/edit?tab=t.0)
 
 ### Digital Design and Signal Processing ###
