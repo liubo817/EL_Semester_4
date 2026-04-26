@@ -3,7 +3,7 @@ Plecs {
   Version       "5.0"
   CircuitModel  "ContStateSpace"
   StartTime     "0.0"
-  TimeSpan      "1.0"
+  TimeSpan      "0.3"
   Timeout       ""
   Solver        "auto"
   MaxStep       "1e-3"
@@ -66,9 +66,9 @@ Plecs {
   InvalidNetlistFunctionEvaluationMsg "1"
   IncompatibleInitialConditionMsg "2"
   Schematic {
-    Location      [0, 24; 1920, 990]
-    ZoomFactor    1.49863
-    SliderPosition [-1, 822]
+    Location      [0, 23; 1920, 989]
+    ZoomFactor    0.999998
+    SliderPosition [143, 0]
     ShowBrowser   off
     BrowserWidth  100
     Component {
@@ -106,7 +106,7 @@ Plecs {
       }
       Parameter {
         Variable      "T_init"
-        Value         ""
+        Value         "25"
         Show          off
       }
     }
@@ -153,7 +153,7 @@ Plecs {
       LabelPosition east
       Parameter {
         Variable      "R"
-        Value         "56"
+        Value         "170"
         Show          on
       }
     }
@@ -201,7 +201,7 @@ Plecs {
       }
       Parameter {
         Variable      "DutyCycle"
-        Value         "0.42"
+        Value         "0.56"
         Show          off
       }
       Parameter {
@@ -219,7 +219,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Output"
       Show          on
-      Position      [680, 370]
+      Position      [725, 175]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -238,7 +238,7 @@ Plecs {
       Type          Scope
       Name          "Output graphs - voltage and current"
       Show          on
-      Position      [810, 370]
+      Position      [855, 175]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -318,7 +318,7 @@ Plecs {
       Type          SignalDemux
       Name          "Demux"
       Show          off
-      Position      [730, 370]
+      Position      [775, 175]
       Direction     right
       Flipped       on
       LabelPosition south
@@ -333,7 +333,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Probe2"
       Show          on
-      Position      [95, 385]
+      Position      [55, 350]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -352,7 +352,7 @@ Plecs {
       Type          Display
       Name          "Output voltage"
       Show          on
-      Position      [315, 360]
+      Position      [275, 325]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -372,7 +372,7 @@ Plecs {
       Type          PeriodicAverage
       Name          "Output Voltage"
       Show          on
-      Position      [220, 360]
+      Position      [180, 325]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -386,7 +386,7 @@ Plecs {
       Type          PeriodicAverage
       Name          "Output Current"
       Show          on
-      Position      [220, 415]
+      Position      [180, 380]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -400,7 +400,7 @@ Plecs {
       Type          Display
       Name          "Output current"
       Show          on
-      Position      [315, 415]
+      Position      [275, 380]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -420,7 +420,7 @@ Plecs {
       Type          SignalDemux
       Name          "Demux1"
       Show          off
-      Position      [150, 385]
+      Position      [110, 350]
       Direction     right
       Flipped       on
       LabelPosition south
@@ -435,7 +435,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Inductor I"
       Show          on
-      Position      [425, 375]
+      Position      [455, 200]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -449,7 +449,7 @@ Plecs {
       Type          Scope
       Name          "CCM"
       Show          on
-      Position      [510, 350]
+      Position      [540, 175]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -507,7 +507,7 @@ Plecs {
       Type          PeriodicAverage
       Name          "Inductor Current"
       Show          on
-      Position      [510, 400]
+      Position      [540, 225]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -521,7 +521,7 @@ Plecs {
       Type          Display
       Name          "Inductor current"
       Show          on
-      Position      [605, 400]
+      Position      [635, 225]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -706,7 +706,7 @@ Plecs {
       }
       Parameter {
         Variable      "Rth"
-        Value         "0.24"
+        Value         "273"
         Show          off
       }
       Parameter {
@@ -716,7 +716,7 @@ Plecs {
       }
       Parameter {
         Variable      "T_init"
-        Value         ""
+        Value         "25"
         Show          off
       }
     }
@@ -763,7 +763,7 @@ Plecs {
       LabelPosition east
       Parameter {
         Variable      "R"
-        Value         "170"
+        Value         "56"
         Show          on
       }
     }
@@ -811,7 +811,7 @@ Plecs {
       }
       Parameter {
         Variable      "DutyCycle"
-        Value         "0.56"
+        Value         "0.42"
         Show          off
       }
       Parameter {
@@ -829,7 +829,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Output1"
       Show          on
-      Position      [1705, 375]
+      Position      [1765, 205]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -848,7 +848,7 @@ Plecs {
       Type          Scope
       Name          "Output graphs - voltage and current1"
       Show          on
-      Position      [1835, 375]
+      Position      [1895, 205]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -928,7 +928,7 @@ Plecs {
       Type          SignalDemux
       Name          "Demux2"
       Show          off
-      Position      [1755, 375]
+      Position      [1815, 205]
       Direction     right
       Flipped       on
       LabelPosition south
@@ -943,7 +943,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Probe3"
       Show          on
-      Position      [1120, 380]
+      Position      [1065, 355]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -962,7 +962,7 @@ Plecs {
       Type          Display
       Name          "Output voltage1"
       Show          on
-      Position      [1340, 350]
+      Position      [1285, 325]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -982,7 +982,7 @@ Plecs {
       Type          PeriodicAverage
       Name          "Output Voltage1"
       Show          on
-      Position      [1245, 350]
+      Position      [1190, 325]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -996,7 +996,7 @@ Plecs {
       Type          PeriodicAverage
       Name          "Output Current1"
       Show          on
-      Position      [1245, 405]
+      Position      [1190, 380]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1010,7 +1010,7 @@ Plecs {
       Type          Display
       Name          "Output current1"
       Show          on
-      Position      [1340, 405]
+      Position      [1285, 380]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1030,7 +1030,7 @@ Plecs {
       Type          SignalDemux
       Name          "Demux3"
       Show          off
-      Position      [1175, 380]
+      Position      [1120, 355]
       Direction     right
       Flipped       on
       LabelPosition south
@@ -1045,7 +1045,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Inductor I1"
       Show          on
-      Position      [1450, 380]
+      Position      [1510, 210]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1059,21 +1059,21 @@ Plecs {
       Type          Scope
       Name          "CCM1"
       Show          on
-      Position      [1535, 355]
+      Position      [1595, 185]
       Direction     up
       Flipped       off
       LabelPosition south
       Frame         [-15, -15; 15, 15]
-      Location      [0, 24; 1920, 1021]
+      Location      [0, 23; 1920, 1011]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAeAAAAAYvw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAB4AAAABEAP///wAAB4AAAANeAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAB4AAAABEAP///wAAB4AAAANVAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":165,\"Labels\":[\""
-"Delta\"],\"VisualIdxs\":[3]}"
+      HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":165,\"Labels\":["
+"\"Delta\"],\"VisualIdxs\":[3]}"
       PlotPalettes  "AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
       Axes          "1"
       TimeRange     "0.0"
@@ -1117,7 +1117,7 @@ Plecs {
       Type          PeriodicAverage
       Name          "Inductor Current1"
       Show          on
-      Position      [1535, 405]
+      Position      [1595, 235]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1131,7 +1131,7 @@ Plecs {
       Type          Display
       Name          "Inductor current1"
       Show          on
-      Position      [1630, 405]
+      Position      [1690, 235]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1295,7 +1295,7 @@ Plecs {
       Type          DCVoltageSource
       Name          "V_dc2"
       Show          on
-      Position      [75, 860]
+      Position      [170, 655]
       Direction     down
       Flipped       on
       LabelPosition east
@@ -1309,13 +1309,13 @@ Plecs {
       Type          Resistor
       Name          "R3"
       Show          on
-      Position      [355, 860]
+      Position      [450, 655]
       Direction     up
       Flipped       off
       LabelPosition east
       Parameter {
         Variable      "R"
-        Value         "170"
+        Value         "105"
         Show          on
       }
     }
@@ -1323,7 +1323,7 @@ Plecs {
       Type          Inductor
       Name          "L3"
       Show          on
-      Position      [190, 860]
+      Position      [285, 655]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -1342,7 +1342,7 @@ Plecs {
       Type          PulseGenerator
       Name          "Pulse\nGenerator2"
       Show          on
-      Position      [100, 910]
+      Position      [195, 705]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1363,7 +1363,7 @@ Plecs {
       }
       Parameter {
         Variable      "DutyCycle"
-        Value         "0.56"
+        Value         "0.5"
         Show          off
       }
       Parameter {
@@ -1381,7 +1381,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Output2"
       Show          on
-      Position      [405, 1010]
+      Position      [535, 655]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1400,16 +1400,16 @@ Plecs {
       Type          Scope
       Name          "Output graphs - voltage and current2"
       Show          on
-      Position      [535, 1010]
+      Position      [665, 655]
       Direction     up
       Flipped       off
       LabelPosition south
       Frame         [-15, -15; 15, 15]
-      Location      [0, 24; 1920, 1021]
+      Location      [0, 23; 1920, 1011]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAFgA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAeAAAAAgvw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAB4AAAABEAP///wAAB4AAAAM+AAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAB4AAAABEAP///wAAB4AAAAM1AAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -1480,7 +1480,7 @@ Plecs {
       Type          SignalDemux
       Name          "Demux4"
       Show          off
-      Position      [455, 1010]
+      Position      [585, 655]
       Direction     right
       Flipped       on
       LabelPosition south
@@ -1495,7 +1495,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Probe4"
       Show          on
-      Position      [55, 1005]
+      Position      [150, 800]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1514,7 +1514,7 @@ Plecs {
       Type          Display
       Name          "Output voltage2"
       Show          on
-      Position      [275, 970]
+      Position      [370, 765]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1534,7 +1534,7 @@ Plecs {
       Type          PeriodicAverage
       Name          "Output Voltage2"
       Show          on
-      Position      [180, 970]
+      Position      [275, 765]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1548,7 +1548,7 @@ Plecs {
       Type          PeriodicAverage
       Name          "Output Current2"
       Show          on
-      Position      [180, 1035]
+      Position      [275, 830]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1562,7 +1562,7 @@ Plecs {
       Type          Display
       Name          "Output current2"
       Show          on
-      Position      [275, 1035]
+      Position      [370, 830]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1582,7 +1582,7 @@ Plecs {
       Type          SignalDemux
       Name          "Demux5"
       Show          off
-      Position      [110, 1005]
+      Position      [205, 800]
       Direction     right
       Flipped       on
       LabelPosition south
@@ -1597,7 +1597,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Inductor I2"
       Show          on
-      Position      [405, 1110]
+      Position      [535, 755]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1611,7 +1611,7 @@ Plecs {
       Type          Scope
       Name          "CCM2"
       Show          on
-      Position      [490, 1085]
+      Position      [620, 730]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1669,7 +1669,7 @@ Plecs {
       Type          PeriodicAverage
       Name          "Inductor Current2"
       Show          on
-      Position      [490, 1135]
+      Position      [620, 780]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1683,7 +1683,7 @@ Plecs {
       Type          Display
       Name          "Inductor current2"
       Show          on
-      Position      [585, 1135]
+      Position      [715, 780]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1703,7 +1703,7 @@ Plecs {
       Type          Mosfet
       Name          "FET3"
       Show          on
-      Position      [155, 830]
+      Position      [250, 625]
       Direction     left
       Flipped       off
       LabelPosition north
@@ -1742,7 +1742,7 @@ Plecs {
       Type          Capacitor
       Name          "C3"
       Show          on
-      Position      [325, 860]
+      Position      [420, 655]
       Direction     down
       Flipped       on
       LabelPosition west
@@ -1761,7 +1761,7 @@ Plecs {
       Type          Diode
       Name          "D1"
       Show          on
-      Position      [250, 830]
+      Position      [345, 625]
       Direction     right
       Flipped       off
       LabelPosition north
@@ -1810,7 +1810,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Probe"
       Show          on
-      Position      [95, 485]
+      Position      [375, 325]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1824,7 +1824,7 @@ Plecs {
       Type          PeriodicAverage
       Name          "Periodic Average"
       Show          on
-      Position      [220, 485]
+      Position      [500, 325]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1838,7 +1838,7 @@ Plecs {
       Type          Display
       Name          "Input Power"
       Show          on
-      Position      [315, 485]
+      Position      [595, 325]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1858,7 +1858,7 @@ Plecs {
       Type          PeriodicAverage
       Name          "Periodic Average1"
       Show          on
-      Position      [220, 545]
+      Position      [500, 385]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1872,7 +1872,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Power"
       Show          on
-      Position      [95, 545]
+      Position      [375, 385]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1886,7 +1886,7 @@ Plecs {
       Type          Display
       Name          "Output Power"
       Show          on
-      Position      [315, 545]
+      Position      [595, 385]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1906,7 +1906,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Probe1"
       Show          on
-      Position      [1120, 470]
+      Position      [1365, 325]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1920,7 +1920,7 @@ Plecs {
       Type          PeriodicAverage
       Name          "Periodic Average2"
       Show          on
-      Position      [1245, 470]
+      Position      [1490, 325]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1934,7 +1934,7 @@ Plecs {
       Type          Display
       Name          "Input Power1"
       Show          on
-      Position      [1340, 470]
+      Position      [1585, 325]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1954,7 +1954,7 @@ Plecs {
       Type          PeriodicAverage
       Name          "Periodic Average3"
       Show          on
-      Position      [1245, 530]
+      Position      [1490, 385]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1968,7 +1968,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Power1"
       Show          on
-      Position      [1120, 530]
+      Position      [1365, 385]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1982,7 +1982,7 @@ Plecs {
       Type          Display
       Name          "Output Power1"
       Show          on
-      Position      [1340, 530]
+      Position      [1585, 385]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2002,7 +2002,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Probe5"
       Show          on
-      Position      [55, 1090]
+      Position      [150, 885]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -2016,7 +2016,7 @@ Plecs {
       Type          PeriodicAverage
       Name          "Periodic Average4"
       Show          on
-      Position      [180, 1090]
+      Position      [275, 885]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2030,7 +2030,7 @@ Plecs {
       Type          Display
       Name          "Input Power2"
       Show          on
-      Position      [275, 1090]
+      Position      [370, 885]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2050,7 +2050,7 @@ Plecs {
       Type          PeriodicAverage
       Name          "Periodic Average5"
       Show          on
-      Position      [180, 1150]
+      Position      [275, 945]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2064,7 +2064,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Power2"
       Show          on
-      Position      [55, 1150]
+      Position      [150, 945]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -2078,7 +2078,255 @@ Plecs {
       Type          Display
       Name          "Output Power2"
       Show          on
-      Position      [275, 1150]
+      Position      [370, 945]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-31, -11; 31, 11]
+      Parameter {
+        Variable      "Notation"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Precision"
+        Value         "4"
+        Show          off
+      }
+    }
+    Component {
+      Type          SwitchLossCalculator
+      Name          "Switch Loss\nCalculator"
+      Show          on
+      Position      [695, 310]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "T_average"
+        Value         "1e-3"
+        Show          off
+      }
+      Parameter {
+        Variable      "ConductionLoss"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "SwitchingLoss"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "TurnOnLoss"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "TurnOffLoss"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "TotalLoss"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "GroupTypes"
+        Value         "1"
+        Show          off
+      }
+      Probe {
+        Component     "FET1"
+        Path          ""
+        Signals       {}
+      }
+    }
+    Component {
+      Type          SignalDemux
+      Name          "Demux6"
+      Show          off
+      Position      [780, 310]
+      Direction     right
+      Flipped       on
+      LabelPosition south
+      Frame         [-7, -15; 2, 15]
+      Parameter {
+        Variable      "Width"
+        Value         "3"
+        Show          off
+      }
+    }
+    Component {
+      Type          Display
+      Name          "Conduction losses"
+      Show          on
+      Position      [870, 270]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-31, -11; 31, 11]
+      Parameter {
+        Variable      "Notation"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Precision"
+        Value         "4"
+        Show          off
+      }
+    }
+    Component {
+      Type          Display
+      Name          "Switcing losses"
+      Show          on
+      Position      [870, 310]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-31, -11; 31, 11]
+      Parameter {
+        Variable      "Notation"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Precision"
+        Value         "4"
+        Show          off
+      }
+    }
+    Component {
+      Type          Display
+      Name          "Total losses"
+      Show          on
+      Position      [870, 355]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-31, -11; 31, 11]
+      Parameter {
+        Variable      "Notation"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Precision"
+        Value         "4"
+        Show          off
+      }
+    }
+    Component {
+      Type          SwitchLossCalculator
+      Name          "Switch Loss\nCalculator1"
+      Show          on
+      Position      [1700, 345]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "T_average"
+        Value         "1e-3"
+        Show          off
+      }
+      Parameter {
+        Variable      "ConductionLoss"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "SwitchingLoss"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "TurnOnLoss"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "TurnOffLoss"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "TotalLoss"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "GroupTypes"
+        Value         "1"
+        Show          off
+      }
+      Probe {
+        Component     "FET2"
+        Path          ""
+        Signals       {}
+      }
+    }
+    Component {
+      Type          SignalDemux
+      Name          "Demux7"
+      Show          off
+      Position      [1785, 345]
+      Direction     right
+      Flipped       on
+      LabelPosition south
+      Frame         [-7, -15; 2, 15]
+      Parameter {
+        Variable      "Width"
+        Value         "3"
+        Show          off
+      }
+    }
+    Component {
+      Type          Display
+      Name          "Conduction losses1"
+      Show          on
+      Position      [1875, 305]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-31, -11; 31, 11]
+      Parameter {
+        Variable      "Notation"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Precision"
+        Value         "4"
+        Show          off
+      }
+    }
+    Component {
+      Type          Display
+      Name          "Switcing losses1"
+      Show          on
+      Position      [1875, 345]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-31, -11; 31, 11]
+      Parameter {
+        Variable      "Notation"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Precision"
+        Value         "4"
+        Show          off
+      }
+    }
+    Component {
+      Type          Display
+      Name          "Total losses1"
+      Show          on
+      Position      [1875, 390]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2193,7 +2441,7 @@ Plecs {
       Type          Signal
       SrcComponent  "Demux1"
       SrcTerminal   2
-      Points        [165, 380; 165, 360]
+      Points        [125, 345; 125, 325]
       DstComponent  "Output Voltage"
       DstTerminal   2
     }
@@ -2208,7 +2456,7 @@ Plecs {
       Type          Signal
       SrcComponent  "Demux1"
       SrcTerminal   3
-      Points        [165, 390; 165, 415]
+      Points        [125, 355; 125, 380]
       DstComponent  "Output Current"
       DstTerminal   2
     }
@@ -2230,14 +2478,14 @@ Plecs {
       Type          Signal
       SrcComponent  "Inductor I"
       SrcTerminal   1
-      Points        [470, 375]
+      Points        [500, 200]
       Branch {
-        Points        [470, 350]
+        Points        [500, 175]
         DstComponent  "CCM"
         DstTerminal   1
       }
       Branch {
-        Points        [470, 400]
+        Points        [500, 225]
         DstComponent  "Inductor Current"
         DstTerminal   2
       }
@@ -2363,7 +2611,7 @@ Plecs {
       Type          Signal
       SrcComponent  "Demux3"
       SrcTerminal   2
-      Points        [1190, 375; 1190, 350]
+      Points        [1135, 350; 1135, 325]
       DstComponent  "Output Voltage1"
       DstTerminal   2
     }
@@ -2378,7 +2626,7 @@ Plecs {
       Type          Signal
       SrcComponent  "Demux3"
       SrcTerminal   3
-      Points        [1190, 385; 1190, 405]
+      Points        [1135, 360; 1135, 380]
       DstComponent  "Output Current1"
       DstTerminal   2
     }
@@ -2400,14 +2648,14 @@ Plecs {
       Type          Signal
       SrcComponent  "Inductor I1"
       SrcTerminal   1
-      Points        [1495, 380]
+      Points        [1555, 210]
       Branch {
-        Points        [1495, 355]
+        Points        [1555, 185]
         DstComponent  "CCM1"
         DstTerminal   1
       }
       Branch {
-        Points        [1495, 405]
+        Points        [1555, 235]
         DstComponent  "Inductor Current1"
         DstTerminal   2
       }
@@ -2438,7 +2686,7 @@ Plecs {
       Type          Wire
       SrcComponent  "FET3"
       SrcTerminal   2
-      Points        [190, 830]
+      Points        [285, 625]
       Branch {
         DstComponent  "L3"
         DstTerminal   1
@@ -2452,7 +2700,7 @@ Plecs {
       Type          Wire
       SrcComponent  "FET3"
       SrcTerminal   1
-      Points        [75, 830]
+      Points        [170, 625]
       DstComponent  "V_dc2"
       DstTerminal   1
     }
@@ -2460,15 +2708,15 @@ Plecs {
       Type          Wire
       SrcComponent  "V_dc2"
       SrcTerminal   2
-      Points        [75, 885; 190, 885]
+      Points        [170, 680; 285, 680]
       Branch {
-        Points        [325, 885]
+        Points        [420, 680]
         Branch {
           DstComponent  "C3"
           DstTerminal   2
         }
         Branch {
-          Points        [355, 885]
+          Points        [450, 680]
           DstComponent  "R3"
           DstTerminal   2
         }
@@ -2482,13 +2730,13 @@ Plecs {
       Type          Wire
       SrcComponent  "C3"
       SrcTerminal   1
-      Points        [325, 830]
+      Points        [420, 625]
       Branch {
         DstComponent  "D1"
         DstTerminal   1
       }
       Branch {
-        Points        [355, 830]
+        Points        [450, 625]
         DstComponent  "R3"
         DstTerminal   1
       }
@@ -2497,7 +2745,7 @@ Plecs {
       Type          Signal
       SrcComponent  "Pulse\nGenerator2"
       SrcTerminal   1
-      Points        [155, 910]
+      Points        [250, 705]
       DstComponent  "FET3"
       DstTerminal   3
     }
@@ -2533,7 +2781,7 @@ Plecs {
       Type          Signal
       SrcComponent  "Demux5"
       SrcTerminal   2
-      Points        [125, 1000; 125, 970]
+      Points        [220, 795; 220, 765]
       DstComponent  "Output Voltage2"
       DstTerminal   2
     }
@@ -2548,7 +2796,7 @@ Plecs {
       Type          Signal
       SrcComponent  "Demux5"
       SrcTerminal   3
-      Points        [125, 1010; 125, 1035]
+      Points        [220, 805; 220, 830]
       DstComponent  "Output Current2"
       DstTerminal   2
     }
@@ -2570,14 +2818,14 @@ Plecs {
       Type          Signal
       SrcComponent  "Inductor I2"
       SrcTerminal   1
-      Points        [450, 1110]
+      Points        [580, 755]
       Branch {
-        Points        [450, 1085]
+        Points        [580, 730]
         DstComponent  "CCM2"
         DstTerminal   1
       }
       Branch {
-        Points        [450, 1135]
+        Points        [580, 780]
         DstComponent  "Inductor Current2"
         DstTerminal   2
       }
@@ -2666,93 +2914,84 @@ Plecs {
       DstComponent  "Periodic Average5"
       DstTerminal   2
     }
-    Annotation {
-      Name          "<html><body>\n<p>0.42</p>\n<p>0.5</p>\n<p>0.56</p></body>"
-"</html>"
-      Position      [465, 205]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>400</p>\n<p>550</p>\n<p>700</p></body></"
-"html>"
-      Position      [520, 205]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>56</p>\n<p>105</p>\n<p>170</p></body></h"
-"tml>"
-      Position      [575, 205]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>D             Vout      Rload</p></body>"
-"</html>"
-      Position      [520, 165]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>Current Ripple</p></body></html>"
-      Position      [645, 165]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>Voltage Ripple</p></body></html>"
-      Position      [735, 165]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>2%</p></body></html>"
-      Position      [645, 220]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>2%</p></body></html>"
-      Position      [735, 220]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>1.5%</p></body></html>"
-      Position      [735, 190]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>1.5%</p></body></html>"
-      Position      [645, 190]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>1.8%</p></body></html>"
-      Position      [735, 205]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>1.8%</p></body></html>"
-      Position      [645, 205]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>Inductor current ripple</p></body></html"
-">"
-      Position      [845, 165]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>7.2%</p></body></html>"
-      Position      [845, 205]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>4.1%</p></body></html>"
-      Position      [845, 190]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>9%</p></body></html>"
-      Position      [845, 220]
-    } 
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux6"
+      SrcTerminal   2
+      Points        [820, 300; 820, 270]
+      DstComponent  "Conduction losses"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux6"
+      SrcTerminal   4
+      Points        [805, 320; 805, 355]
+      DstComponent  "Total losses"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Switch Loss\nCalculator"
+      SrcTerminal   1
+      DstComponent  "Demux6"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux7"
+      SrcTerminal   2
+      Points        [1825, 335; 1825, 305]
+      DstComponent  "Conduction losses1"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux7"
+      SrcTerminal   3
+      DstComponent  "Switcing losses1"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux7"
+      SrcTerminal   4
+      Points        [1810, 355; 1810, 390]
+      DstComponent  "Total losses1"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Switch Loss\nCalculator1"
+      SrcTerminal   1
+      DstComponent  "Demux7"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux6"
+      SrcTerminal   3
+      DstComponent  "Switcing losses"
+      DstTerminal   1
+    }
     Annotation {
       Name          "<html><body>\n<p>https://www.infineon.com/assets/row/publ"
 "ic/documents/60/49/infineon-imw120r030m1h-datasheet-en.pdf?fileId=5546d46269e"
 "1c019016a92fde38b669a</p></body></html>"
-      Position      [510, 630]
+      Position      [495, 450]
     } 
     Annotation {
       Name          "<html><body>\n<p>https://mm.digikey.com/Volume0/opasdata/"
 "d220001/medias/docus/725/60CPF10%2C12PbF.pdf</p></body></html>"
-      Position      [360, 650]
+      Position      [355, 480]
     } 
     Annotation {
       Name          "<html><body>\n<p>MOSFET:</p>\n<p> </p></body></html>"
-      Position      [85, 635]
+      Position      [75, 460]
     } 
     Annotation {
       Name          "<html><body>\n<p>DIODE:</p></body></html>"
-      Position      [80, 650]
+      Position      [75, 480]
     } 
     Annotation {
       Name          "<html><body>\n<p><span style=\" font-size:16px; color:#aa"
@@ -2760,92 +2999,23 @@ Plecs {
       Position      [460, 30]
     } 
     Annotation {
-      Name          "<html><body>\n<p>0.42</p>\n<p>0.5</p>\n<p>0.56</p></body>"
-"</html>"
-      Position      [1490, 210]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>400</p>\n<p>550</p>\n<p>700</p></body></"
-"html>"
-      Position      [1545, 210]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>56</p>\n<p>105</p>\n<p>170</p></body></h"
-"tml>"
-      Position      [1600, 210]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>D             Vout      Rload</p></body>"
-"</html>"
-      Position      [1545, 170]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>Current Ripple</p></body></html>"
-      Position      [1670, 170]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>Voltage Ripple</p></body></html>"
-      Position      [1760, 170]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>2%</p></body></html>"
-      Position      [1670, 225]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>2%</p></body></html>"
-      Position      [1760, 225]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>1.5%</p></body></html>"
-      Position      [1760, 195]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>1.5%</p></body></html>"
-      Position      [1670, 195]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>1.8%</p></body></html>"
-      Position      [1760, 210]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>1.8%</p></body></html>"
-      Position      [1670, 210]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>Inductor current ripple</p></body></html"
-">"
-      Position      [1870, 170]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>11%</p></body></html>"
-      Position      [1870, 210]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>16%</p></body></html>"
-      Position      [1870, 195]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>9%</p></body></html>"
-      Position      [1870, 225]
-    } 
-    Annotation {
       Name          "<html><body>\n<p>https://assets.wolfspeed.com/uploads/202"
 "4/01/Wolfspeed_C2M0025120D_data_sheet.pdf</p></body></html>"
-      Position      [1390, 630]
+      Position      [1340, 445]
     } 
     Annotation {
       Name          "<html><body>\n<p>https://www.st.com/content/ccc/resource/"
 "technical/document/datasheet/03/93/2d/32/61/6b/4c/36/CD00096472.pdf/files/CD0"
 "0096472.pdf/jcr:content/translations/en.CD00096472.pdf</p></body></html>"
-      Position      [1625, 650]
+      Position      [1575, 465]
     } 
     Annotation {
       Name          "<html><body>\n<p>MOSFET:</p>\n<p> </p></body></html>"
-      Position      [1130, 635]
+      Position      [1080, 450]
     } 
     Annotation {
       Name          "<html><body>\n<p>DIODE:</p></body></html>"
-      Position      [1125, 650]
+      Position      [1075, 465]
     } 
     Annotation {
       Name          "<html><body>\n<p><span style=\" font-size:16px; color:#00"
@@ -2853,78 +3023,9 @@ Plecs {
       Position      [1485, 35]
     } 
     Annotation {
-      Name          "<html><body>\n<p>0.42</p>\n<p>0.5</p>\n<p>0.56</p></body>"
-"</html>"
-      Position      [485, 920]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>400</p>\n<p>550</p>\n<p>700</p></body></"
-"html>"
-      Position      [540, 920]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>56</p>\n<p>105</p>\n<p>170</p></body></h"
-"tml>"
-      Position      [595, 920]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>D             Vout      Rload</p></body>"
-"</html>"
-      Position      [540, 880]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>Current Ripple</p></body></html>"
-      Position      [665, 880]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>Voltage Ripple</p></body></html>"
-      Position      [755, 880]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>2%</p></body></html>"
-      Position      [665, 935]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>2%</p></body></html>"
-      Position      [755, 935]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>1.5%</p></body></html>"
-      Position      [755, 905]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>1.5%</p></body></html>"
-      Position      [665, 905]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>1.8%</p></body></html>"
-      Position      [755, 920]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>1.8%</p></body></html>"
-      Position      [665, 920]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>Inductor current ripple</p></body></html"
-">"
-      Position      [865, 880]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>11%</p></body></html>"
-      Position      [865, 920]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>16%</p></body></html>"
-      Position      [865, 905]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>9%</p></body></html>"
-      Position      [865, 935]
-    } 
-    Annotation {
       Name          "<html><body>\n<p><span style=\" font-size:16px; color:#93"
 "0058;\">Ideal Buck-Boost converter</span></p></body></html>"
-      Position      [405, 775]
+      Position      [500, 570]
     } 
   }
 }
