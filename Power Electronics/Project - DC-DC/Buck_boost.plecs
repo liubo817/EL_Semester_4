@@ -66,9 +66,9 @@ Plecs {
   InvalidNetlistFunctionEvaluationMsg "1"
   IncompatibleInitialConditionMsg "2"
   Schematic {
-    Location      [0, 23; 1920, 989]
-    ZoomFactor    0.763607
-    SliderPosition [0, 0]
+    Location      [0, 24; 1920, 990]
+    ZoomFactor    1.49863
+    SliderPosition [-1, 822]
     ShowBrowser   off
     BrowserWidth  100
     Component {
@@ -134,7 +134,7 @@ Plecs {
       LabelPosition west
       Parameter {
         Variable      "C"
-        Value         "8e-6"
+        Value         "10e-6"
         Show          on
       }
       Parameter {
@@ -153,7 +153,7 @@ Plecs {
       LabelPosition east
       Parameter {
         Variable      "R"
-        Value         "170"
+        Value         "56"
         Show          on
       }
     }
@@ -167,7 +167,7 @@ Plecs {
       LabelPosition east
       Parameter {
         Variable      "L"
-        Value         "18e-3"
+        Value         "25e-3"
         Show          on
       }
       Parameter {
@@ -201,7 +201,7 @@ Plecs {
       }
       Parameter {
         Variable      "DutyCycle"
-        Value         "0.56"
+        Value         "0.42"
         Show          off
       }
       Parameter {
@@ -457,8 +457,8 @@ Plecs {
       Location      [0, 23; 1920, 1011]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAeAAAAAYvw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAB4AAAABEAP///wAAB4AAAANVAAAA"
+"///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAeAAAAAVvw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAB4AAAABEAP///wAAB4AAAANhAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -744,7 +744,7 @@ Plecs {
       LabelPosition west
       Parameter {
         Variable      "C"
-        Value         "8e-6"
+        Value         "10e-6"
         Show          on
       }
       Parameter {
@@ -777,7 +777,7 @@ Plecs {
       LabelPosition east
       Parameter {
         Variable      "L"
-        Value         "18e-3"
+        Value         "25e-3"
         Show          on
       }
       Parameter {
@@ -1329,7 +1329,7 @@ Plecs {
       LabelPosition east
       Parameter {
         Variable      "L"
-        Value         "18e-3"
+        Value         "25e-3"
         Show          on
       }
       Parameter {
@@ -1748,8 +1748,8 @@ Plecs {
       LabelPosition west
       Parameter {
         Variable      "C"
-        Value         "8e-6"
-        Show          off
+        Value         "10e-6"
+        Show          on
       }
       Parameter {
         Variable      "v_init"
@@ -2724,11 +2724,11 @@ Plecs {
       Position      [845, 165]
     } 
     Annotation {
-      Name          "<html><body>\n<p>11%</p></body></html>"
+      Name          "<html><body>\n<p>7.2%</p></body></html>"
       Position      [845, 205]
     } 
     Annotation {
-      Name          "<html><body>\n<p>16%</p></body></html>"
+      Name          "<html><body>\n<p>4.1%</p></body></html>"
       Position      [845, 190]
     } 
     Annotation {
