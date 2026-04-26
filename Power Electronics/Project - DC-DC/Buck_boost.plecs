@@ -66,52 +66,19 @@ Plecs {
   InvalidNetlistFunctionEvaluationMsg "1"
   IncompatibleInitialConditionMsg "2"
   Schematic {
-    Location      [0, 23; 1920, 989]
+    Location      [0, 24; 1920, 990]
     ZoomFactor    1.96257
     SliderPosition [0, 0]
     ShowBrowser   off
     BrowserWidth  100
     Component {
-      Type          DCVoltageSource
-      Name          "V_dc"
-      Show          on
-      Position      [55, 140]
-      Direction     down
-      Flipped       on
-      LabelPosition east
-      Parameter {
-        Variable      "V"
-        Value         "550"
-        Show          on
-      }
-    }
-    Component {
-      Type          Inductor
-      Name          "L1"
-      Show          on
-      Position      [120, 85]
-      Direction     left
-      Flipped       off
-      LabelPosition north
-      Parameter {
-        Variable      "L"
-        Value         "15.6e-3"
-        Show          on
-      }
-      Parameter {
-        Variable      "i_init"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
       Type          Mosfet
       Name          "FET1"
       Show          on
-      Position      [190, 140]
-      Direction     up
+      Position      [110, 30]
+      Direction     left
       Flipped       off
-      LabelPosition east
+      LabelPosition north
       Parameter {
         Variable      "Ron"
         Value         "0"
@@ -144,51 +111,27 @@ Plecs {
       }
     }
     Component {
-      Type          Capacitor
-      Name          "C1"
+      Type          DCVoltageSource
+      Name          "V_dc"
       Show          on
-      Position      [230, 85]
-      Direction     left
-      Flipped       on
-      LabelPosition north
-      Parameter {
-        Variable      "C"
-        Value         "1.61e-6"
-        Show          on
-      }
-      Parameter {
-        Variable      "v_init"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
-      Type          Inductor
-      Name          "L2"
-      Show          on
-      Position      [285, 140]
+      Position      [55, 60]
       Direction     down
-      Flipped       off
-      LabelPosition west
+      Flipped       on
+      LabelPosition east
       Parameter {
-        Variable      "L"
-        Value         "7.76e-3"
+        Variable      "V"
+        Value         "550"
         Show          on
-      }
-      Parameter {
-        Variable      "i_init"
-        Value         "0"
-        Show          off
       }
     }
     Component {
       Type          Diode
       Name          "D1"
       Show          on
-      Position      [325, 85]
-      Direction     left
+      Position      [205, 30]
+      Direction     right
       Flipped       off
-      LabelPosition south
+      LabelPosition north
       Parameter {
         Variable      "Vf"
         Value         "0"
@@ -196,7 +139,7 @@ Plecs {
       }
       Parameter {
         Variable      "Ron"
-        Value         "0"
+        Value         "0.001"
         Show          off
       }
       Parameter {
@@ -232,15 +175,15 @@ Plecs {
     }
     Component {
       Type          Capacitor
-      Name          "C2"
+      Name          "C1"
       Show          on
-      Position      [365, 130]
+      Position      [280, 60]
       Direction     down
       Flipped       on
       LabelPosition west
       Parameter {
         Variable      "C"
-        Value         "4.71e-6"
+        Value         "8e-6"
         Show          on
       }
       Parameter {
@@ -253,21 +196,40 @@ Plecs {
       Type          Resistor
       Name          "R1"
       Show          on
-      Position      [400, 140]
+      Position      [310, 60]
       Direction     up
       Flipped       off
       LabelPosition east
       Parameter {
         Variable      "R"
-        Value         "230"
+        Value         "170"
         Show          on
+      }
+    }
+    Component {
+      Type          Inductor
+      Name          "L1"
+      Show          on
+      Position      [145, 60]
+      Direction     up
+      Flipped       off
+      LabelPosition east
+      Parameter {
+        Variable      "L"
+        Value         "18e-3"
+        Show          on
+      }
+      Parameter {
+        Variable      "i_init"
+        Value         "0"
+        Show          off
       }
     }
     Component {
       Type          PulseGenerator
       Name          "Pulse\nGenerator"
       Show          on
-      Position      [140, 140]
+      Position      [55, 110]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -283,12 +245,12 @@ Plecs {
       }
       Parameter {
         Variable      "f"
-        Value         "50e3"
+        Value         "20e3"
         Show          off
       }
       Parameter {
         Variable      "DutyCycle"
-        Value         "0.6"
+        Value         "0.56"
         Show          off
       }
       Parameter {
@@ -304,153 +266,66 @@ Plecs {
     }
     Component {
       Type          PlecsProbe
-      Name          "Probe"
+      Name          "Output"
       Show          on
-      Position      [130, 260]
+      Position      [625, 240]
       Direction     right
       Flipped       off
       LabelPosition south
       Probe {
-        Component     "C2"
+        Component     "C1"
         Path          ""
         Signals       {"Capacitor voltage"}
       }
-    }
-    Component {
-      Type          Scope
-      Name          "Scope"
-      Show          on
-      Position      [195, 260]
-      Direction     up
-      Flipped       off
-      LabelPosition south
-      Frame         [-15, -15; 15, 15]
-      Location      [0, 24; 1920, 1064]
-      State         "AAAA/wAAAAD9AAAAAQAAAAEAAAIPAAAD8fwCAAAABPsAAAAUAEQAYQB0A"
-"GEAVwBpAGQAZwBlAHQBAAAANAAAA/EAAABWAP////sAAAAQAFoAbwBvAG0AQQByAGUAYQAAAAAA//"
-"///wAAADAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA/////wAAAGIA////+wAAAAw"
-"AVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAABWsAAAPxAAAABAAAAAQAAAAIAAAACPwAAAAB"
-"AAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAA=="
-      SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":173,\"Labels\":["
-"\"Delta\"],\"VisualIdxs\":[3]}"
-      PlotPalettes  "AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-      Axes          "1"
-      TimeRange     "0.0"
-      ScrollingMode "1"
-      SingleTimeAxis "1"
-      Open          "0"
-      Ts            "-1"
-      SampleLimit   "0"
-      XAxisLabel    "Time / s"
-      ShowLegend    "1"
-      Axis {
-        Name          ""
-        AutoScale     1
-        MinValue      0
-        MaxValue      1
-        Signals       {}
-        SignalTypes   [ ]
-        Untangle      0
-        KeepBaseline  off
-        BaselineValue 0
-      }
-      Fourier {
-        SingleXAxis       on
-        AxisLabel         "Frequency / Hz"
-        Scaling           0
-        PhaseDisplay      0
-        ShowFourierLegend off
-        Axis {
-          Name          ""
-          AutoScale     1
-          MinValue      0
-          MaxValue      1
-          Signals       {}
-          Untangle      0
-          KeepBaseline  off
-          BaselineValue 0
-        }
-      }
-    }
-    Component {
-      Type          PeriodicAverage
-      Name          "Periodic Average"
-      Show          on
-      Position      [215, 310]
-      Direction     up
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "T_average"
-        Value         "0.1"
-        Show          off
-      }
-    }
-    Component {
-      Type          Display
-      Name          "Output Voltage"
-      Show          on
-      Position      [315, 310]
-      Direction     up
-      Flipped       off
-      LabelPosition south
-      Frame         [-31, -11; 31, 11]
-      Parameter {
-        Variable      "Notation"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "Precision"
-        Value         "4"
-        Show          off
-      }
-    }
-    Component {
-      Type          PlecsProbe
-      Name          "Probe1"
-      Show          on
-      Position      [400, 290]
-      Direction     right
-      Flipped       off
-      LabelPosition south
       Probe {
-        Component     "L2"
+        Component     "R1"
         Path          ""
-        Signals       {"Inductor current"}
+        Signals       {"Resistor current"}
       }
     }
     Component {
       Type          Scope
-      Name          "Scope1"
+      Name          "Output graphs - voltage and current"
       Show          on
-      Position      [475, 290]
+      Position      [755, 240]
       Direction     up
       Flipped       off
       LabelPosition south
       Frame         [-15, -15; 15, 15]
       Location      [0, 23; 1920, 1011]
-      State         "AAAA/wAAAAD9AAAAAQAAAAEAAAI0AAADvfwCAAAABPsAAAAUAEQAYQB0A"
-"GEAVwBpAGQAZwBlAHQBAAAANAAAA70AAABWAP////sAAAAQAFoAbwBvAG0AQQByAGUAYQAAAAAA//"
-"///wAAADAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA/////wAAAGIA////+wAAAAw"
-"AVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAABUYAAAO9AAAABAAAAAQAAAAIAAAACPwAAAAB"
-"AAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAA=="
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAAFgA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAeAAAAAgvw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAB4AAAABEAP///wAAB4AAAAM1AAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
       SavedViews    "AAAAAgAAAAA="
       HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":173,\"Labels\":["
 "\"Delta\"],\"VisualIdxs\":[3]}"
-      PlotPalettes  "AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-      Axes          "1"
-      TimeRange     "0.0"
+      PlotPalettes  "AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+      Axes          "2"
+      TimeRange     "0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "0"
+      Open          "1"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time / s"
       ShowLegend    "1"
       Axis {
-        Name          ""
+        Name          "Load Voltage"
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          "Load Current"
         AutoScale     1
         MinValue      0
         MaxValue      1
@@ -476,27 +351,52 @@ Plecs {
           KeepBaseline  off
           BaselineValue 0
         }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
       }
     }
     Component {
-      Type          PeriodicAverage
-      Name          "Periodic Average1"
-      Show          on
-      Position      [465, 350]
-      Direction     up
-      Flipped       off
+      Type          SignalDemux
+      Name          "Demux"
+      Show          off
+      Position      [675, 240]
+      Direction     right
+      Flipped       on
       LabelPosition south
+      Frame         [-7, -10; 2, 10]
       Parameter {
-        Variable      "T_average"
-        Value         "0.1"
+        Variable      "Width"
+        Value         "2"
         Show          off
       }
     }
     Component {
-      Type          Display
-      Name          "Output current"
+      Type          PlecsProbe
+      Name          "Power"
       Show          on
-      Position      [580, 350]
+      Position      [165, 255]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Probe {
+        Component     "R1"
+        Path          ""
+        Signals       {"Resistor power"}
+      }
+    }
+    Component {
+      Type          Display
+      Name          "Output Power"
+      Show          on
+      Position      [260, 255]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -516,21 +416,195 @@ Plecs {
       Type          PlecsProbe
       Name          "Probe2"
       Show          on
-      Position      [400, 235]
+      Position      [40, 255]
       Direction     right
       Flipped       off
       LabelPosition south
       Probe {
+        Component     "C1"
+        Path          ""
+        Signals       {"Capacitor voltage"}
+      }
+      Probe {
         Component     "R1"
         Path          ""
-        Signals       {"Resistor power"}
+        Signals       {"Resistor current"}
       }
     }
     Component {
       Type          Display
-      Name          "Output Power"
+      Name          "Output voltage"
       Show          on
-      Position      [470, 235]
+      Position      [260, 200]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-31, -11; 31, 11]
+      Parameter {
+        Variable      "Notation"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Precision"
+        Value         "4"
+        Show          off
+      }
+    }
+    Component {
+      Type          PeriodicAverage
+      Name          "Output Voltage"
+      Show          on
+      Position      [165, 200]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "T_average"
+        Value         "0.1"
+        Show          off
+      }
+    }
+    Component {
+      Type          PeriodicAverage
+      Name          "Output Current"
+      Show          on
+      Position      [165, 300]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "T_average"
+        Value         "0.1"
+        Show          off
+      }
+    }
+    Component {
+      Type          Display
+      Name          "Output current"
+      Show          on
+      Position      [260, 300]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-31, -11; 31, 11]
+      Parameter {
+        Variable      "Notation"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Precision"
+        Value         "4"
+        Show          off
+      }
+    }
+    Component {
+      Type          SignalDemux
+      Name          "Demux1"
+      Show          off
+      Position      [95, 255]
+      Direction     right
+      Flipped       on
+      LabelPosition south
+      Frame         [-7, -10; 2, 10]
+      Parameter {
+        Variable      "Width"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          PlecsProbe
+      Name          "Inductor I"
+      Show          on
+      Position      [370, 245]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Probe {
+        Component     "L1"
+        Path          ""
+        Signals       {"Inductor current"}
+      }
+    }
+    Component {
+      Type          Scope
+      Name          "CCM"
+      Show          on
+      Position      [455, 220]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-15, -15; 15, 15]
+      Location      [0, 23; 1920, 1011]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAADAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAeAAAAAYvw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAB4AAAABEAP///wAAB4AAAANVAAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":165,\"Labels\":["
+"\"Delta\"],\"VisualIdxs\":[3]}"
+      PlotPalettes  "AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      Axes          "1"
+      TimeRange     "0.0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "0"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    "Time / s"
+      ShowLegend    "1"
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis       on
+        AxisLabel         "Frequency / Hz"
+        Scaling           0
+        PhaseDisplay      0
+        ShowFourierLegend off
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
+    }
+    Component {
+      Type          PeriodicAverage
+      Name          "Inductor Current"
+      Show          on
+      Position      [455, 270]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "T_average"
+        Value         "0.1"
+        Show          off
+      }
+    }
+    Component {
+      Type          Display
+      Name          "Inductor current"
+      Show          on
+      Position      [550, 270]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -550,71 +624,57 @@ Plecs {
       Type          Wire
       SrcComponent  "FET1"
       SrcTerminal   2
-      Points        [190, 185]
+      Points        [145, 30]
       Branch {
-        Points        [55, 185]
-        DstComponent  "V_dc"
-        DstTerminal   2
+        DstComponent  "L1"
+        DstTerminal   1
       }
       Branch {
-        Points        [285, 185]
-        Branch {
-          DstComponent  "L2"
-          DstTerminal   1
-        }
-        Branch {
-          Points        [365, 185]
-          Branch {
-            DstComponent  "C2"
-            DstTerminal   2
-          }
-          Branch {
-            Points        [400, 185]
-            DstComponent  "R1"
-            DstTerminal   2
-          }
-        }
+        DstComponent  "D1"
+        DstTerminal   2
       }
     }
     Connection {
       Type          Wire
       SrcComponent  "FET1"
       SrcTerminal   1
-      Points        [190, 85]
-      Branch {
-        DstComponent  "L1"
-        DstTerminal   2
-      }
-      Branch {
-        DstComponent  "C1"
-        DstTerminal   2
-      }
+      Points        [55, 30]
+      DstComponent  "V_dc"
+      DstTerminal   1
     }
     Connection {
       Type          Wire
-      SrcComponent  "L2"
+      SrcComponent  "V_dc"
       SrcTerminal   2
-      Points        [285, 85]
+      Points        [55, 85; 145, 85]
       Branch {
-        DstComponent  "C1"
-        DstTerminal   1
+        Points        [280, 85]
+        Branch {
+          DstComponent  "C1"
+          DstTerminal   2
+        }
+        Branch {
+          Points        [310, 85]
+          DstComponent  "R1"
+          DstTerminal   2
+        }
       }
       Branch {
-        DstComponent  "D1"
-        DstTerminal   1
+        DstComponent  "L1"
+        DstTerminal   2
       }
     }
     Connection {
       Type          Wire
       SrcComponent  "D1"
-      SrcTerminal   2
-      Points        [365, 85]
+      SrcTerminal   1
+      Points        [280, 30]
       Branch {
-        DstComponent  "C2"
+        DstComponent  "C1"
         DstTerminal   1
       }
       Branch {
-        Points        [400, 85]
+        Points        [310, 30]
         DstComponent  "R1"
         DstTerminal   1
       }
@@ -623,97 +683,166 @@ Plecs {
       Type          Signal
       SrcComponent  "Pulse\nGenerator"
       SrcTerminal   1
+      Points        [110, 110]
       DstComponent  "FET1"
       DstTerminal   3
     }
     Connection {
-      Type          Wire
-      SrcComponent  "V_dc"
+      Type          Signal
+      SrcComponent  "Output"
       SrcTerminal   1
-      Points        [55, 85]
-      DstComponent  "L1"
+      DstComponent  "Demux"
       DstTerminal   1
     }
     Connection {
       Type          Signal
-      SrcComponent  "Periodic Average"
+      SrcComponent  "Demux"
+      SrcTerminal   2
+      DstComponent  "Output graphs - voltage and current"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux"
+      SrcTerminal   3
+      DstComponent  "Output graphs - voltage and current"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Power"
       SrcTerminal   1
+      DstComponent  "Output Power"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Output Voltage"
+      SrcTerminal   1
+      DstComponent  "Output voltage"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux1"
+      SrcTerminal   2
+      Points        [110, 250; 110, 200]
       DstComponent  "Output Voltage"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Probe2"
+      SrcTerminal   1
+      DstComponent  "Demux1"
       DstTerminal   1
     }
     Connection {
       Type          Signal
-      SrcComponent  "Probe"
-      SrcTerminal   1
-      Points        [165, 260]
-      Branch {
-        DstComponent  "Scope"
-        DstTerminal   1
-      }
-      Branch {
-        Points        [165, 310]
-        DstComponent  "Periodic Average"
-        DstTerminal   2
-      }
+      SrcComponent  "Demux1"
+      SrcTerminal   3
+      Points        [110, 260; 110, 300]
+      DstComponent  "Output Current"
+      DstTerminal   2
     }
     Connection {
       Type          Signal
-      SrcComponent  "Periodic Average1"
+      SrcComponent  "Output Current"
       SrcTerminal   1
       DstComponent  "Output current"
       DstTerminal   1
     }
     Connection {
       Type          Signal
-      SrcComponent  "Probe1"
+      SrcComponent  "Inductor Current"
       SrcTerminal   1
-      Points        [435, 290]
-      Branch {
-        DstComponent  "Scope1"
-        DstTerminal   1
-      }
-      Branch {
-        DstComponent  "Periodic Average1"
-        DstTerminal   2
-      }
+      DstComponent  "Inductor current"
+      DstTerminal   1
     }
     Connection {
       Type          Signal
-      SrcComponent  "Probe2"
+      SrcComponent  "Inductor I"
       SrcTerminal   1
-      DstComponent  "Output Power"
-      DstTerminal   1
+      Points        [415, 245]
+      Branch {
+        Points        [415, 220]
+        DstComponent  "CCM"
+        DstTerminal   1
+      }
+      Branch {
+        Points        [415, 270]
+        DstComponent  "Inductor Current"
+        DstTerminal   2
+      }
     }
     Annotation {
-      Name          "<html><body>\n<p>Duty Cycle</p></body></html>"
-      Position      [555, 60]
+      Name          "<html><body>\n<p>0.42</p>\n<p>0.5</p>\n<p>0.56</p></body>"
+"</html>"
+      Position      [410, 75]
     } 
     Annotation {
-      Name          "<html><body>\n<p>Resistor Load</p></body></html>"
-      Position      [635, 60]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>0.35</p>\n<p>0.5</p>\n<p>0.6</p></body><"
-"/html>"
-      Position      [555, 95]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>31</p>\n<p>103</p>\n<p>230</p></body></h"
-"tml>"
-      Position      [635, 95]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>Frequency = 50kHz</p></body></html>"
-      Position      [640, 45]
-    } 
-    Annotation {
-      Name          "<html><body>\n<p>296</p>\n<p>550</p>\n<p>825</p></body></"
+      Name          "<html><body>\n<p>400</p>\n<p>550</p>\n<p>700</p></body></"
 "html>"
-      Position      [720, 95]
+      Position      [465, 75]
     } 
     Annotation {
-      Name          "<html><body>\n<p>Output voltage</p></body></html>"
-      Position      [720, 60]
+      Name          "<html><body>\n<p>56</p>\n<p>105</p>\n<p>170</p></body></h"
+"tml>"
+      Position      [520, 75]
+    } 
+    Annotation {
+      Name          "<html><body>\n<p>D             Vout      Rload</p></body>"
+"</html>"
+      Position      [465, 35]
+    } 
+    Annotation {
+      Name          "<html><body>\n<p>Current Ripple</p></body></html>"
+      Position      [590, 35]
+    } 
+    Annotation {
+      Name          "<html><body>\n<p>Voltage Ripple</p></body></html>"
+      Position      [680, 35]
+    } 
+    Annotation {
+      Name          "<html><body>\n<p>2%</p></body></html>"
+      Position      [590, 90]
+    } 
+    Annotation {
+      Name          "<html><body>\n<p>2%</p></body></html>"
+      Position      [680, 90]
+    } 
+    Annotation {
+      Name          "<html><body>\n<p>1.5%</p></body></html>"
+      Position      [680, 60]
+    } 
+    Annotation {
+      Name          "<html><body>\n<p>1.5%</p></body></html>"
+      Position      [590, 60]
+    } 
+    Annotation {
+      Name          "<html><body>\n<p>1.8%</p></body></html>"
+      Position      [680, 75]
+    } 
+    Annotation {
+      Name          "<html><body>\n<p>1.8%</p></body></html>"
+      Position      [590, 75]
+    } 
+    Annotation {
+      Name          "<html><body>\n<p>Inductor current ripple</p></body></html"
+">"
+      Position      [790, 35]
+    } 
+    Annotation {
+      Name          "<html><body>\n<p>11%</p></body></html>"
+      Position      [790, 75]
+    } 
+    Annotation {
+      Name          "<html><body>\n<p>16%</p></body></html>"
+      Position      [790, 60]
+    } 
+    Annotation {
+      Name          "<html><body>\n<p>9%</p></body></html>"
+      Position      [790, 90]
     } 
   }
 }
