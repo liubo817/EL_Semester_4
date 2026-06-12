@@ -1,6 +1,6 @@
 Plecs {
   Name          "buckboost"
-  Version       "5.0"
+  Version       "4.9"
   CircuitModel  "ContStateSpace"
   StartTime     "0.0"
   TimeSpan      "1.0"
@@ -31,7 +31,6 @@ Plecs {
   InitializationCommands ""
   InitialState  "1"
   SystemState   ""
-  JacobianComputation "2"
   TaskingMode   "1"
   TaskConfigurations ""
   CodeGenParameterInlining "2"
@@ -53,22 +52,10 @@ Plecs {
   AlgebraicLoopTolerance "1e-6"
   ScriptsDialogGeometry ""
   ScriptsDialogSplitterPos "0"
-  MixedSignalSolverBypassOperatingPoint "1"
-  MixedSignalSolverInitialConditions "2"
-  MixedSignalSolverMaxNewtonIterations "25"
-  MixedSignalSolverNumThreads "-1"
-  OperatingPointMaxNewtonIterations "50"
-  OperatingPointRelativeNewtonTolerance "1e-3"
-  OperatingPointAbsoluteNewtonTolerance "1e-12"
-  OperatingPointNodalVoltageNewtonTolerance "1e-6"
-  SpiceTemperature "27"
-  NetlistParserDetails "2"
-  InvalidNetlistFunctionEvaluationMsg "1"
-  IncompatibleInitialConditionMsg "2"
   Schematic {
-    Location      [0, 23; 1920, 989]
+    Location      [0, 24; 1920, 990]
     ZoomFactor    1.49863
-    SliderPosition [0, -1]
+    SliderPosition [0, 306]
     ShowBrowser   off
     BrowserWidth  100
     Component {
@@ -166,11 +153,6 @@ Plecs {
         Show          off
       }
       Parameter {
-        Variable      "Np"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
         Variable      "T_init"
         Value         ""
         Show          off
@@ -202,11 +184,6 @@ Plecs {
       Parameter {
         Variable      "Rth"
         Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Np"
-        Value         "1"
         Show          off
       }
       Parameter {
@@ -250,7 +227,7 @@ Plecs {
       }
       Parameter {
         Variable      "DutyCycle"
-        Value         "0.5"
+        Value         "0.8"
         Show          off
       }
       Parameter {
@@ -275,7 +252,7 @@ Plecs {
       Probe {
         Component     "R1"
         Path          ""
-        Signals       {"Resistor voltage", "Resistor current"}
+        Signals       {"Resistor current", "Resistor voltage"}
       }
     }
     Component {
@@ -286,12 +263,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Frame         [-15, -15; 15, 15]
-      Location      [448, 216; 798, 447]
+      Location      [0, 24; 1920, 1030]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
-"G0AQQByAGUAYQAAAAAA/////wAAAFgA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAAAV4AAADIAAAA"
+"G0AQQByAGUAYQAAAAAA/////wAAAFkA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAAAAAAAAPw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAAB4AAAAPPAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -366,7 +342,6 @@ Plecs {
       Direction     right
       Flipped       on
       LabelPosition south
-      Frame         [-7, -10; 2, 10]
       Parameter {
         Variable      "Width"
         Value         "2"
@@ -400,7 +375,6 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Frame         [-15, -15; 15, 15]
       Location      [448, 216; 798, 474]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAFgA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
@@ -480,7 +454,6 @@ Plecs {
       Direction     right
       Flipped       on
       LabelPosition south
-      Frame         [-7, -10; 2, 10]
       Parameter {
         Variable      "Width"
         Value         "2"
@@ -514,12 +487,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Frame         [-15, -15; 15, 15]
-      Location      [0, 24; 1536, 943]
+      Location      [0, 31; 820, 339]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
-"G0AQQByAGUAYQAAAAAA/////wAAAFgA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAABgAAAAN4AAAA"
+"G0AQQByAGUAYQAAAAAA/////wAAAFkA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAAAAAAAAPw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAAAzQAAAEVAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -537,7 +509,7 @@ Plecs {
       XAxisLabel    "Time / s"
       ShowLegend    "1"
       Axis {
-        Name          ""
+        Name          "Source V"
         AutoScale     1
         MinValue      0
         MaxValue      1
@@ -548,7 +520,7 @@ Plecs {
         BaselineValue 0
       }
       Axis {
-        Name          ""
+        Name          "Load V"
         AutoScale     1
         MinValue      0
         MaxValue      1
@@ -594,7 +566,6 @@ Plecs {
       Direction     right
       Flipped       on
       LabelPosition south
-      Frame         [-7, -10; 2, 10]
       Parameter {
         Variable      "Width"
         Value         "2"
@@ -605,7 +576,7 @@ Plecs {
       Type          DCVoltageSource
       Name          "V_dc1"
       Show          on
-      Position      [25, 245]
+      Position      [25, 280]
       Direction     down
       Flipped       on
       LabelPosition east
@@ -619,7 +590,7 @@ Plecs {
       Type          Resistor
       Name          "R2"
       Show          on
-      Position      [265, 245]
+      Position      [265, 280]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -633,7 +604,7 @@ Plecs {
       Type          Capacitor
       Name          "C2"
       Show          on
-      Position      [245, 245]
+      Position      [245, 280]
       Direction     down
       Flipped       on
       LabelPosition west
@@ -652,7 +623,7 @@ Plecs {
       Type          Mosfet
       Name          "FET2"
       Show          on
-      Position      [70, 215]
+      Position      [70, 250]
       Direction     left
       Flipped       off
       LabelPosition north
@@ -677,11 +648,6 @@ Plecs {
         Show          off
       }
       Parameter {
-        Variable      "Np"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
         Variable      "T_init"
         Value         ""
         Show          off
@@ -691,7 +657,7 @@ Plecs {
       Type          Diode
       Name          "D2"
       Show          on
-      Position      [210, 215]
+      Position      [210, 250]
       Direction     left
       Flipped       off
       LabelPosition south
@@ -716,11 +682,6 @@ Plecs {
         Show          off
       }
       Parameter {
-        Variable      "Np"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
         Variable      "T_init"
         Value         ""
         Show          off
@@ -740,7 +701,7 @@ Plecs {
       Type          PulseGenerator
       Name          "Pulse\nGenerator1"
       Show          on
-      Position      [45, 290]
+      Position      [45, 325]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -779,7 +740,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Load V and I1"
       Show          on
-      Position      [335, 215]
+      Position      [335, 250]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -793,11 +754,10 @@ Plecs {
       Type          Scope
       Name          "Scope3"
       Show          on
-      Position      [435, 215]
+      Position      [435, 250]
       Direction     up
       Flipped       off
       LabelPosition south
-      Frame         [-15, -15; 15, 15]
       Location      [0, 24; 1920, 1030]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAFgA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
@@ -873,11 +833,10 @@ Plecs {
       Type          SignalDemux
       Name          "Demux3"
       Show          off
-      Position      [385, 215]
+      Position      [385, 250]
       Direction     right
       Flipped       on
       LabelPosition south
-      Frame         [-7, -10; 2, 10]
       Parameter {
         Variable      "Width"
         Value         "2"
@@ -888,7 +847,7 @@ Plecs {
       Type          PlecsProbe
       Name          "L I and C V1"
       Show          on
-      Position      [335, 275]
+      Position      [335, 310]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -907,28 +866,27 @@ Plecs {
       Type          Scope
       Name          "Scope4"
       Show          on
-      Position      [435, 275]
+      Position      [435, 310]
       Direction     up
       Flipped       off
       LabelPosition south
-      Frame         [-15, -15; 15, 15]
-      Location      [0, 24; 1536, 910]
+      Location      [0, 24; 1536, 919]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
-"G0AQQByAGUAYQAAAAAA/////wAAAFgA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAYAAAAAgvw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABgAAAABEAP///wAABgAAAALPAAAA"
+"G0AQQByAGUAYQAAAAAA/////wAAAFkA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAYAAAAAYfw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABgAAAABEAP///wAABgAAAAL5AAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":173,\"Labels\":["
-"\"Delta\"],\"VisualIdxs\":[3]}"
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":173,\"Labels\":[\""
+"Delta\"],\"VisualIdxs\":[3]}"
       PlotPalettes  "AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
       Axes          "2"
       TimeRange     "0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "1"
+      Open          "0"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time / s"
@@ -987,11 +945,10 @@ Plecs {
       Type          SignalDemux
       Name          "Demux4"
       Show          off
-      Position      [385, 275]
+      Position      [385, 310]
       Direction     right
       Flipped       on
       LabelPosition south
-      Frame         [-7, -10; 2, 10]
       Parameter {
         Variable      "Width"
         Value         "2"
@@ -1002,7 +959,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Source V Load V1"
       Show          on
-      Position      [335, 330]
+      Position      [335, 365]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1021,11 +978,10 @@ Plecs {
       Type          Scope
       Name          "Scope5"
       Show          on
-      Position      [435, 330]
+      Position      [435, 365]
       Direction     up
       Flipped       off
       LabelPosition south
-      Frame         [-15, -15; 15, 15]
       Location      [0, 24; 1536, 943]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAFgA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
@@ -1101,11 +1057,10 @@ Plecs {
       Type          SignalDemux
       Name          "Demux5"
       Show          off
-      Position      [385, 330]
+      Position      [385, 365]
       Direction     right
       Flipped       on
       LabelPosition south
-      Frame         [-7, -10; 2, 10]
       Parameter {
         Variable      "Width"
         Value         "2"
@@ -1116,7 +1071,7 @@ Plecs {
       Type          Diode
       Name          "D3"
       Show          on
-      Position      [95, 245]
+      Position      [95, 280]
       Direction     down
       Flipped       off
       LabelPosition east
@@ -1141,11 +1096,6 @@ Plecs {
         Show          off
       }
       Parameter {
-        Variable      "Np"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
         Variable      "T_init"
         Value         ""
         Show          off
@@ -1165,7 +1115,7 @@ Plecs {
       Type          Mosfet
       Name          "FET3"
       Show          on
-      Position      [185, 245]
+      Position      [185, 280]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -1190,11 +1140,6 @@ Plecs {
         Show          off
       }
       Parameter {
-        Variable      "Np"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
         Variable      "T_init"
         Value         ""
         Show          off
@@ -1204,7 +1149,7 @@ Plecs {
       Type          Inductor
       Name          "L2"
       Show          on
-      Position      [160, 215]
+      Position      [160, 250]
       Direction     left
       Flipped       off
       LabelPosition north
@@ -1223,7 +1168,7 @@ Plecs {
       Type          DCVoltageSource
       Name          "V_dc2"
       Show          on
-      Position      [25, 445]
+      Position      [25, 520]
       Direction     down
       Flipped       on
       LabelPosition east
@@ -1237,7 +1182,7 @@ Plecs {
       Type          Resistor
       Name          "R3"
       Show          on
-      Position      [265, 445]
+      Position      [265, 520]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -1251,7 +1196,7 @@ Plecs {
       Type          Capacitor
       Name          "C3"
       Show          on
-      Position      [210, 445]
+      Position      [210, 520]
       Direction     down
       Flipped       on
       LabelPosition west
@@ -1270,7 +1215,7 @@ Plecs {
       Type          Inductor
       Name          "L3"
       Show          on
-      Position      [65, 415]
+      Position      [65, 490]
       Direction     left
       Flipped       off
       LabelPosition north
@@ -1289,7 +1234,7 @@ Plecs {
       Type          Mosfet
       Name          "FET4"
       Show          on
-      Position      [110, 445]
+      Position      [110, 520]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -1314,11 +1259,6 @@ Plecs {
         Show          off
       }
       Parameter {
-        Variable      "Np"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
         Variable      "T_init"
         Value         ""
         Show          off
@@ -1328,7 +1268,7 @@ Plecs {
       Type          PulseGenerator
       Name          "Pulse\nGenerator2"
       Show          on
-      Position      [45, 490]
+      Position      [45, 565]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1349,7 +1289,7 @@ Plecs {
       }
       Parameter {
         Variable      "DutyCycle"
-        Value         "0.3"
+        Value         "0.7"
         Show          off
       }
       Parameter {
@@ -1367,7 +1307,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Load V and I2"
       Show          on
-      Position      [335, 415]
+      Position      [335, 490]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1381,11 +1321,10 @@ Plecs {
       Type          Scope
       Name          "Scope6"
       Show          on
-      Position      [435, 415]
+      Position      [435, 490]
       Direction     up
       Flipped       off
       LabelPosition south
-      Frame         [-15, -15; 15, 15]
       Location      [448, 216; 798, 447]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAFgA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
@@ -1461,11 +1400,10 @@ Plecs {
       Type          SignalDemux
       Name          "Demux6"
       Show          off
-      Position      [385, 415]
+      Position      [385, 490]
       Direction     right
       Flipped       on
       LabelPosition south
-      Frame         [-7, -10; 2, 10]
       Parameter {
         Variable      "Width"
         Value         "2"
@@ -1476,7 +1414,7 @@ Plecs {
       Type          PlecsProbe
       Name          "L I and C V2"
       Show          on
-      Position      [335, 475]
+      Position      [335, 550]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1495,11 +1433,10 @@ Plecs {
       Type          Scope
       Name          "Scope7"
       Show          on
-      Position      [435, 475]
+      Position      [435, 550]
       Direction     up
       Flipped       off
       LabelPosition south
-      Frame         [-15, -15; 15, 15]
       Location      [0, 24; 1536, 901]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAFgA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
@@ -1575,11 +1512,10 @@ Plecs {
       Type          SignalDemux
       Name          "Demux7"
       Show          off
-      Position      [385, 475]
+      Position      [385, 550]
       Direction     right
       Flipped       on
       LabelPosition south
-      Frame         [-7, -10; 2, 10]
       Parameter {
         Variable      "Width"
         Value         "2"
@@ -1590,7 +1526,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Source V Load V2"
       Show          on
-      Position      [335, 530]
+      Position      [335, 605]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1609,16 +1545,15 @@ Plecs {
       Type          Scope
       Name          "Scope8"
       Show          on
-      Position      [435, 530]
+      Position      [435, 605]
       Direction     up
       Flipped       off
       LabelPosition south
-      Frame         [-15, -15; 15, 15]
-      Location      [0, 24; 1536, 943]
+      Location      [0, 31; 633, 341]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
-"G0AQQByAGUAYQAAAAAA/////wAAAFgA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAABgAAAAN4AAAA"
+"G0AQQByAGUAYQAAAAAA/////wAAAFkA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAAAAAAAAPw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAAAnkAAAEXAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -1636,7 +1571,7 @@ Plecs {
       XAxisLabel    "Time / s"
       ShowLegend    "1"
       Axis {
-        Name          ""
+        Name          "Source V"
         AutoScale     1
         MinValue      0
         MaxValue      1
@@ -1647,7 +1582,7 @@ Plecs {
         BaselineValue 0
       }
       Axis {
-        Name          ""
+        Name          "Load V"
         AutoScale     1
         MinValue      0
         MaxValue      1
@@ -1689,11 +1624,10 @@ Plecs {
       Type          SignalDemux
       Name          "Demux8"
       Show          off
-      Position      [385, 530]
+      Position      [385, 605]
       Direction     right
       Flipped       on
       LabelPosition south
-      Frame         [-7, -10; 2, 10]
       Parameter {
         Variable      "Width"
         Value         "2"
@@ -1704,7 +1638,7 @@ Plecs {
       Type          Capacitor
       Name          "C4"
       Show          on
-      Position      [145, 415]
+      Position      [145, 490]
       Direction     right
       Flipped       on
       LabelPosition south
@@ -1723,7 +1657,7 @@ Plecs {
       Type          Diode
       Name          "D4"
       Show          on
-      Position      [165, 445]
+      Position      [165, 520]
       Direction     up
       Flipped       off
       LabelPosition west
@@ -1748,11 +1682,6 @@ Plecs {
         Show          off
       }
       Parameter {
-        Variable      "Np"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
         Variable      "T_init"
         Value         ""
         Show          off
@@ -1772,7 +1701,7 @@ Plecs {
       Type          Inductor
       Name          "L4"
       Show          on
-      Position      [185, 415]
+      Position      [185, 490]
       Direction     left
       Flipped       off
       LabelPosition north
@@ -1825,7 +1754,7 @@ Plecs {
       Type          Display
       Name          "Display2"
       Show          on
-      Position      [565, 380]
+      Position      [580, 455]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1845,7 +1774,7 @@ Plecs {
       Type          PeriodicAverage
       Name          "Periodic Average1"
       Show          on
-      Position      [500, 380]
+      Position      [500, 455]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -1859,7 +1788,7 @@ Plecs {
       Type          DCVoltageSource
       Name          "V_dc3"
       Show          on
-      Position      [25, 635]
+      Position      [25, 730]
       Direction     down
       Flipped       on
       LabelPosition east
@@ -1873,7 +1802,7 @@ Plecs {
       Type          Resistor
       Name          "R4"
       Show          on
-      Position      [265, 635]
+      Position      [265, 730]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -1887,7 +1816,7 @@ Plecs {
       Type          Capacitor
       Name          "C5"
       Show          on
-      Position      [245, 635]
+      Position      [245, 730]
       Direction     down
       Flipped       on
       LabelPosition west
@@ -1906,7 +1835,7 @@ Plecs {
       Type          PulseGenerator
       Name          "Pulse\nGenerator3"
       Show          on
-      Position      [45, 680]
+      Position      [45, 775]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1945,7 +1874,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Load V and I3"
       Show          on
-      Position      [335, 605]
+      Position      [335, 700]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1959,11 +1888,10 @@ Plecs {
       Type          Scope
       Name          "Scope9"
       Show          on
-      Position      [435, 605]
+      Position      [435, 700]
       Direction     up
       Flipped       off
       LabelPosition south
-      Frame         [-15, -15; 15, 15]
       Location      [0, 24; 1920, 1064]
       State         "AAAA/wAAAAD9AAAAAQAAAAEAAAJlAAAD8fwCAAAABPsAAAAUAEQAYQB0A"
 "GEAVwBpAGQAZwBlAHQBAAAANAAAA/EAAABWAP////sAAAAQAFoAbwBvAG0AQQByAGUAYQAAAAAA//"
@@ -2038,11 +1966,10 @@ Plecs {
       Type          SignalDemux
       Name          "Demux9"
       Show          off
-      Position      [385, 605]
+      Position      [385, 700]
       Direction     right
       Flipped       on
       LabelPosition south
-      Frame         [-7, -10; 2, 10]
       Parameter {
         Variable      "Width"
         Value         "2"
@@ -2053,7 +1980,7 @@ Plecs {
       Type          PlecsProbe
       Name          "L I and C V3"
       Show          on
-      Position      [335, 665]
+      Position      [335, 760]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -2072,11 +1999,10 @@ Plecs {
       Type          Scope
       Name          "Scope10"
       Show          on
-      Position      [435, 665]
+      Position      [435, 760]
       Direction     up
       Flipped       off
       LabelPosition south
-      Frame         [-15, -15; 15, 15]
       Location      [0, 24; 1536, 955]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAFgA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
@@ -2152,11 +2078,10 @@ Plecs {
       Type          SignalDemux
       Name          "Demux10"
       Show          off
-      Position      [385, 665]
+      Position      [385, 760]
       Direction     right
       Flipped       on
       LabelPosition south
-      Frame         [-7, -10; 2, 10]
       Parameter {
         Variable      "Width"
         Value         "2"
@@ -2167,7 +2092,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Source V Load V3"
       Show          on
-      Position      [335, 720]
+      Position      [335, 815]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -2186,11 +2111,10 @@ Plecs {
       Type          Scope
       Name          "Scope11"
       Show          on
-      Position      [435, 720]
+      Position      [435, 815]
       Direction     up
       Flipped       off
       LabelPosition south
-      Frame         [-15, -15; 15, 15]
       Location      [0, 24; 1536, 943]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAFgA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
@@ -2266,11 +2190,10 @@ Plecs {
       Type          SignalDemux
       Name          "Demux11"
       Show          off
-      Position      [385, 720]
+      Position      [385, 815]
       Direction     right
       Flipped       on
       LabelPosition south
-      Frame         [-7, -10; 2, 10]
       Parameter {
         Variable      "Width"
         Value         "2"
@@ -2281,7 +2204,7 @@ Plecs {
       Type          Inductor
       Name          "L5"
       Show          on
-      Position      [210, 605]
+      Position      [210, 700]
       Direction     left
       Flipped       off
       LabelPosition north
@@ -2300,7 +2223,7 @@ Plecs {
       Type          Mosfet
       Name          "FET5"
       Show          on
-      Position      [85, 635]
+      Position      [85, 730]
       Direction     down
       Flipped       off
       LabelPosition west
@@ -2325,11 +2248,6 @@ Plecs {
         Show          off
       }
       Parameter {
-        Variable      "Np"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
         Variable      "T_init"
         Value         ""
         Show          off
@@ -2339,7 +2257,7 @@ Plecs {
       Type          Diode
       Name          "D5"
       Show          on
-      Position      [185, 635]
+      Position      [185, 730]
       Direction     down
       Flipped       off
       LabelPosition east
@@ -2364,11 +2282,6 @@ Plecs {
         Show          off
       }
       Parameter {
-        Variable      "Np"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
         Variable      "T_init"
         Value         ""
         Show          off
@@ -2388,7 +2301,7 @@ Plecs {
       Type          Diode
       Name          "D6"
       Show          on
-      Position      [125, 605]
+      Position      [125, 700]
       Direction     left
       Flipped       off
       LabelPosition south
@@ -2413,11 +2326,6 @@ Plecs {
         Show          off
       }
       Parameter {
-        Variable      "Np"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
         Variable      "T_init"
         Value         ""
         Show          off
@@ -2437,7 +2345,7 @@ Plecs {
       Type          Inductor
       Name          "L6"
       Show          on
-      Position      [45, 605]
+      Position      [45, 700]
       Direction     left
       Flipped       off
       LabelPosition north
@@ -2456,7 +2364,7 @@ Plecs {
       Type          Capacitor
       Name          "C6"
       Show          on
-      Position      [145, 635]
+      Position      [145, 730]
       Direction     down
       Flipped       on
       LabelPosition west
@@ -2475,7 +2383,7 @@ Plecs {
       Type          Mosfet
       Name          "FET6"
       Show          on
-      Position      [165, 605]
+      Position      [165, 700]
       Direction     left
       Flipped       off
       LabelPosition north
@@ -2500,11 +2408,6 @@ Plecs {
         Show          off
       }
       Parameter {
-        Variable      "Np"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
         Variable      "T_init"
         Value         ""
         Show          off
@@ -2514,7 +2417,7 @@ Plecs {
       Type          Display
       Name          "Display3"
       Show          on
-      Position      [565, 570]
+      Position      [565, 665]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2534,7 +2437,7 @@ Plecs {
       Type          PeriodicAverage
       Name          "Periodic Average2"
       Show          on
-      Position      [500, 570]
+      Position      [500, 665]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2548,7 +2451,7 @@ Plecs {
       Type          Display
       Name          "Display4"
       Show          on
-      Position      [565, 180]
+      Position      [565, 215]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2568,7 +2471,7 @@ Plecs {
       Type          PeriodicAverage
       Name          "Periodic Average3"
       Show          on
-      Position      [500, 180]
+      Position      [500, 215]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2704,7 +2607,7 @@ Plecs {
       Type          Wire
       SrcComponent  "V_dc1"
       SrcTerminal   1
-      Points        [25, 215]
+      Points        [25, 250]
       DstComponent  "FET2"
       DstTerminal   1
     }
@@ -2712,11 +2615,11 @@ Plecs {
       Type          Wire
       SrcComponent  "R2"
       SrcTerminal   2
-      Points        [245, 265]
+      Points        [245, 300]
       Branch {
-        Points        [185, 265]
+        Points        [185, 300]
         Branch {
-          Points        [95, 265]
+          Points        [95, 300]
           Branch {
             DstComponent  "V_dc1"
             DstTerminal   2
@@ -2796,7 +2699,7 @@ Plecs {
       Type          Wire
       SrcComponent  "FET2"
       SrcTerminal   2
-      Points        [95, 215]
+      Points        [95, 250]
       Branch {
         DstComponent  "L2"
         DstTerminal   1
@@ -2810,14 +2713,14 @@ Plecs {
       Type          Signal
       SrcComponent  "Pulse\nGenerator1"
       SrcTerminal   1
-      Points        [90, 290]
+      Points        [90, 325]
       Branch {
-        Points        [90, 270; 70, 270]
+        Points        [90, 305; 70, 305]
         DstComponent  "FET2"
         DstTerminal   3
       }
       Branch {
-        Points        [150, 290]
+        Points        [150, 325]
         DstComponent  "FET3"
         DstTerminal   3
       }
@@ -2826,7 +2729,7 @@ Plecs {
       Type          Wire
       SrcComponent  "R2"
       SrcTerminal   1
-      Points        [265, 215; 245, 215]
+      Points        [265, 250; 245, 250]
       Branch {
         DstComponent  "C2"
         DstTerminal   1
@@ -2840,7 +2743,7 @@ Plecs {
       Type          Wire
       SrcComponent  "D2"
       SrcTerminal   1
-      Points        [185, 215]
+      Points        [185, 250]
       Branch {
         DstComponent  "FET3"
         DstTerminal   1
@@ -2910,7 +2813,7 @@ Plecs {
       Type          Signal
       SrcComponent  "Pulse\nGenerator2"
       SrcTerminal   1
-      Points        [75, 490]
+      Points        [75, 565]
       DstComponent  "FET4"
       DstTerminal   3
     }
@@ -2918,7 +2821,7 @@ Plecs {
       Type          Wire
       SrcComponent  "D4"
       SrcTerminal   1
-      Points        [165, 415]
+      Points        [165, 490]
       Branch {
         DstComponent  "L4"
         DstTerminal   1
@@ -2932,7 +2835,7 @@ Plecs {
       Type          Wire
       SrcComponent  "R3"
       SrcTerminal   1
-      Points        [265, 415; 210, 415]
+      Points        [265, 490; 210, 490]
       Branch {
         DstComponent  "C3"
         DstTerminal   1
@@ -2946,7 +2849,7 @@ Plecs {
       Type          Wire
       SrcComponent  "FET4"
       SrcTerminal   1
-      Points        [110, 415]
+      Points        [110, 490]
       Branch {
         DstComponent  "C4"
         DstTerminal   1
@@ -2960,7 +2863,7 @@ Plecs {
       Type          Wire
       SrcComponent  "L3"
       SrcTerminal   1
-      Points        [25, 415]
+      Points        [25, 490]
       DstComponent  "V_dc2"
       DstTerminal   1
     }
@@ -2968,19 +2871,19 @@ Plecs {
       Type          Wire
       SrcComponent  "V_dc2"
       SrcTerminal   2
-      Points        [110, 465]
+      Points        [110, 540]
       Branch {
         DstComponent  "FET4"
         DstTerminal   2
       }
       Branch {
-        Points        [165, 465]
+        Points        [165, 540]
         Branch {
           DstComponent  "D4"
           DstTerminal   2
         }
         Branch {
-          Points        [210, 465]
+          Points        [210, 540]
           Branch {
             DstComponent  "C3"
             DstTerminal   2
@@ -3025,13 +2928,13 @@ Plecs {
       Type          Signal
       SrcComponent  "Demux6"
       SrcTerminal   2
-      Points        [405, 410]
+      Points        [405, 485]
       Branch {
         DstComponent  "Scope6"
         DstTerminal   1
       }
       Branch {
-        Points        [405, 380]
+        Points        [405, 455]
         DstComponent  "Periodic Average1"
         DstTerminal   2
       }
@@ -3040,13 +2943,13 @@ Plecs {
       Type          Wire
       SrcComponent  "R4"
       SrcTerminal   2
-      Points        [245, 655]
+      Points        [245, 750]
       Branch {
-        Points        [185, 655]
+        Points        [185, 750]
         Branch {
-          Points        [145, 655]
+          Points        [145, 750]
           Branch {
-            Points        [85, 655]
+            Points        [85, 750]
             Branch {
               DstComponent  "V_dc3"
               DstTerminal   2
@@ -3131,7 +3034,7 @@ Plecs {
       Type          Wire
       SrcComponent  "R4"
       SrcTerminal   1
-      Points        [265, 605; 245, 605]
+      Points        [265, 700; 245, 700]
       Branch {
         DstComponent  "C5"
         DstTerminal   1
@@ -3152,7 +3055,7 @@ Plecs {
       Type          Wire
       SrcComponent  "L6"
       SrcTerminal   2
-      Points        [85, 605]
+      Points        [85, 700]
       Branch {
         DstComponent  "D6"
         DstTerminal   1
@@ -3166,7 +3069,7 @@ Plecs {
       Type          Wire
       SrcComponent  "D5"
       SrcTerminal   2
-      Points        [185, 605]
+      Points        [185, 700]
       Branch {
         DstComponent  "L5"
         DstTerminal   1
@@ -3180,7 +3083,7 @@ Plecs {
       Type          Wire
       SrcComponent  "D6"
       SrcTerminal   2
-      Points        [145, 605]
+      Points        [145, 700]
       Branch {
         DstComponent  "FET6"
         DstTerminal   1
@@ -3194,13 +3097,13 @@ Plecs {
       Type          Signal
       SrcComponent  "Pulse\nGenerator3"
       SrcTerminal   1
-      Points        [120, 680; 120, 670]
+      Points        [120, 775; 120, 765]
       Branch {
         DstComponent  "FET5"
         DstTerminal   3
       }
       Branch {
-        Points        [165, 670]
+        Points        [165, 765]
         DstComponent  "FET6"
         DstTerminal   3
       }
@@ -3216,13 +3119,13 @@ Plecs {
       Type          Signal
       SrcComponent  "Demux9"
       SrcTerminal   2
-      Points        [400, 600]
+      Points        [400, 695]
       Branch {
         DstComponent  "Scope9"
         DstTerminal   1
       }
       Branch {
-        Points        [400, 570]
+        Points        [400, 665]
         DstComponent  "Periodic Average2"
         DstTerminal   2
       }
@@ -3238,13 +3141,13 @@ Plecs {
       Type          Signal
       SrcComponent  "Demux3"
       SrcTerminal   2
-      Points        [405, 210]
+      Points        [405, 245]
       Branch {
         DstComponent  "Scope3"
         DstTerminal   1
       }
       Branch {
-        Points        [405, 180]
+        Points        [405, 215]
         DstComponent  "Periodic Average3"
         DstTerminal   2
       }
@@ -3257,16 +3160,16 @@ Plecs {
     Annotation {
       Name          "<html><body>\n<p>&lt;------- NON-INVERTING BUCK BOOST</p>"
 "</body></html>"
-      Position      [580, 260]
+      Position      [580, 295]
     } 
     Annotation {
       Name          "<html><body>\n<p>&lt;------- CUK</p></body></html>"
-      Position      [580, 445]
+      Position      [580, 520]
     } 
     Annotation {
       Name          "<html><body>\n<p>&lt;------- NON-INVERTING CUK</p></body>"
 "</html>"
-      Position      [580, 650]
+      Position      [580, 745]
     } 
   }
 }

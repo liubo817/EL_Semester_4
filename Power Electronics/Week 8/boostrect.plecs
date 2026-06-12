@@ -1,6 +1,6 @@
 Plecs {
   Name          "boostrect"
-  Version       "5.0"
+  Version       "4.9"
   CircuitModel  "ContStateSpace"
   StartTime     "0.0"
   TimeSpan      "1.0"
@@ -31,7 +31,6 @@ Plecs {
   InitializationCommands ""
   InitialState  "1"
   SystemState   ""
-  JacobianComputation "2"
   TaskingMode   "1"
   TaskConfigurations ""
   CodeGenParameterInlining "2"
@@ -53,21 +52,9 @@ Plecs {
   AlgebraicLoopTolerance "1e-6"
   ScriptsDialogGeometry ""
   ScriptsDialogSplitterPos "0"
-  MixedSignalSolverBypassOperatingPoint "1"
-  MixedSignalSolverInitialConditions "2"
-  MixedSignalSolverMaxNewtonIterations "25"
-  MixedSignalSolverNumThreads "-1"
-  OperatingPointMaxNewtonIterations "50"
-  OperatingPointRelativeNewtonTolerance "1e-3"
-  OperatingPointAbsoluteNewtonTolerance "1e-12"
-  OperatingPointNodalVoltageNewtonTolerance "1e-6"
-  SpiceTemperature "27"
-  NetlistParserDetails "2"
-  InvalidNetlistFunctionEvaluationMsg "1"
-  IncompatibleInitialConditionMsg "2"
   Schematic {
-    Location      [0, 24; 1536, 870]
-    ZoomFactor    1
+    Location      [0, 24; 1920, 990]
+    ZoomFactor    1.49863
     SliderPosition [0, 0]
     ShowBrowser   off
     BrowserWidth  100
@@ -82,7 +69,7 @@ Plecs {
       Parameter {
         Variable      "V"
         Value         "320"
-        Show          off
+        Show          on
       }
       Parameter {
         Variable      "w"
@@ -180,11 +167,6 @@ Plecs {
         Show          off
       }
       Parameter {
-        Variable      "Np"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
         Variable      "T_init"
         Value         ""
         Show          off
@@ -226,11 +208,6 @@ Plecs {
       Parameter {
         Variable      "Rth"
         Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Np"
-        Value         "1"
         Show          off
       }
       Parameter {
@@ -278,11 +255,6 @@ Plecs {
         Show          off
       }
       Parameter {
-        Variable      "Np"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
         Variable      "T_init"
         Value         ""
         Show          off
@@ -327,11 +299,6 @@ Plecs {
         Show          off
       }
       Parameter {
-        Variable      "Np"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
         Variable      "T_init"
         Value         ""
         Show          off
@@ -371,7 +338,7 @@ Plecs {
       LabelPosition east
       Parameter {
         Variable      "R"
-        Value         "10"
+        Value         "200"
         Show          off
       }
     }
@@ -401,11 +368,6 @@ Plecs {
       Parameter {
         Variable      "Rth"
         Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Np"
-        Value         "1"
         Show          off
       }
       Parameter {
@@ -440,11 +402,6 @@ Plecs {
       Parameter {
         Variable      "Rth"
         Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Np"
-        Value         "1"
         Show          off
       }
       Parameter {
@@ -499,12 +456,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Frame         [-15, -30; 15, 30]
-      Location      [0, 24; 1536, 943]
+      Location      [0, 31; 1183, 835]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
-"G0AQQByAGUAYQAAAAAA/////wAAANAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAABgAAAAN4AAAA"
+"G0AQQByAGUAYQAAAAAA/////wAAANEA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAAAAAAAAPw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAABJ8AAAMFAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -518,13 +474,13 @@ Plecs {
       TimeRange     "0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "0"
+      Open          "1"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time / s"
       ShowLegend    "1"
       Axis {
-        Name          ""
+        Name          "Input AC V"
         AutoScale     1
         MinValue      0
         MaxValue      1
@@ -535,7 +491,7 @@ Plecs {
         BaselineValue 0
       }
       Axis {
-        Name          ""
+        Name          "Input AC current"
         AutoScale     1
         MinValue      0
         MaxValue      1
@@ -546,7 +502,7 @@ Plecs {
         BaselineValue 0
       }
       Axis {
-        Name          ""
+        Name          "Rectifier V"
         AutoScale     1
         MinValue      0
         MaxValue      1
@@ -557,7 +513,7 @@ Plecs {
         BaselineValue 0
       }
       Axis {
-        Name          ""
+        Name          "DC Side current"
         AutoScale     1
         MinValue      0
         MaxValue      1
@@ -568,7 +524,7 @@ Plecs {
         BaselineValue 0
       }
       Axis {
-        Name          ""
+        Name          "Output DC voltage"
         AutoScale     1
         MinValue      0
         MaxValue      1
@@ -678,7 +634,6 @@ Plecs {
       Direction     right
       Flipped       on
       LabelPosition south
-      Frame         [-7, -25; 2, 25]
       Parameter {
         Variable      "Width"
         Value         "5"

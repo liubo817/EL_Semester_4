@@ -1,6 +1,6 @@
 Plecs {
   Name          "single_phase_thyristor_AC_DC"
-  Version       "5.0"
+  Version       "4.9"
   CircuitModel  "ContStateSpace"
   StartTime     "0.0"
   TimeSpan      "1.0"
@@ -31,7 +31,6 @@ Plecs {
   InitializationCommands ""
   InitialState  "1"
   SystemState   ""
-  JacobianComputation "2"
   TaskingMode   "1"
   TaskConfigurations ""
   CodeGenParameterInlining "2"
@@ -53,22 +52,10 @@ Plecs {
   AlgebraicLoopTolerance "1e-6"
   ScriptsDialogGeometry ""
   ScriptsDialogSplitterPos "0"
-  MixedSignalSolverBypassOperatingPoint "1"
-  MixedSignalSolverInitialConditions "2"
-  MixedSignalSolverMaxNewtonIterations "25"
-  MixedSignalSolverNumThreads "-1"
-  OperatingPointMaxNewtonIterations "50"
-  OperatingPointRelativeNewtonTolerance "1e-3"
-  OperatingPointAbsoluteNewtonTolerance "1e-12"
-  OperatingPointNodalVoltageNewtonTolerance "1e-6"
-  SpiceTemperature "27"
-  NetlistParserDetails "2"
-  InvalidNetlistFunctionEvaluationMsg "1"
-  IncompatibleInitialConditionMsg "2"
   Schematic {
-    Location      [0, 23; 1536, 869]
-    ZoomFactor    1.71498
-    SliderPosition [-1, -1]
+    Location      [0, 24; 1536, 870]
+    ZoomFactor    1.14436
+    SliderPosition [0, -1]
     ShowBrowser   off
     BrowserWidth  100
     Component {
@@ -221,7 +208,6 @@ Plecs {
       Direction     right
       Flipped       on
       LabelPosition south
-      Frame         [-7, -25; 2, 25]
       Parameter {
         Variable      "Width"
         Value         "5"
@@ -236,17 +222,16 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Frame         [-15, -30; 15, 30]
-      Location      [0, 24; 1536, 943]
+      Location      [0, 24; 1536, 988]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
-"G0AQQByAGUAYQAAAAAA/////wAAANAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAYAAAAA4vw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABgAAAABEAP///wAABgAAAAKQAAAA"
+"G0AQQByAGUAYQAAAAAA/////wAAANEA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAYAAAAA4vw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABgAAAABEAP///wAABgAAAAK9AAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":64,\"Labels\":["
-"\"Delta\"],\"VisualIdxs\":[3]}"
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":64,\"Labels\":[\"D"
+"elta\"],\"VisualIdxs\":[3]}"
       PlotPalettes  "AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
@@ -648,7 +633,6 @@ Plecs {
       Direction     right
       Flipped       on
       LabelPosition south
-      Frame         [-7, -25; 2, 25]
       Parameter {
         Variable      "Width"
         Value         "5"
@@ -663,17 +647,16 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Frame         [-15, -30; 15, 30]
-      Location      [0, 24; 1536, 943]
+      Location      [0, 24; 1536, 1006]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
-"G0AQQByAGUAYQAAAAAA/////wAAANAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAYAAAAA4vw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABgAAAABEAP///wAABgAAAAKQAAAA"
+"G0AQQByAGUAYQAAAAAA/////wAAANEA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAYAAAAA4vw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABgAAAABEAP///wAABgAAAALPAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":64,\"Labels\":["
-"\"Delta\"],\"VisualIdxs\":[3]}"
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":187,\"Labels\":[\""
+"Delta\"],\"VisualIdxs\":[3]}"
       PlotPalettes  "AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
@@ -1075,7 +1058,6 @@ Plecs {
       Direction     right
       Flipped       on
       LabelPosition south
-      Frame         [-7, -25; 2, 25]
       Parameter {
         Variable      "Width"
         Value         "5"
@@ -1090,7 +1072,6 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Frame         [-15, -30; 15, 30]
       Location      [0, 24; 1536, 943]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAANAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
@@ -1502,7 +1483,6 @@ Plecs {
       Direction     right
       Flipped       on
       LabelPosition south
-      Frame         [-7, -25; 2, 25]
       Parameter {
         Variable      "Width"
         Value         "5"
@@ -1517,7 +1497,6 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Frame         [-15, -30; 15, 30]
       Location      [0, 24; 1536, 943]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAANAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
@@ -2203,7 +2182,6 @@ Plecs {
       Direction     right
       Flipped       on
       LabelPosition south
-      Frame         [-7, -10; 2, 10]
       Parameter {
         Variable      "Width"
         Value         "2"
@@ -2603,7 +2581,6 @@ Plecs {
       Direction     right
       Flipped       on
       LabelPosition south
-      Frame         [-7, -10; 2, 10]
       Parameter {
         Variable      "Width"
         Value         "2"
@@ -3022,7 +2999,6 @@ Plecs {
       Direction     right
       Flipped       on
       LabelPosition south
-      Frame         [-7, -10; 2, 10]
       Parameter {
         Variable      "Width"
         Value         "2"
@@ -3441,7 +3417,6 @@ Plecs {
       Direction     right
       Flipped       on
       LabelPosition south
-      Frame         [-7, -10; 2, 10]
       Parameter {
         Variable      "Width"
         Value         "2"
